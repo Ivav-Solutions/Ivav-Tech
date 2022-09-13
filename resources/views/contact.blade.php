@@ -87,6 +87,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        {!! app('captcha')->display() !!}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
                                     <button type="submit" class="default-btn page-btn box-btn">Submit</button>
                                 </div>
                             </div>
