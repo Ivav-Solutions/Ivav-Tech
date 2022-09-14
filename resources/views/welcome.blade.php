@@ -47,7 +47,7 @@
                         <div class="service-img"><img src="images/services/service2.png" alt="service" /></div>
                         <div class="service-content">
                             <h3>Moble Development</h3>
-                            <p>From simple to complex Mobile Apps, whether it is for your business, or a personal affair, we have what it Takes. Rest Assured. Your Mobile Applications will work on as many devices and Mobile Apps as possible.</p><a class="line-bnt" href="#">Read More</a>
+                            <p>From simple to complex Mobile Apps, whether it is for your business, or a personal affair, we have what it Takes. Rest Assured. Your Mobile Applications will work on as many devices and Mobile Apps as possible.</p><a class="line-bnt" href="/service/software_development/mobile_development">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <div class="service-img"><img src="images/services/service2.png" alt="service" /></div>
                         <div class="service-content">
                             <h3>Desktop Development</h3>
-                            <p>Games are often a tricky field of software development. We have a dedicated team of Game Developers who can handle your request to the letter. And our prices are affordable.</p><a class="line-bnt" href="#">Read More</a>
+                            <p>Games are often a tricky field of software development. We have a dedicated team of Game Developers who can handle your request to the letter. And our prices are affordable.</p><a class="line-bnt" href="/service/software_development/desktop_development">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,6 @@
                                     <p>At {{config('app.name')}}, we do not rest on our laurels. Whatever service you received from us today is primed to be better than what you would have received yesterday, or the day before. We value your feedback and you can always count on us to take your concerns seriously.</p>
                                 </li>
                             </ul>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form variations passages.</p>
                         </div><a class="box-btn" href="/about-us">Know More</a>
                     </div>
                 </div>
@@ -115,11 +114,6 @@
                                 <div data-accordion-component="AccordionItem" class="accordion__item">
                                     <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
                                         <div class="accordion__button" id="accordion__heading-raa-0" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-raa-0" role="button" tabindex="0" data-accordion-component="AccordionItemButton">Consistency</div>
-                                    </div>
-                                </div>
-                                <div data-accordion-component="AccordionItem" class="accordion__item">
-                                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                                        <div class="accordion__button" id="accordion__heading-raa-1" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-raa-1" role="button" tabindex="0" data-accordion-component="AccordionItemButton">Update Technology</div>
                                     </div>
                                 </div>
                                 <div data-accordion-component="AccordionItem" class="accordion__item">
@@ -195,6 +189,7 @@
                             <li><i class="flaticon-correct"></i>Monthly Paid Workspace</li>
                             <li><i class="flaticon-correct"></i>IT Learning Institute</li>
                             <li><i class="flaticon-correct"></i>Digital Marketing</li>
+                            <li><i class="flaticon-correct"></i>Professional/Personal</li>
                         </ul><a class="box-btn" href="/contact">Lets Talk!</a>
                     </div>
                 </div>

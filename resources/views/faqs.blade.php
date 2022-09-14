@@ -95,7 +95,7 @@
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    There are different websites with different scopes and complexities. So, there's no 'one cap fits all' duration for all the websites we build. However, a website development project will not take more than a month before it's delivered to you.
+                                    There are different websites with different scopes and complexities. So, there's no 'one cap fits all' duration for all the websites we build. However, a website development project will not take us two weeks to a month before it's delivered to you. On special occasions might be longer depending on requirements/complexities.
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Just like a website, there's no particular duration for the completion of all categories of software but we can guarantee that you will have it handed over to you before the end of a calendar month.
+                                    Just like a website, there's no particular duration for the completion of all categories of software but we can guarantee that you will have it handed over to in 4 to 6 weeks. This can sometimes be longer depending on requirements/complexities.
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    The duration of training depends on the course you opt-in for. However, the maximum completion time for our courses is 6 months.
+                                    The duration of training depends on the course you opt-in for. However, our courses duration ranges from 4 weeks to 6 months.
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                             </h2>
                             <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    With us you can learn and become proficient in Software Development, Web Development, Full stack Development etc. Also, you can learn individual programming languages such as Python, PHP, Java, JavaScript, HTML, CSS, React Node, React JS and so on.
+                                    With us you can learn and become proficient in Project/Product Management, Business Analysis, Digital Marketing, Software Development, Web Development, Full stack Development etc. Also, you can learn individual programming languages such as Python, PHP, Java, JavaScript, HTML, CSS, React Node, React JS and so on.
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                             </h2>
                             <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    All our courses are delivered online which means you can access them at any time and at your preferred location.
+                                    All our courses are delivered online which means you can attend classes remotely and at your preferred location.
                                 </div>
                             </div>
                         </div>

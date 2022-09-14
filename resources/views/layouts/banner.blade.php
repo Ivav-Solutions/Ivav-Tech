@@ -10,7 +10,7 @@
                             <p>Do You Need a Website? An App? A Game? We Got You!</p>
                             <p>Do You Need a Tech Skillset? We Offer Training!</p>
                             <p>Do You Need Some Help? Advice? Guidance? Consult with Us!</p>
-                            <div class="banner-btn"><a class="box-btn" href="">Register</a><a class="box-btn border-btn" href="">Login</a></div>
+                            <div class="banner-btn"><a class="box-btn" href="/book_consultation">Book Appointment</a></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
