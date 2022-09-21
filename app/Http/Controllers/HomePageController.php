@@ -235,4 +235,14 @@ class HomePageController extends Controller
     {
         return view('it_trainings');
     }
+
+    public function project_management()
+    {
+        return view('project_management');
+    }
+
+    public function risk_management_program()
+    {
+        return view('pm.risk_management_program');
+    }
 }

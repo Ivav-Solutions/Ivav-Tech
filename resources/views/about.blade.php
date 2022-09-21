@@ -34,7 +34,7 @@
                             </li>
                             <br>
                             <li>3. TRANSPARENCY
-                                <p>At {{config('app.name')}}, we do not rest on our laurels. Whatever service you received from us today is primed to be better than what you would have received yesterday, or the day before. We value your feedback and you can always count on us to take your concerns seriously.</p>
+                                <p>Open and honest communication are at the centre of our core values. At each stage of every project, we convey the right information to you so that you can follow the progress of your investment closely.</p>
                             </li>
                         </ul>
                     </div>

@@ -21,6 +21,8 @@ Route::get('/service/software_development/mobile_development', [App\Http\Control
 Route::get('/service/software_development/desktop_development', [App\Http\Controllers\HomePageController::class, 'desktop_development']);
 Route::get('/service/software_development/game_development', [App\Http\Controllers\HomePageController::class, 'game_development']);
 Route::get('/service/it_trainings', [App\Http\Controllers\HomePageController::class, 'it_trainings']);
+Route::get('/service/it_trainings/project_management', [App\Http\Controllers\HomePageController::class, 'project_management']);
+Route::get('/service/it_trainings/project_management/risk_management_program', [App\Http\Controllers\HomePageController::class, 'risk_management_program']);
 Route::get('/faqs', [App\Http\Controllers\HomePageController::class, 'faqs']);
 Route::get('/contact', [App\Http\Controllers\HomePageController::class, 'contact']);
 Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm']);

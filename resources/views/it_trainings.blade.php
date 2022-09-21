@@ -77,11 +77,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="services-details-text">
-                    <h2>Project Management</h2>
-                    <p>Build a lucrative career in project management by improving your ability to manage team and resources efficiently. </p>
-                    <p>In this exercise-based training, you will learn how to marshal the right knowledge, skills, tools, and techniques to carry out several tasks to achieve project objectives in a given time and budget.<p>
-                </div>
+                <a href="/service/it_trainings/project_management" style="color: #000;">
+                    <div class="services-details-text">
+                        <h2>Project Management</h2>
+                        <p>Build a lucrative career in project management by improving your ability to manage team and resources efficiently. </p>
+                        <p>In this exercise-based training, you will learn how to marshal the right knowledge, skills, tools, and techniques to carry out several tasks to achieve project objectives in a given time and budget.<p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
