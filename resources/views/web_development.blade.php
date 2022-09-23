@@ -39,12 +39,12 @@
                 <li class="active" data-filter="*"><span>We are proud of our work. Check them out.</span></li>
             </ul>
         </div>
-        <!-- <div class="row case-list" style="position: relative; height: auto;">
+        <div class="row case-list" style="position: relative; height: auto;">
             <div class="col-lg-4 col-sm-6 item">
                 <div class="single-case">
                     <div class="case-img">
                         <a href="#">
-                            <img src="{{URL::asset('images/case/c1.jpg')}}" alt="case">
+                            <img src="{{URL::asset('images/products/ivav_tech.jpg')}}" alt="case">
                         </a>
                     </div>
                 </div>
@@ -53,21 +53,12 @@
                 <div class="single-case">
                     <div class="case-img">
                         <a href="#">
-                            <img src="{{URL::asset('images/case/c2.jpg')}}" alt="case">
+                            <img src="{{URL::asset('images/products/ivav_travel.jpeg')}}" alt="case">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 item">
-                <div class="single-case">
-                    <div class="case-img">
-                        <a href="#">
-                            <img src="{{URL::asset('images/case/c3.jpg')}}" alt="case">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        </div>
         <div class="case-btn text-center">
             <p><a href="/contact">Contact us today </a></p>
         </div>

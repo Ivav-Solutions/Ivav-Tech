@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="home-case ptb-100">
+    <div class="home-case ptb-100">
         <div class="container">
             <div class="section-title"><span>Our Works</span>
                 <h2>Have a Look Our Work Showcase</h2>
@@ -141,40 +141,17 @@
             <div class="row case-list">
                 <div class="col-lg-4 col-sm-6">
                     <div class="single-case">
-                        <div class="case-img"><a href="case-studies-details.html"><img src="images/case-studies/case-studies4.jpg" alt="case" /></a></div>
-                        <div class="content"><a href="case-studies-details.html">
-                                <h3>IT Software Company Development Case</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, coloni is to nsectetur adipiscing elit, sed do eiudvi smod tempor incididunt ipsum dolor.</p><a class="line-bnt" href="case-studies-details.html">View Project Details</a>
-                        </div>
+                        <div class="case-img"><a href="#"><img src="{{URL::asset('images/products/ivav_tech.jpg')}}" alt="case" /></a></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single-case">
-                        <div class="case-img"><a href="case-studies-details.html"><img src="images/case-studies/case-studies5.jpg" alt="case" /></a></div>
-                        <div class="content"><a href="case-studies-details.html">
-                                <h3>Parking Management &amp; Web Developing</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, coloni is to nsectetur adipiscing elit, sed do eiudvi smod tempor incididunt ipsum dolor.</p><a class="line-bnt" href="case-studies-details.html">View Project Details</a>
-                        </div>
+                        <div class="case-img"><a href="#"><img src="{{URL::asset('images/products/ivav_travel.jpeg')}}" alt="case" /></a></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-case">
-                        <div class="case-img"><a href="case-studies-details.html"><img src="images/case-studies/case-studies5.jpg" alt="case" /></a></div>
-                        <div class="content"><a href="case-studies-details.html">
-                                <h3>Temperature App UX Studies &amp; Development Case</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, coloni is to nsectetur adipiscing elit, sed do eiudvi smod tempor incididunt ipsum dolor.</p><a class="line-bnt" href="case-studies-details.html">View Project Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="case-btn text-center">
-                <p>We Have More Amazing Cases. <a href="#">View More</a></p>
             </div>
         </div>
-    </div> -->
+    </div>
     <div class="feature-area bg-color ptb-100">
         <div class="container">
             <div class="row align-items-center">

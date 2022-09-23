@@ -10,7 +10,7 @@
                     </p>
                     <ul class="social">
                         <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/ivav_tech?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bx bxl-instagram"></i></a></li>
                         <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
                     </ul>
                 </div>
@@ -44,10 +44,10 @@
                 <div class="content contacts">
                     <h3 class="ml-40">Contact</h3>
                     <ul class="footer-list foot-social">
-                        <li><a href="tel:"><i class="bx bx-phone"></i> Phone Number</a></li>
-                        <li><a href=""><i class="bx bxs-envelope"></i> <span class="__cf_email__" data-cfemail="ea828f868685aa90858185c4898587">[email&#160;protected]</span></a></li>
-                        <li><a href=""><i class="bx bxs-envelope"></i> <span class="__cf_email__" data-cfemail="42313732322d303602382d292d6c212d2f">[email&#160;protected]</span></a></li>
-                        <li><i class="bx bxs-map"></i> Address</li>
+                        <li><a href="tel:+447949317523"><i class="bx bx-phone"></i>+447949317523</a></li>
+                        <li><a href="mailto:info@ivavtech.com"><i class="bx bxs-envelope"></i> <span class="__cf_email__" data-cfemail="ea828f868685aa90858185c4898587">info@ivavtech.com</span></a></li>
+                        <li><a href="mailto:contact@ivavtech.com "><i class="bx bxs-envelope"></i> <span class="__cf_email__" data-cfemail="42313732322d303602382d292d6c212d2f">contact@ivavtech.com</span></a></li>
+                        <li><i class="bx bxs-map"></i> Shelton, London <br> Lagos, Nigeria.</li>
                     </ul>
                 </div>
             </div>

@@ -241,8 +241,33 @@ class HomePageController extends Controller
         return view('project_management');
     }
 
+    public function scrum_program()
+    {
+        return view('pm.scrum_program');
+    }
+
+    public function quality_management_program()
+    {
+        return view('pm.quality_management_program');
+    }
+
     public function risk_management_program()
     {
         return view('pm.risk_management_program');
+    }
+
+    public function prince2_program()
+    {
+        return view('pm.prince2_program');
+    }
+
+    public function marketing_program()
+    {
+        return view('pm.marketing_program');
+    }
+
+    public function itil()
+    {
+        return view('pm.itil');
     }
 }

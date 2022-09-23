@@ -33,7 +33,7 @@
                         <div class="icon"><i class="bx bx-location-plus"></i></div>
                         <div class="content">
                             <h3>Address</h3>
-                            <p>[Address]</p>
+                            <p>Shelton, London <br> Lagos, Nigeria</p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                         <div class="icon"><i class="bx bx-phone-call"></i></div>
                         <div class="content">
                             <h3>Phone</h3>
-                            <p>[Phone Number]</p>
+                            <p>+447949317523</p>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="contact-img contact-img-2"><img src="images/contact-img2.jpg" alt="contact" /></div>
+                    <div class="contact-img contact-img-2"><img src="{{URL::asset('images/contact-img2.jpg')}}" alt="contact" /></div>
                 </div>
             </div>
         </div>

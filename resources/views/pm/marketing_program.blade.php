@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/service/it_trainings/project_management">Project Management</a></li>
-                <li class="active">Risk Management Program</li>
+                <li class="active">Marketing Program</li>
             </ul>
         </div>
     </div>
