@@ -9,7 +9,7 @@
                         IT Training, and Career and Business Consulting.
                     </p>
                     <ul class="social">
-                        <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="https://m.facebook.com/ivavtech/" target="_blank"><i class="bx bxl-facebook"></i></a></li>
                         <li><a href="https://instagram.com/ivav_tech?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bx bxl-instagram"></i></a></li>
                         <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
                     </ul>

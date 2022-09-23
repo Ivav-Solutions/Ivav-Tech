@@ -18,30 +18,32 @@
     </div>
 </div>
 
-<section class="services-details-area pb-100" style="padding-top: 5rem;">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
                 <h1>Expert Scrum Master (ESM&trade;)</h1>
-                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <th rowspan="2">Certification</th>
-                        <th colspan="2">Prerequisites</th>
-                        <th rowspan="2">Target Audience</th>
-                        <th rowspan="2">Maintaining Certification (RCUs)</th>
-                    </tr>
-                    <tr class="second-row">
-                        <th>Experience</th>
-                        <th>Education</th>
-                    </tr>
-                    <tr>
-                        <td>ESM<sup>&trade;</sup></td>
-                        <td>3 Years managing SCRUM/AGILE projects</td>
-                        <td>Should be SMC&trade;, SAMC&trade;, and SPOC&trade; Certified</td>
-                        <td>Experienced Scrum Professional</td>
-                        <td>60 Recertification units every 2 years</td>
-                    </tr>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">                
+                        <tr>
+                            <th rowspan="2">Certification</th>
+                            <th colspan="2">Prerequisites</th>
+                            <th rowspan="2">Target Audience</th>
+                            <th rowspan="2">Maintaining Certification (RCUs)</th>
+                        </tr>
+                        <tr class="second-row">
+                            <th>Experience</th>
+                            <th>Education</th>
+                        </tr>
+                        <tr>
+                            <td>ESM<sup>&trade;</sup></td>
+                            <td>3 Years managing SCRUM/AGILE projects</td>
+                            <td>Should be SMC&trade;, SAMC&trade;, and SPOC&trade; Certified</td>
+                            <td>Experienced Scrum Professional</td>
+                            <td>60 Recertification units every 2 years</td>
+                        </tr>
+                    </table>
+                </div>
                 <h2>Overview </h2>
                 <p>Expert Scrum Master (ESM&trade;) certification is the next step for Scrum practitioners to further demonstrate their expertise in Scrum methodology. This will test your ability to manage complex Scrum projects and scale Scrum in complex projects involving big project teams, programs and portfolios. Applicants will be awarded the Expert Scrum Master (ESM&trade;) certificate by SCRUMstudy upon successfully passing the certification exam.</p>
                 <h2>Audience Profile:</h2>
@@ -66,13 +68,13 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
                 <h1>Why SCRUM?</h1>
                 <div class="media-block-holder">
-                    <iframe width="640" height="360" src="http://www.youtube.com/embed/aP3TBpWWwJ8?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="responsive-iframe" width="640" height="360" src="http://www.youtube.com/embed/aP3TBpWWwJ8?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <p>Scrum is one of the most popular agile methodologies. It is an adaptive, iterative, fast, flexible, and effective methodology designed to deliver significant value quickly and throughout a project. Scrum ensures transparency in communication and creates an environment of collective accountability and continuous progress. The Scrum framework, as defined in the SBOK&trade; Guide, is structured in such a way that it supports product and service development in all types of industries and in any type of project, irrespective of its complexity.</p>
                 <p>A key strength of Scrum lies in its use of cross-functional, self-organized, and empowered teams who divide their work into short, concentrated work cycles called Sprints.</p>
@@ -83,7 +85,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -113,7 +115,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -148,19 +150,25 @@
                         &trade;) </li>
                 </ul>
                 <div class="buy-sbok">
-                    <div class="sbok-cover" style="float:left"><img src="{{URL::asset('images/sbok-book.png')}}" width="240" /></div>
-                    <div class="sbok-value">
-                        <h3>A Guide to the Scrum Body of Knowledge</h3>
-                        <ul class="scrum-no-list">
-                            <li>Price: $ 35.95 (includes free global shipping)</li>
-                            <li>Number of Pages: 340</li>
-                            <li>ISBN: 978-0-9899252-0-4</li>
-                            <li>Date Published: 2013</li>
-                            <li>Subject: A Comprehensive Guide to Deliver Projects using Scrum</li>
-                            <li>Publisher: VMEdu, Inc.</li>
-                            <li>Author: SCRUMstudy</li>
-                        </ul>
-                        <a href="http://www.scrumstudy.com/buy-sbok.asp" target="_blank" class="scrum-btn" style="margin-right:20px">Buy Now</a><a href="http://www.scrumstudy.com/Chapter%201%20(Introduction).pdf" class="scrum-btn">Sample Chapter</a>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="sbok-cover" style="float:left"><img src="{{URL::asset('images/sbok-book.png')}}" width="240" /></div>    
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="sbok-value">
+                                <h3>A Guide to the Scrum Body of Knowledge</h3>
+                                <ul class="scrum-no-list">
+                                    <li>Price: $ 35.95 (includes free global shipping)</li>
+                                    <li>Number of Pages: 340</li>
+                                    <li>ISBN: 978-0-9899252-0-4</li>
+                                    <li>Date Published: 2013</li>
+                                    <li>Subject: A Comprehensive Guide to Deliver Projects using Scrum</li>
+                                    <li>Publisher: VMEdu, Inc.</li>
+                                    <li>Author: SCRUMstudy</li>
+                                </ul>
+                                <a href="http://www.scrumstudy.com/buy-sbok.asp" target="_blank" class="scrum-btn" style="margin-right:20px">Buy Now</a><a href="http://www.scrumstudy.com/Chapter%201%20(Introduction).pdf" class="scrum-btn">Sample Chapter</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,7 +176,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -201,30 +209,32 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
                 <h1>Scrum Developer Certified (SDC&trade;)</h1>
-                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <th rowspan="2">Certification</th>
-                        <th colspan="2">Prerequisites</th>
-                        <th rowspan="2">Target Audience</th>
-                        <th rowspan="2">Maintaining Certification (RCUs)</th>
-                    </tr>
-                    <tr class="second-row">
-                        <th>Experience</th>
-                        <th>Education</th>
-                    </tr>
-                    <tr>
-                        <td>SDC<sup>&trade;</sup></td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>Anyone on a SCRUM Team or anyone who interacts with any Scrum Team</td>
-                        <td>25 Recertification units every 2 years</td>
-                    </tr>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th rowspan="2">Certification</th>
+                            <th colspan="2">Prerequisites</th>
+                            <th rowspan="2">Target Audience</th>
+                            <th rowspan="2">Maintaining Certification (RCUs)</th>
+                        </tr>
+                        <tr class="second-row">
+                            <th>Experience</th>
+                            <th>Education</th>
+                        </tr>
+                        <tr>
+                            <td>SDC<sup>&trade;</sup></td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>Anyone on a SCRUM Team or anyone who interacts with any Scrum Team</td>
+                            <td>25 Recertification units every 2 years</td>
+                        </tr>
+                    </table>
+                </div>
                 <h2>Overview</h2>
                 <p>Scrum Developer Certified (SDC&trade;) is an entry level certification for Scrum Team members and those who interact with any Scrum Team. The objective of this certification is to ensure that Scrum Team members know enough about Scrum to effectively contribute to a Scrum project. The courseware and preparation tools required for the certification exam will be available online on SCRUMstudy.com. An online proctored exam will be conducted at the end of the course.
                 <h2>Audience Profile</h2>
@@ -246,7 +256,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -268,30 +278,32 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
                 <h1>Scrum Master Certified (SMC&trade;)</h1>
-                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <th rowspan="2">Certification</th>
-                        <th colspan="2">Prerequisites</th>
-                        <th rowspan="2">Target Audience</th>
-                        <th rowspan="2">Maintaining Certification (RCUs)</th>
-                    </tr>
-                    <tr class="second-row">
-                        <th>Experience</th>
-                        <th>Education</th>
-                    </tr>
-                    <tr>
-                        <td>SMC<sup>&trade;</sup></td>
-                        <td>Nil</td>
-                        <td>Preferably SDC&trade; certified professional</td>
-                        <td>Anyone who is interested in becoming a Scrum Master</td>
-                        <td>40 Recertification units every 2 years</td>
-                    </tr>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th rowspan="2">Certification</th>
+                            <th colspan="2">Prerequisites</th>
+                            <th rowspan="2">Target Audience</th>
+                            <th rowspan="2">Maintaining Certification (RCUs)</th>
+                        </tr>
+                        <tr class="second-row">
+                            <th>Experience</th>
+                            <th>Education</th>
+                        </tr>
+                        <tr>
+                            <td>SMC<sup>&trade;</sup></td>
+                            <td>Nil</td>
+                            <td>Preferably SDC&trade; certified professional</td>
+                            <td>Anyone who is interested in becoming a Scrum Master</td>
+                            <td>40 Recertification units every 2 years</td>
+                        </tr>
+                    </table>
+                </div>
                 <h2>Overview</h2>
                 <p>Scrum Master Certified (SMC&trade;) professionals are facilitators who ensure that the Scrum Team is provided with an environment conducive to completing the project successfully. The Scrum Master guides, facilitates, and teaches Scrum practices to everyone involved in the project; clears impediments for the team; and, ensure that Scrum processes are being followed. Successful candidates will be awarded the Scrum Master Certified (SMC&trade;) certification by SCRUMstudy after passing the certification exam.
                 <h2>Audience Profile</h2>
@@ -312,30 +324,32 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
                 <h1>Scrum Product Owner Certified (SPOC&trade;)</h1>
-                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <th rowspan="2">Certification</th>
-                        <th colspan="2">Prerequisites</th>
-                        <th rowspan="2">Target Audience</th>
-                        <th rowspan="2">Maintaining Certification (RCUs)</th>
-                    </tr>
-                    <tr class="second-row">
-                        <th>Experience</th>
-                        <th>Education</th>
-                    </tr>
-                    <tr>
-                        <td>SPOC<sup>&trade;</sup></td>
-                        <td>Nil</td>
-                        <td>Preferably SDC&trade; (or) SMC&trade; certified professional</td>
-                        <td>Anyone who interfaces with business stakeholders or works as a Product Owner in a Scrum project.</td>
-                        <td>40 Recertification units every 2 years</td>
-                    </tr>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th rowspan="2">Certification</th>
+                            <th colspan="2">Prerequisites</th>
+                            <th rowspan="2">Target Audience</th>
+                            <th rowspan="2">Maintaining Certification (RCUs)</th>
+                        </tr>
+                        <tr class="second-row">
+                            <th>Experience</th>
+                            <th>Education</th>
+                        </tr>
+                        <tr>
+                            <td>SPOC<sup>&trade;</sup></td>
+                            <td>Nil</td>
+                            <td>Preferably SDC&trade; (or) SMC&trade; certified professional</td>
+                            <td>Anyone who interfaces with business stakeholders or works as a Product Owner in a Scrum project.</td>
+                            <td>40 Recertification units every 2 years</td>
+                        </tr>
+                    </table>
+                </div>
                 <h2>Overview</h2>
                 <p>The Product Owner represents the interests of the stakeholder community to the Scrum Team. The Product Owner is responsible for ensuring clear communication of product or service functionality requirements to the Scrum Team, defining Acceptance Criteria, and ensuring those criteria are met. The Product Owner must always maintain a dual view. He or she must understand and support the needs and interests of all stakeholders, while also understanding the needs and workings of the Scrum Team.</p>
                 <p>Applicants will be awarded the Scrum Product Owner Certified (SPOC&trade;) certificate by SCRUMstudy upon successfully passing the certification exam.</p>
@@ -357,30 +371,33 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
                 <h1>SCRUMstudy Agile Master Certified (SAMC&trade;)</h1>
-                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <th rowspan="2">Certification</th>
-                        <th colspan="2">Prerequisites</th>
-                        <th rowspan="2">Target Audience</th>
-                        <th rowspan="2">Maintaining Certification (RCUs)</th>
-                    </tr>
-                    <tr class="second-row">
-                        <th>Experience</th>
-                        <th>Education</th>
-                    </tr>
-                    <tr>
-                        <td>SAMC<sup>&trade;</sup></td>
-                        <td>Nil</td>
-                        <td>Preferably SDC&trade; (or) SMC&trade; Certified professional</td>
-                        <td>Anyone on a Scrum team</td>
-                        <td>40 Recertification units every 2 years</td>
-                    </tr>
-                </table>
+                
+                <div style="overflow-x:auto;">
+                    <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th rowspan="2">Certification</th>
+                            <th colspan="2">Prerequisites</th>
+                            <th rowspan="2">Target Audience</th>
+                            <th rowspan="2">Maintaining Certification (RCUs)</th>
+                        </tr>
+                        <tr class="second-row">
+                            <th>Experience</th>
+                            <th>Education</th>
+                        </tr>
+                        <tr>
+                            <td>SAMC<sup>&trade;</sup></td>
+                            <td>Nil</td>
+                            <td>Preferably SDC&trade; (or) SMC&trade; Certified professional</td>
+                            <td>Anyone on a Scrum team</td>
+                            <td>40 Recertification units every 2 years</td>
+                        </tr>
+                    </table>
+                </div>
                 <h2>Overview</h2>
                 <p>Rapid changes in technology, market demands, and expectations have paved the way for the conceptualization and implementation of Agile methods and values in many organizations. Agile relies on adaptive planning and iterative development and delivery. It focuses primiarily on the value of people in getting the job done effectively. (SAMC&trade;) Certified Professionals should appreciate the concepts of Agile development and have the ability to compare and choose the Agile methodology appropriate in a given situation.</p>
                 <p>Applicants will be awarded the SCRUMstudy Agile Master Certified (SAMC&trade;) certificate by SCRUMstudy after successfully passing the certification exam.</p>
@@ -402,93 +419,90 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
                 <h1>Scrum Vs Traditional PM</h1>
-
-                <div class="media-block-holder">
-                    <iframe width="640" height="360" src="http://www.youtube.com/embed/8dkiayd0EM8?rel=0" frameborder="0" allowfullscreen></iframe>
-                </div>
-
                 <p>Traditional project management emphasizes on conducting detailed upfront planning for the project with emphasis on fixing the scope, cost and schedule - and managing those parameters. Whereas, Scrum encourages data-based, iterative decision making in which the primary focus is on delivering products that satisfy customer requirements.</p>
                 <p>To deliver the greatest amount of value in the shortest amount of time, Scrum promotes prioritization and Time-boxing over fixing the scope, cost and schedule of a project. An important feature of Scrum is self-organization, which allows the individuals who are actually doing the work to estimate and take ownership of tasks.</p>
                 <p>Following table summarizes many of the differences between Scrum and traditional project management: </p>
-                <table width="100%" class="comparison-table" border="0" cellspacing="0" cellpadding="0">
-                    <tbody>
-                        <tr>
-                            <th width="20%">Parameters</th>
-                            <th width="14%">Scrum</th>
-                            <th width="14%">Traditional Project Management</th>
-                        </tr>
-                        <tr class="odd">
-                            <td>Emphasis is on</td>
-                            <td>People</td>
-                            <td>Processes</td>
-                        </tr>
-                        <tr>
-                            <td>Documentation</td>
-                            <td>Minimal - only as required</td>
-                            <td>Comprehensive</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Process style</td>
-                            <td>Iterative</td>
-                            <td>Linear</td>
-                        </tr>
-                        <tr>
-                            <td>Upfront planning</td>
-                            <td>Low</td>
-                            <td>High</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Prioritization of Requirements</td>
-                            <td>Based on business value and regularly updated</td>
-                            <td>Fixed in the Project Plan</td>
-                        </tr>
-                        <tr>
-                            <td>Quality assurance</td>
-                            <td>Customer centric</td>
-                            <td>Process centric</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Organization</td>
-                            <td>Self-organized</td>
-                            <td>Managed</td>
-                        </tr>
-                        <tr>
-                            <td>Management style</td>
-                            <td>Decentralized</td>
-                            <td>Centralized</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Change</td>
-                            <td>Updates to Productized Product Backlog</td>
-                            <td>Formal Change Management System</td>
-                        </tr>
-                        <tr>
-                            <td>Leadership</td>
-                            <td>Collaborative, Servant Leadership</td>
-                            <td>Command and control</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Performance measurement</td>
-                            <td>Business value</td>
-                            <td>Plan conformity</td>
-                        </tr>
-                        <tr>
-                            <td>Return on Investment</td>
-                            <td>Early/throughout project life</td>
-                            <td>End of project life</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Customer involvement</td>
-                            <td>High throughout the project</td>
-                            <td>Varies depending on the project lifecycle</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table width="100%" class="comparison-table" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th width="20%">Parameters</th>
+                                <th width="14%">Scrum</th>
+                                <th width="14%">Traditional Project Management</th>
+                            </tr>
+                            <tr class="odd">
+                                <td>Emphasis is on</td>
+                                <td>People</td>
+                                <td>Processes</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation</td>
+                                <td>Minimal - only as required</td>
+                                <td>Comprehensive</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Process style</td>
+                                <td>Iterative</td>
+                                <td>Linear</td>
+                            </tr>
+                            <tr>
+                                <td>Upfront planning</td>
+                                <td>Low</td>
+                                <td>High</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Prioritization of Requirements</td>
+                                <td>Based on business value and regularly updated</td>
+                                <td>Fixed in the Project Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Quality assurance</td>
+                                <td>Customer centric</td>
+                                <td>Process centric</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Organization</td>
+                                <td>Self-organized</td>
+                                <td>Managed</td>
+                            </tr>
+                            <tr>
+                                <td>Management style</td>
+                                <td>Decentralized</td>
+                                <td>Centralized</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Change</td>
+                                <td>Updates to Productized Product Backlog</td>
+                                <td>Formal Change Management System</td>
+                            </tr>
+                            <tr>
+                                <td>Leadership</td>
+                                <td>Collaborative, Servant Leadership</td>
+                                <td>Command and control</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Performance measurement</td>
+                                <td>Business value</td>
+                                <td>Plan conformity</td>
+                            </tr>
+                            <tr>
+                                <td>Return on Investment</td>
+                                <td>Early/throughout project life</td>
+                                <td>End of project life</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Customer involvement</td>
+                                <td>High throughout the project</td>
+                                <td>Varies depending on the project lifecycle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

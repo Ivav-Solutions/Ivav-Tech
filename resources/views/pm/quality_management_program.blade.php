@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<section class="services-details-area pb-100" style="padding-top: 5rem;">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -43,7 +43,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -100,7 +100,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 0px; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -128,7 +128,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -186,7 +186,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -212,7 +212,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -249,7 +249,7 @@
     </div>
 </section>
 
-<section class="services-details-area pb-100">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
