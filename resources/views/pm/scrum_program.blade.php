@@ -11,62 +11,12 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings/project_management">Project Management</a></li>
+                <li><a href="/service/it_trainings">IT Trainings</a></li>
                 <li class="active">Scrum Program</li>
             </ul>
         </div>
     </div>
 </div>
-
-<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
-    <div class="container">
-        <div class="wrapper">
-            <div id="scrum-container">
-                <h1>Expert Scrum Master (ESM&trade;)</h1>
-                <div style="overflow-x:auto;">
-                    <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">                
-                        <tr>
-                            <th rowspan="2">Certification</th>
-                            <th colspan="2">Prerequisites</th>
-                            <th rowspan="2">Target Audience</th>
-                            <th rowspan="2">Maintaining Certification (RCUs)</th>
-                        </tr>
-                        <tr class="second-row">
-                            <th>Experience</th>
-                            <th>Education</th>
-                        </tr>
-                        <tr>
-                            <td>ESM<sup>&trade;</sup></td>
-                            <td>3 Years managing SCRUM/AGILE projects</td>
-                            <td>Should be SMC&trade;, SAMC&trade;, and SPOC&trade; Certified</td>
-                            <td>Experienced Scrum Professional</td>
-                            <td>60 Recertification units every 2 years</td>
-                        </tr>
-                    </table>
-                </div>
-                <h2>Overview </h2>
-                <p>Expert Scrum Master (ESM&trade;) certification is the next step for Scrum practitioners to further demonstrate their expertise in Scrum methodology. This will test your ability to manage complex Scrum projects and scale Scrum in complex projects involving big project teams, programs and portfolios. Applicants will be awarded the Expert Scrum Master (ESM&trade;) certificate by SCRUMstudy upon successfully passing the certification exam.</p>
-                <h2>Audience Profile:</h2>
-                <p>This Certification is suitable for anyone who is an expert in the SCRUM team and wants to handle complicated Scrum projects as an Expert Scrum Master.</p>
-                <h2>Prerequisites</h2>
-                <p>To become an ESM&trade; certified professional you should fulfil the following criteria:</p>
-                <ul>
-                    <li>Should have three years of experience managing Scrum/Agile Projects</li>
-                    <li>Should be SMC&trade;, SAMC&trade; and SPOC&trade; certified.</li>
-                    <li>Should submit 500 words write up about two Scrum/Agile projects.</li>
-                    <li>You can also attend a 2-day ESM&trade; classroom training provided by a SCRUMstudy R.E.P.</li>
-                </ul>
-                <h2>Exam Format </h2>
-                <ul>
-                    <li>Objective testing. Case study and scenario based</li>
-                    <li>240 minutes duration</li>
-                    <li>Proctored online exam</li>
-                    <li>Open book exam (SBOK&trade; Guide only)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
@@ -419,7 +369,7 @@
     </div>
 </section>
 
-<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
+<section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -503,6 +453,56 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
+    <div class="container">
+        <div class="wrapper">
+            <div id="scrum-container">
+                <h1>Expert Scrum Master (ESM&trade;)</h1>
+                <div style="overflow-x:auto;">
+                    <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">                
+                        <tr>
+                            <th rowspan="2">Certification</th>
+                            <th colspan="2">Prerequisites</th>
+                            <th rowspan="2">Target Audience</th>
+                            <th rowspan="2">Maintaining Certification (RCUs)</th>
+                        </tr>
+                        <tr class="second-row">
+                            <th>Experience</th>
+                            <th>Education</th>
+                        </tr>
+                        <tr>
+                            <td>ESM<sup>&trade;</sup></td>
+                            <td>3 Years managing SCRUM/AGILE projects</td>
+                            <td>Should be SMC&trade;, SAMC&trade;, and SPOC&trade; Certified</td>
+                            <td>Experienced Scrum Professional</td>
+                            <td>60 Recertification units every 2 years</td>
+                        </tr>
+                    </table>
+                </div>
+                <h2>Overview </h2>
+                <p>Expert Scrum Master (ESM&trade;) certification is the next step for Scrum practitioners to further demonstrate their expertise in Scrum methodology. This will test your ability to manage complex Scrum projects and scale Scrum in complex projects involving big project teams, programs and portfolios. Applicants will be awarded the Expert Scrum Master (ESM&trade;) certificate by SCRUMstudy upon successfully passing the certification exam.</p>
+                <h2>Audience Profile:</h2>
+                <p>This Certification is suitable for anyone who is an expert in the SCRUM team and wants to handle complicated Scrum projects as an Expert Scrum Master.</p>
+                <h2>Prerequisites</h2>
+                <p>To become an ESM&trade; certified professional you should fulfil the following criteria:</p>
+                <ul>
+                    <li>Should have three years of experience managing Scrum/Agile Projects</li>
+                    <li>Should be SMC&trade;, SAMC&trade; and SPOC&trade; certified.</li>
+                    <li>Should submit 500 words write up about two Scrum/Agile projects.</li>
+                    <li>You can also attend a 2-day ESM&trade; classroom training provided by a SCRUMstudy R.E.P.</li>
+                </ul>
+                <h2>Exam Format </h2>
+                <ul>
+                    <li>Objective testing. Case study and scenario based</li>
+                    <li>240 minutes duration</li>
+                    <li>Proctored online exam</li>
+                    <li>Open book exam (SBOK&trade; Guide only)</li>
+                </ul>
             </div>
         </div>
     </div>

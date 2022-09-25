@@ -11,7 +11,7 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings/project_management">Project Management</a></li>
+                <li><a href="/service/it_trainings">IT Trainings</a></li>
                 <li class="active">Prince2 Program</li>
             </ul>
         </div>
@@ -22,66 +22,78 @@
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
-                <h1>PRINCE2<sup>®</sup> Practitioner Course</h1>
-                <p><strong>What you will learn</strong></p>
-                <p>At the end of this course the delegate will be prepared for the PRINCE2<sup>®</sup> practitioner exam.</p>
-                <p>The purpose of the Practitioner qualification is to confirm whether the candidate has achieved sufficient understanding of how to apply and tailor PRINCE2<sup>®</sup> in a scenario situation. A successful Practitioner candidate should, with suitable direction, be able to start applying the method to a real project but may not be sufficiently skilled to do this appropriately for all situations. Their individual project management expertise, complexity of the project and the support provided for the use of PRINCE2<sup>®</sup> in their work environment will all be factors that impact what the Practitioner can achieve.</p>
-                <p>Candidates should be able to apply and understand how to tailor PRINCE2<sup>®</sup> effectively to a project within an organization environment supporting PRINCE2<sup>®</sup>. Specifically candidates should</p>
+                <h1>Why PRINCE2<sup>®</sup> ?</h1>
+                <p>PRINCE2<sup>®</sup> (Projects IN Controlled Environments) is a process-based approach for project management providing an easily tailored and scalable method for the management of all types of projects. The method is the de-facto standard for project management in the UK and is practiced worldwide.</p>
+                <p>The continued international development of PRINCE2 examinations, training and course material is contributing significantly to the recognition of PRINCE2 as a truly international standard. More and more people are having the opportunity to benefit from the training courses and certifications that are available worldwide.</p>
+                <h2>Benefits for Individuals</h2>
                 <ul>
-                    <li>Understand the relationships between the roles, management products, principles, themes, techniques and processes</li>
-                    <li>Be able to apply the principles, themes and processes to a project</li>
-                    <li>Be able to create and assess management products.</li>
+                    <li>Learn how to manage projects or to work in a project environment using the most internationally recognized project management method.</li>
+                    <li>Ensure that team members focus on the viability of the project in relation to its business case objectives - rather than simply seeing the completion of the project as an end in itself.</li>
+                    <li>Promote consistency of project work and the ability to reuse project assets while facilitating staff mobility and reducing the impact of personnel changes/handovers.</li>
+                    <li>Design plans and reports to meet the needs of each level in the project team and Project Board, improving communication and control.</li>
+                    <li>Mitigate perceived problems and issues and focus on the viability of the project throughout.</li>
+                    <li>Evaluate the project portfolio to bring clarity and allow improvements in reviewing projects.</li>
                 </ul>
-                <p>This course leads to the PRINCE2 <sup>®</sup> practitioner level certification. The Practitioner examination is normally taken on the final day of the course.</p>
-                <p>The Practitioner examination is an open- book objective test examination based on a given scenario and lasting 150 minutes. There are 8 questions each worth 10 marks, making a total of 80 marks available. The pass mark is 55% (44 marks required to pass out of 80 available).</p>
-                <h2>Audience Profile</h2>
-                <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including</p>
-                <strong>Project Board members</strong>
+                <h2>Benefits for Organizations</h2>
                 <ul>
-                    <li>Senior Responsible Owners</li>
-                    <li>Project Sponsors</li>
-                    <li>Senior management involved in making project-level decisions</li>
+                    <li>Benefit from a shared and thoroughly understood language and approach to reporting which will save time and effort.</li>
+                    <li>Increase staff awareness of their roles and responsibilities in the project management life cycle.</li>
+                    <li>Utilize an invaluable diagnostic tool, facilitating the assurance and assessment of project work, troubleshooting and audits.</li>
+                    <li>Ensure stakeholders (including sponsors and resource providers) are properly represented in planning and decision making.</li>
+                    <li>Enable more effective engagement of stakeholders in the process of project approval and management.</li>
                 </ul>
-                <strong>Team Managers</strong>
-                <ul>
-                    <li>Product Delivery Managers</li>
-                    <li>Project team members</li>
-                    <li>Business Analysts</li>
-                    <li>Subject matter experts delivering or providing expertise to a project</li>
-                </ul>
-                <strong>Project Assurance</strong>
-                <ul>
-                    <li>Business Change Analysts</li>
-                    <li>Change Board members</li>
-                    <li>Risk managers</li>
-                    <li>Auditors</li>
-                    <li>Stakeholder representatives</li>
-                </ul>
-                <strong>Project Support</strong>
-                <ul>
-                    <li>Project office support staff</li>
-                    <li>Program office personnel</li>
-                    <li>Planners and plan creators</li>
-                    <li>Operational line managers/staff involved in a project, or intending to be involved </li>
-                </ul>
-                <h2>Prerequisite</h2>
-                <p>Delegates must have attained the Foundation qualification, or achieved Foundation level qualification in a previous version.</p>
-                <p>In addition, delegates should allow for around 2 to 3 hours of evening work prior to taking the Practitioner examination. This is to finalize exam preparation and confirm understanding in any areas of uncertainty.</p>
-                <h2>Course Outline</h2>
-                <p><strong>DAY 1</strong></p>
-                <ul>
-                    <li>Understanding the examination format</li>
-                    <li>Tips and tricks for answering the Practitioner</li>
-                    <li>Questions</li>
-                    <li>Review of PRINCE2<sup>®</sup></li>
-                    <li>Practice questions under examination conditions</li>
-                    <li>Review of answers</li>
-                </ul>
-                <p><strong>DAY 2</strong></p>
-                <ul>
-                    <li>Practitioner examination only</li>
-                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="services-details-area" style="padding-top: 5rem;">
+    <div class="container">
+        <div class="wrapper">
+            <div id="scrum-container">
+                <h1>Benefits of PRINCE2:</h1>
+                <p>PRINCE2 embodies established and proven best practice and governance for project management. It can be applied to any type of project - and can easily be implemented alongside specialist, industry-specific models ('engineering models' or 'development life cycles').</p>
+                <p>The method is widely recognized and understood, and therefore provides a common vocabulary for all project participants - promoting effective communication. The method also provides for the explicit recognition of project responsibilities - so that participants understand each other's roles and needs. There is a defined structure for accountability, delegation, authority and communication.</p>
+                <p><strong>Some observed benefits are:</strong></p>
+                <ul>
+                    <li>Promotes consistency of project work and the ability to reuse project assets; it also facilitates staff mobility and reduces the impact of personnel changes/handovers.</li>
+                    <li>Is an invaluable diagnostic tool, facilitating the assurance and assessment of project work, troubleshooting and audits.</li>
+                    <li>Plans are carefully designed to meet the needs of the different levels in the management team, improving communication and control.</li>
+                    <li>Ensures that participants focus on the viability of the project in relation to its Business Case objectives - rather than simply seeing the completion of the project as an end in it.</li>
+                    <li>Defines a thorough but economic structure of reports.</li>
+                    <li>Ensures that stakeholders (including sponsors and resource providers) are properly represented in planning and decision making.</li>
+                </ul>
+                Adopting PRINCE2 promotes learning and continual improvement in organizations. Its product focus clarifies (for all parties) what a project will deliver, why, when, by whom and for whom. It is based on a 'management by exception' framework, providing for the efficient and economic use of management time (whether at corporate, program, Project Board or project management levels).
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-details-area" style="padding-top: 5rem;">
+    <div class="container">
+        <div class="wrapper">
+            <div id="scrum-container">
+                <h1>PRINCE2<sup>®</sup> METHODOLOGY</h1>
+                <p>There are six variables involved in any project, and therefore six aspects of project performance to be managed:</p>
+                <ul>
+                    <li>Costs</li>
+                    <li>Timescales</li>
+                    <li>Quality</li>
+                    <li>Scope</li>
+                    <li>Risk</li>
+                    <li>Benefits</li>
+
+                </ul>
+                <p>PRINCE2 is an integrated framework of processes and themes that addresses the planning, delegation, monitoring and control of all these six aspects of project performance.</p>
+                <h2>THE STRUCTURE OF PRINCE2</h2>
+                <img src="{{URL::asset('images/diagram-01.png')}}" style="margin-left:234px;">
+                <p>The PRINCE2 method addresses project management with four integrated elements of principles, themes, processes and the project environment:</p>
+                <ol type="1">
+                    <li>The Principles - These are the guiding obligations and good practices which determine whether the project is genuinely being managed using PRINCE2. There are seven principles and unless all of them are applied, it is not a PRINCE2 project.</li>
+                    <li>The Themes - These describe aspects of project management that must be addressed continually and in parallel throughout the project. The seven themes explain the specific treatment required by PRINCE2 for various project management disciplines and why they are necessary.</li>
+                    <li>The Processes - These describe a step-wise progression through the project lifecycle, from getting started to project closure. Each process provides checklists of recommended activities, products and related responsibilities.</li>
+                    <li>Tailoring PRINCE2 to the Project Environment - This chapter addresses the need to tailor PRINCE2 to the specific context of the project. PRINCE2 is not a 'one size fits all' solution; it is a flexible framework that can readily be tailored to any type or size of project.</li>
+                </ol>
             </div>
         </div>
     </div>
@@ -177,33 +189,72 @@
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
-                <h1>PRINCE2<sup>®</sup> METHODOLOGY</h1>
-                <p>There are six variables involved in any project, and therefore six aspects of project performance to be managed:</p>
+                <h1>PRINCE2<sup>®</sup> Practitioner Course</h1>
+                <p><strong>What you will learn</strong></p>
+                <p>At the end of this course the delegate will be prepared for the PRINCE2<sup>®</sup> practitioner exam.</p>
+                <p>The purpose of the Practitioner qualification is to confirm whether the candidate has achieved sufficient understanding of how to apply and tailor PRINCE2<sup>®</sup> in a scenario situation. A successful Practitioner candidate should, with suitable direction, be able to start applying the method to a real project but may not be sufficiently skilled to do this appropriately for all situations. Their individual project management expertise, complexity of the project and the support provided for the use of PRINCE2<sup>®</sup> in their work environment will all be factors that impact what the Practitioner can achieve.</p>
+                <p>Candidates should be able to apply and understand how to tailor PRINCE2<sup>®</sup> effectively to a project within an organization environment supporting PRINCE2<sup>®</sup>. Specifically candidates should</p>
                 <ul>
-                    <li>Costs</li>
-                    <li>Timescales</li>
-                    <li>Quality</li>
-                    <li>Scope</li>
-                    <li>Risk</li>
-                    <li>Benefits</li>
-
+                    <li>Understand the relationships between the roles, management products, principles, themes, techniques and processes</li>
+                    <li>Be able to apply the principles, themes and processes to a project</li>
+                    <li>Be able to create and assess management products.</li>
                 </ul>
-                <p>PRINCE2 is an integrated framework of processes and themes that addresses the planning, delegation, monitoring and control of all these six aspects of project performance.</p>
-                <h2>THE STRUCTURE OF PRINCE2</h2>
-                <img src="{{URL::asset('images/diagram-01.png')}}" style="margin-left:234px;">
-                <p>The PRINCE2 method addresses project management with four integrated elements of principles, themes, processes and the project environment:</p>
-                <ol type="1">
-                    <li>The Principles - These are the guiding obligations and good practices which determine whether the project is genuinely being managed using PRINCE2. There are seven principles and unless all of them are applied, it is not a PRINCE2 project.</li>
-                    <li>The Themes - These describe aspects of project management that must be addressed continually and in parallel throughout the project. The seven themes explain the specific treatment required by PRINCE2 for various project management disciplines and why they are necessary.</li>
-                    <li>The Processes - These describe a step-wise progression through the project lifecycle, from getting started to project closure. Each process provides checklists of recommended activities, products and related responsibilities.</li>
-                    <li>Tailoring PRINCE2 to the Project Environment - This chapter addresses the need to tailor PRINCE2 to the specific context of the project. PRINCE2 is not a 'one size fits all' solution; it is a flexible framework that can readily be tailored to any type or size of project.</li>
-                </ol>
+                <p>This course leads to the PRINCE2 <sup>®</sup> practitioner level certification. The Practitioner examination is normally taken on the final day of the course.</p>
+                <p>The Practitioner examination is an open- book objective test examination based on a given scenario and lasting 150 minutes. There are 8 questions each worth 10 marks, making a total of 80 marks available. The pass mark is 55% (44 marks required to pass out of 80 available).</p>
+                <h2>Audience Profile</h2>
+                <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including</p>
+                <strong>Project Board members</strong>
+                <ul>
+                    <li>Senior Responsible Owners</li>
+                    <li>Project Sponsors</li>
+                    <li>Senior management involved in making project-level decisions</li>
+                </ul>
+                <strong>Team Managers</strong>
+                <ul>
+                    <li>Product Delivery Managers</li>
+                    <li>Project team members</li>
+                    <li>Business Analysts</li>
+                    <li>Subject matter experts delivering or providing expertise to a project</li>
+                </ul>
+                <strong>Project Assurance</strong>
+                <ul>
+                    <li>Business Change Analysts</li>
+                    <li>Change Board members</li>
+                    <li>Risk managers</li>
+                    <li>Auditors</li>
+                    <li>Stakeholder representatives</li>
+                </ul>
+                <strong>Project Support</strong>
+                <ul>
+                    <li>Project office support staff</li>
+                    <li>Program office personnel</li>
+                    <li>Planners and plan creators</li>
+                    <li>Operational line managers/staff involved in a project, or intending to be involved </li>
+                </ul>
+                <h2>Prerequisite</h2>
+                <p>Delegates must have attained the Foundation qualification, or achieved Foundation level qualification in a previous version.</p>
+                <p>In addition, delegates should allow for around 2 to 3 hours of evening work prior to taking the Practitioner examination. This is to finalize exam preparation and confirm understanding in any areas of uncertainty.</p>
+                <h2>Course Outline</h2>
+                <p><strong>DAY 1</strong></p>
+                <ul>
+                    <li>Understanding the examination format</li>
+                    <li>Tips and tricks for answering the Practitioner</li>
+                    <li>Questions</li>
+                    <li>Review of PRINCE2<sup>®</sup></li>
+                    <li>Practice questions under examination conditions</li>
+                    <li>Review of answers</li>
+                </ul>
+                <p><strong>DAY 2</strong></p>
+                <ul>
+                    <li>Practitioner examination only</li>
+                </ul>
+
             </div>
         </div>
     </div>
 </section>
 
-<section class="services-details-area" style="padding-top: 5rem;">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -295,57 +346,6 @@
                     <li>Practitioner examination only</li>
                     <li>The timetable and order of events may be varied by the trainer where they see an opportunity to give delegates a better learning experience.</li>
                 </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services-details-area" style="padding-top: 5rem;">
-    <div class="container">
-        <div class="wrapper">
-            <div id="scrum-container">
-                <h1>Why PRINCE2<sup>®</sup> ?</h1>
-                <p>PRINCE2<sup>®</sup> (Projects IN Controlled Environments) is a process-based approach for project management providing an easily tailored and scalable method for the management of all types of projects. The method is the de-facto standard for project management in the UK and is practiced worldwide.</p>
-                <p>The continued international development of PRINCE2 examinations, training and course material is contributing significantly to the recognition of PRINCE2 as a truly international standard. More and more people are having the opportunity to benefit from the training courses and certifications that are available worldwide.</p>
-                <h2>Benefits for Individuals</h2>
-                <ul>
-                    <li>Learn how to manage projects or to work in a project environment using the most internationally recognized project management method.</li>
-                    <li>Ensure that team members focus on the viability of the project in relation to its business case objectives - rather than simply seeing the completion of the project as an end in itself.</li>
-                    <li>Promote consistency of project work and the ability to reuse project assets while facilitating staff mobility and reducing the impact of personnel changes/handovers.</li>
-                    <li>Design plans and reports to meet the needs of each level in the project team and Project Board, improving communication and control.</li>
-                    <li>Mitigate perceived problems and issues and focus on the viability of the project throughout.</li>
-                    <li>Evaluate the project portfolio to bring clarity and allow improvements in reviewing projects.</li>
-                </ul>
-                <h2>Benefits for Organizations</h2>
-                <ul>
-                    <li>Benefit from a shared and thoroughly understood language and approach to reporting which will save time and effort.</li>
-                    <li>Increase staff awareness of their roles and responsibilities in the project management life cycle.</li>
-                    <li>Utilize an invaluable diagnostic tool, facilitating the assurance and assessment of project work, troubleshooting and audits.</li>
-                    <li>Ensure stakeholders (including sponsors and resource providers) are properly represented in planning and decision making.</li>
-                    <li>Enable more effective engagement of stakeholders in the process of project approval and management.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
-    <div class="container">
-        <div class="wrapper">
-            <div id="scrum-container">
-                <h1>Benefits of PRINCE2:</h1>
-                <p>PRINCE2 embodies established and proven best practice and governance for project management. It can be applied to any type of project - and can easily be implemented alongside specialist, industry-specific models ('engineering models' or 'development life cycles').</p>
-                <p>The method is widely recognized and understood, and therefore provides a common vocabulary for all project participants - promoting effective communication. The method also provides for the explicit recognition of project responsibilities - so that participants understand each other's roles and needs. There is a defined structure for accountability, delegation, authority and communication.</p>
-                <p><strong>Some observed benefits are:</strong></p>
-                <ul>
-                    <li>Promotes consistency of project work and the ability to reuse project assets; it also facilitates staff mobility and reduces the impact of personnel changes/handovers.</li>
-                    <li>Is an invaluable diagnostic tool, facilitating the assurance and assessment of project work, troubleshooting and audits.</li>
-                    <li>Plans are carefully designed to meet the needs of the different levels in the management team, improving communication and control.</li>
-                    <li>Ensures that participants focus on the viability of the project in relation to its Business Case objectives - rather than simply seeing the completion of the project as an end in it.</li>
-                    <li>Defines a thorough but economic structure of reports.</li>
-                    <li>Ensures that stakeholders (including sponsors and resource providers) are properly represented in planning and decision making.</li>
-                </ul>
-                Adopting PRINCE2 promotes learning and continual improvement in organizations. Its product focus clarifies (for all parties) what a project will deliver, why, when, by whom and for whom. It is based on a 'management by exception' framework, providing for the efficient and economic use of management time (whether at corporate, program, Project Board or project management levels).
             </div>
         </div>
     </div>

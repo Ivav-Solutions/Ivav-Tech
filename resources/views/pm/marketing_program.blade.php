@@ -11,7 +11,7 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings/project_management">Project Management</a></li>
+                <li><a href="/service/it_trainings">IT Trainings</a></li>
                 <li class="active">Marketing Program</li>
             </ul>
         </div>

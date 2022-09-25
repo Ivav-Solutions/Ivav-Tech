@@ -270,4 +270,9 @@ class HomePageController extends Controller
     {
         return view('pm.itil');
     }
+
+    public function enroll()
+    {
+        return view('enroll');
+    }
 }

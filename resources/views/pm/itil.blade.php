@@ -11,14 +11,67 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings/project_management">Project Management</a></li>
+                <li><a href="/service/it_trainings">IT Trainings</a></li>
                 <li class="active">ITIL (IT Services) Program</li>
             </ul>
         </div>
     </div>
 </div>
 
-<section class="services-details-area" style="padding-top: 5rem;">
+<div class="services-details-area" style="padding-top: 5rem;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="services-details-text">
+                    <h2>
+                        ITIL (IT Services) Program Self-Paced Online Course (including online certificates): Priced at £150.
+                        <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="services-details-area" style="padding-top: 2rem;">
+    <div class="container">
+        <div class="wrapper">
+            <div id="scrum-container">
+                <h1>ITIL Foundation</h1>
+                <h2>What you will learn:</h2>
+                <p>The ITIL<sup>®</sup> Foundation Certificate is a three day course in which delegates will gain a comprehensive grounding in the aspects of ITIL<sup>®</sup> service management. Delegates will prepare for and sit the one hour, multiple- choice ITIL® Foundation certificate in service management exam. The course consists of short lectures, exercises, discussions, examination technique training, mock examinations and culminates in an invigilated exam on the third day.</p>
+                <p>Effective and formal IT Service Management will give an organization a clear view of its IT capabilities. It will give the IT department a clear understanding of the customer's needs, drivers and motivation. The interlocking IT Service Management disciplines will allow the needs of the customer to be matched by the capability of the services being offered.</p>
+                <p>In documenting best practice ITIL has laid before us a professional approach to the provision of IT services. In the ITIL world measurement and monitoring are critical. We are able to focus on the needs of the business and to measure the performance of the services offered, reviewing and improving on a continual basis.</p>
+                <p>Critical among costs the Service Management disciplines is Availability Management. If services are not available then it's not a service. All the service support and service delivery disciplines work together to deliver agreed levels of service availability to our customers.</p>
+                <p>Delivery of service availability to meet customer needs benefits the whole organization. Customer satisfaction is greatly increased, as is the motivation of those staff involved in service provision.</p>
+                <p>Overall, professional IT Service Management disciplines will deliver improved quality of service to customers enabling the business to reduce costs, derive higher revenues and hence increased profit.</p>
+                <p>This course leads to the ITIL<sup>®</sup> Foundation level certification. Delegates are prepared for the Foundation examination and will normally take this examination on the third day of the course. The Foundation qualification is a pre-requisite for the ITIL Intermediate examinations.</p>
+                <p>The ITIL Foundation examination is a closed- book 60 minute 40 multiple choice question paper. The pass mark is 65% (26 marks required to pass out of 40 available).</p>
+                <h2>Audience Profile</h2>
+                The target groups of the ITIL<sup>®</sup> Foundation Certificate are:
+                <ul>
+                    <li>Individuals who require a basic understanding of the refreshed ITIL<sup>®</sup> framework and how it may be used to enhance the quality of IT service management within an organization.</li>
+                    <li>IT professionals that are working within an organization that has adopted and adapted ITIL<sup>®</sup>, who need to be informed about and thereafter contribute to, an ongoing service improvement program.</li>
+                </ul>
+                <h2>Prerequisites</h2>
+                <p>There are no pre-requisites for this course, nor is there any pre-course preparation required. Evening work is not compulsory, although it may benefit delegates to ensure they have consolidated each day's learning through reading and checking notes. This should take no longer than an hour each evening, although further self-study is encouraged.</p>
+                <p><strong>Course Learning Objectives</strong></p>
+                <ul>
+                    <li>To provide a basic understanding of the ITIL framework</li>
+                    <li>To understand how ITIL can be used to enhance the quality of IT service management within an organization</li>
+                    <li>To enable comprehension and / or awareness of key areas of the 5 ITIL core books:
+                        <ul>
+                            <li>Service Strategy, Service Design, Service Transition, Service Operation and Continual Service Improvement</li>
+                        </ul>
+                    </li>
+                    <li>To prepare to sit the ITIL Foundation Exam</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-details-area" style="padding-top: 5rem; ">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -121,7 +174,7 @@
     </div>
 </section>
 
-<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 0px;">
+<section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -170,41 +223,18 @@
     </div>
 </section>
 
-<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
+<div class="services-details-area" style="padding-top: 2rem; padding-bottom: 50px;">
     <div class="container">
-        <div class="wrapper">
-            <div id="scrum-container">
-                <h1>ITIL Foundation</h1>
-                <h2>What you will learn:</h2>
-                <p>The ITIL<sup>®</sup> Foundation Certificate is a three day course in which delegates will gain a comprehensive grounding in the aspects of ITIL<sup>®</sup> service management. Delegates will prepare for and sit the one hour, multiple- choice ITIL® Foundation certificate in service management exam. The course consists of short lectures, exercises, discussions, examination technique training, mock examinations and culminates in an invigilated exam on the third day.</p>
-                <p>Effective and formal IT Service Management will give an organization a clear view of its IT capabilities. It will give the IT department a clear understanding of the customer's needs, drivers and motivation. The interlocking IT Service Management disciplines will allow the needs of the customer to be matched by the capability of the services being offered.</p>
-                <p>In documenting best practice ITIL has laid before us a professional approach to the provision of IT services. In the ITIL world measurement and monitoring are critical. We are able to focus on the needs of the business and to measure the performance of the services offered, reviewing and improving on a continual basis.</p>
-                <p>Critical among costs the Service Management disciplines is Availability Management. If services are not available then it's not a service. All the service support and service delivery disciplines work together to deliver agreed levels of service availability to our customers.</p>
-                <p>Delivery of service availability to meet customer needs benefits the whole organization. Customer satisfaction is greatly increased, as is the motivation of those staff involved in service provision.</p>
-                <p>Overall, professional IT Service Management disciplines will deliver improved quality of service to customers enabling the business to reduce costs, derive higher revenues and hence increased profit.</p>
-                <p>This course leads to the ITIL<sup>®</sup> Foundation level certification. Delegates are prepared for the Foundation examination and will normally take this examination on the third day of the course. The Foundation qualification is a pre-requisite for the ITIL Intermediate examinations.</p>
-                <p>The ITIL Foundation examination is a closed- book 60 minute 40 multiple choice question paper. The pass mark is 65% (26 marks required to pass out of 40 available).</p>
-                <h2>Audience Profile</h2>
-                The target groups of the ITIL<sup>®</sup> Foundation Certificate are:
-                <ul>
-                    <li>Individuals who require a basic understanding of the refreshed ITIL<sup>®</sup> framework and how it may be used to enhance the quality of IT service management within an organization.</li>
-                    <li>IT professionals that are working within an organization that has adopted and adapted ITIL<sup>®</sup>, who need to be informed about and thereafter contribute to, an ongoing service improvement program.</li>
-                </ul>
-                <h2>Prerequisites</h2>
-                <p>There are no pre-requisites for this course, nor is there any pre-course preparation required. Evening work is not compulsory, although it may benefit delegates to ensure they have consolidated each day's learning through reading and checking notes. This should take no longer than an hour each evening, although further self-study is encouraged.</p>
-                <p><strong>Course Learning Objectives</strong></p>
-                <ul>
-                    <li>To provide a basic understanding of the ITIL framework</li>
-                    <li>To understand how ITIL can be used to enhance the quality of IT service management within an organization</li>
-                    <li>To enable comprehension and / or awareness of key areas of the 5 ITIL core books:
-                        <ul>
-                            <li>Service Strategy, Service Design, Service Transition, Service Operation and Continual Service Improvement</li>
-                        </ul>
-                    </li>
-                    <li>To prepare to sit the ITIL Foundation Exam</li>
-                </ul>
+        <div class="row">
+            <div class="col-12">
+                <div class="services-details-text">
+                    <h2>
+                        ITIL (IT Services) Program Self-Paced Online Course (including online certificates): Priced at £150.
+                        <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 @endsection

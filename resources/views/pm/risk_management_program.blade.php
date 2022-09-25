@@ -11,14 +11,14 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings/project_management">Project Management</a></li>
+                <li><a href="/service/it_trainings">IT Trainings</a></li>
                 <li class="active">Risk Management Program</li>
             </ul>
         </div>
     </div>
 </div>
 
-<section class="services-details-area pb-100" style="padding-top: 5rem;">
+<section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
         <div class="wrapper">
             <div id="rm-container">
@@ -129,6 +129,56 @@
                     <li>Some Important Terms and Concepts</li>
                 </ul>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-details-area pb-100" style="padding-top: 5rem;">
+    <div class="container">
+        <div id="rm-container">
+            <h1>About Risk Management and RMP<sup>&reg;</sup></h1>
+            <h2>About Risk Management</h2>
+            <p>Risk management is an important skill that can be applied to a wide variety of projects. In an era of downsizing, consolidation, shrinking budgets, increasing technological sophistication, and shorter development times, risk management can provide valuable insights to help key project personnel plan for risks, alert them of potential risk issues, analyze these issues, and develop, implement, and monitor plans to address the issues long before the issues surface as problems and adversely affect project cost, performance, and schedule.</p>
+            <p>If you are looking to sharpen your employees’ project management skills and showcase their specialized expertise in risk management, this course is meant for you. We assure you that you will find this course useful.</p>
+            <h2>About the PMI<sup>&reg;</sup></h2>
+            <h4>Project Management Institute<sup>&reg;</sup></h4>
+            <p>The Project Management Institute PMI<sup>&reg;</sup> is the world's leading not-for-profit project management professional association. PMI<sup>&reg;</sup> supports over half a million members in 170 countries worldwide. PMI<sup>&reg;</sup> members are individuals practicing and studying project management in many different industry areas.</p>
+            <p>PMI<sup>&reg;</sup> has become, and continues to be, the leading professional association in project management. More details can be found here: www.pmi.org</p>
+            <h4>Certifications offered by PMI<sup>&reg;</sup></h4>
+            <p>PMI offers a comprehensive certification program for project practitioners of all education and skill levels.</p>
+            <p>PMI certifications ensure that you and your projects excel. </p>
+            <ul>
+                <li>Certified Associate in Project Management (CAPM)<sup>&reg;</sup></li>
+                <li>Project Management Professional (PMP)<sup>&reg;</sup></li>
+                <li>Portfolio Management Professional (PfMP)SM</li>
+                <li>PMI Agile Certified Practitioner (PMI-ACP)<sup>&reg;</sup></li>
+                <li>PMI Risk Management Professional (PMI-RMP)<sup>&reg;</sup></li>
+                <li>PMI Scheduling Professional (PMI-SP)<sup>&reg;</sup></li>
+            </ul>
+            <h2>Risk Management Professional (RMP<sup>&reg;</sup>)</h2>
+            <p>PMI&rsquo;s Risk Management Professional (PMI-RMP)<sup>&reg;</sup> credential is a sought after credential which provides solution to project management&rsquo;s increasing growth, complexity and diversity. This certification is recognized globally and is in much demand. A Risk Management Professional satisfies the requirement of having a specialist role while dealing in project risk management.</p>
+            <p>To be eligible for the PMI-RMP credential, you must meet certain educational and professional experience requirements. All project risk management experience must have been accrued <em>within the last 5 consecutive years</em> prior to your application submission.</p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="comparison-table">
+                <tr>
+                    <th scope="col"><strong>Educational Background</strong></th>
+                    <th scope="col"><strong>Project Risk Management Experience</strong></th>
+                    <th scope="col"><strong>Project Risk Management Education </strong></th>
+                </tr>
+                <tr>
+                    <td>Secondary diploma (high School diploma, associate’s degree or global equivalent) </td>
+                    <td>At least 4,500 hours spent in the specialized area of professional project risk management within the last five consecutive years.</td>
+                    <td>40 contact hours of formal education in the specialized area of project risk management </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:center"><strong>OR</strong></td>
+                </tr>
+                <tr>
+                    <td>Four-year degree (bachelor’s degree or global equivalent) </td>
+                    <td>At least 3,000 hours spent in the specialized area of professional project risk management within the last five consecutive years</td>
+                    <td>30 contact hours of formal education in the specialized area of project risk management </td>
+                </tr>
+            </table>
+
         </div>
     </div>
 </section>
