@@ -28,8 +28,8 @@
                     <div class="single-service">
                         <div class="service-img"><img src="images/services/service3.png" alt="service" /></div>
                         <div class="service-content">
-                            <h3>IT Trainings</h3>
-                            <p>Carefully curated and standardized educational courses designed to train and equip you within the shortest span of time possible to a level of expertise.</p><a class="line-bnt" href="/service/it_training_packages">Read More</a>
+                            <h3>IT Programs</h3>
+                            <p>Carefully curated and standardized educational courses designed to train and equip you within the shortest span of time possible to a level of expertise.</p><a class="line-bnt" href="/service/it_programs">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -147,6 +147,11 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="single-case">
                         <div class="case-img"><a href="#"><img src="{{URL::asset('images/products/ivav_travel.jpeg')}}" alt="case" /></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-case">
+                        <div class="case-img"><a href="#"><img src="{{URL::asset('images/products/ivav_solutions.jpg')}}" alt="case" /></a></div>
                     </div>
                 </div>
             </div>

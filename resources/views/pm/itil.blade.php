@@ -11,16 +11,16 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings">IT Trainings</a></li>
+                <li><a href="/service/it_programs">IT Programs</a></li>
                 <li class="active">ITIL (IT Services) Program</li>
             </ul>
         </div>
     </div>
 </div>
 
-<div class="services-details-area" style="padding-top: 5rem;">
+<section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
-        <div class="row">
+        <div class="wrapper">
             <div class="col-12">
                 <div class="services-details-text">
                     <h2>
@@ -29,13 +29,6 @@
                     </h2>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<section class="services-details-area" style="padding-top: 2rem;">
-    <div class="container">
-        <div class="wrapper">
             <div id="scrum-container">
                 <h1>ITIL Foundation</h1>
                 <h2>What you will learn:</h2>
@@ -174,7 +167,7 @@
     </div>
 </section>
 
-<section class="services-details-area" style="padding-top: 5rem;">
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
     <div class="container">
         <div class="wrapper">
             <div id="scrum-container">
@@ -220,21 +213,14 @@
 
             </div>
         </div>
-    </div>
-</section>
-
-<div class="services-details-area" style="padding-top: 2rem; padding-bottom: 50px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="services-details-text">
-                    <h2>
-                        ITIL (IT Services) Program Self-Paced Online Course (including online certificates): Priced at £150.
-                        <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
-                    </h2>
-                </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    ITIL (IT Services) Program Self-Paced Online Course (including online certificates): Priced at £150.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
-</div>
+</section>
 @endsection

@@ -11,7 +11,7 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings">IT Trainings</a></li>
+                <li><a href="/service/it_programs">IT Programs</a></li>
                 <li class="active">Marketing Program</li>
             </ul>
         </div>
@@ -79,6 +79,14 @@
                 <p>There is no formal work experience prerequisite for this certification. However, it is mandatory to complete the SMstudy<sup>&reg;</sup> Certified Digital Marketing Professional Certification and study all processes from Chapter 7 in the SMstudy<sup>&reg;</sup> Guide – Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Affiliate Marketing Professional exam. All required resources are provided as part of the online certification course.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Affiliate Marketing Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -141,6 +149,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite for this course.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Corporate Sales Self-Paced Online Course (including online certificates): Priced at £100.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -206,6 +222,14 @@
                 <p>The candidate should have minimum of 5 years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Corporate Sales Specialist and study all processes from the SMstudy<sup>&reg;</sup> Guide –Corporate Sales book before applying for the SMstudy<sup>&reg;</sup> Certified Corporate Sales Expert certification. It is also mandatory to accumulate 40 mandatory educational hours by attending Corporate Sales Expert classroom training provided by a SMstudy approved VMEdu Authorized Training Partner (V.A.T.P.) and produce professional recommendation.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Corporate Sales Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -268,6 +292,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite for this certification. However, it is preferable to complete the SMstudy<sup>&reg;</sup> Certified Corporate Sales Associate and study the recommended processes in the SMstudy<sup>&reg;</sup> Guide –Corporate Sales book before applying for the SMstudy<sup>&reg;</sup> Certified Corporate Sales Professional certification.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Corporate Sales Professional Self-Paced Online Course (including online certificates): Priced at £200.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -335,6 +367,14 @@
                 <p>The candidate should have minimum of 3 years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Corporate Sales Professional certification and study all processes in the SMstudy<sup>&reg;</sup> Guide –Corporate Sales book before applying for the SMstudy<sup>&reg;</sup> Certified Corporate Sales Specialists certification. It is also mandatory to accumulate 20 mandatory educational hours by attending Corporate Sales Specialist classroom training provided by a SMstudy approved VMEdu Authorized Training Partner (V.A.T.P.).</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Corporate Sales Specialist Self-Paced Online Course (including online certificates): Priced at £350.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -396,6 +436,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite for this course.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Digital Marketing Associate Self-Paced Online Course (including online certificates): Priced at £100.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -460,6 +508,14 @@
                 <p>Candidates should have a minimum of five years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Digital Marketing Specialist certification and study all processes in the SMstudy<sup>&reg;</sup> Guide – Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Digital Marketing Expert certification. It is also mandatory to earn 40 educational hours by attending Digital Marketing Expert classroom training provided by a SMstudy approved VMedu Authorized Training Partner (V.A.T.P.) and provide a professional recommendation.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Digital Marketing Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -521,6 +577,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite required for this certification. However, it is preferable to complete the SMstudy® Certified Digital Marketing Associate certification and study the recommended processes in the SMstudy<sup>&reg;</sup> Guide – Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Marketing Strategy Professional certification. All required resources are provided as part of the online certification course.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Digital Marketing Professional Self-Paced Online Course (including online certificates): Priced at £200.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -587,6 +651,14 @@
                 <p>Candidates should have a minimum of three years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Digital Marketing Professional certification and study all processes in the SMstudy<sup>&reg;</sup> Guide – Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Digital Marketing Specialist certification. It is also mandatory to earn 20 educational hours by attending Digital Marketing Specialist classroom training provided by a SMstudy approved VMedu Authorized Training Partner (V.A.T.P.).</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Digital Marketing Specialist Self-Paced Online Course (including online certificates): Priced at £350.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -649,6 +721,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>Candidates must pass the SMstudy<sup>&reg;</sup> Certified Digital Marketing Professional exam and study all processes from Chapter 7 of the SMstudy<sup>&reg;</sup> Guide- Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Email Marketing Professional.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Email Marketing Professional Self-Paced Online Course (including online certificates): Priced at £200.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -716,6 +796,14 @@
                 <p>There is no formal prerequisite for this course.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Research Associate Self-Paced Online Course (including online certificates): Priced at £.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -779,9 +867,16 @@
                 <p>Candidates should have a minimum of five years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Marketing Research Specialist certification and study all processes in the SMstudy<sup>&reg;</sup> Guide – Marketing Research book before applying for the SMstudy<sup>&reg;</sup> Certified Marketing Research Expert certification. It is also mandatory to earn 40 educational hours by attending Marketing Research Expert classroom training provided by a SMstudy approved VMedu Authorized Training Partner (V.A.T.P.) and provide a professional recommendation.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Research Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
-
 
 <section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
@@ -842,6 +937,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite required for this certification. However, it is preferable to complete the SMstudy<sup>&reg;</sup> Certified Marketing Research Associate certification and study the recommended processes in the SMstudy<sup>&reg;</sup> Guide – Marketing Research book before applying for the SMstudy<sup>&reg;</sup> Certified Marketing Research Professional certification. All required resources are provided as part of the online certification course.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Research Professional Self-Paced Online Course (including online certificates): Priced at £200.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -908,6 +1011,14 @@
                 <p>Candidates should have a minimum of three years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Marketing Research Professional certification and study all processes in the SMstudy<sup>&reg;</sup> Guide – Marketing Research book before applying for the SMstudy<sup>&reg;</sup> Certified Marketing Research Specialist certification. It is also mandatory to earn 20 educational hours by attending Marketing Research Specialist classroom training provided by a SMstudy approved VMedu Authorized Training Partner (V.A.T.P.).</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Research Specialist Self-Paced Online Course (including online certificates): Priced at £350.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -968,6 +1079,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite for this course.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Strategy Associate Self-Paced Online Course (including online certificates): Priced at £.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -1034,6 +1153,14 @@
                 <p>Candidates should have a minimum of 5 years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Marketing Strategy Specialist certification and study all processes in the SMstudy<sup>&reg;</sup> Guide –Marketing Strategy book before applying for the SMstudy<sup>&reg;</sup> Certified Marketing Strategy Expert certification. It is also mandatory to earn 40 educational hours by attending Marketing Strategy Expert classroom training provided by a SMstudy approved VMEdu Authorized Training Partner (V.A.T.P.) and provide a professional recommendation.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Strategy Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -1097,6 +1224,14 @@
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite for this certification. However, it is preferable to complete the SMstudy<sup>&reg;</sup> Certified Marketing Strategy Associate certification and study the recommended processes from the SMstudy<sup>&reg;</sup> Guide – Marketing Strategy book before applying for the SMstudy<sup>&reg;</sup> Certified Marketing Strategy Professional. It is also highly recommended to attend a 2-day Marketing Strategy Professional classroom training provided by a SMstudy approved VMEdu Authorized Training Partner (V.A.T.P.).</p>
 
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Strategy Professional Self-Paced Online Course (including online certificates): Priced at £200.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -1168,6 +1303,14 @@
                 <p>Candidates should have a minimum of 3 years work experience. It is preferable to complete the SMstudy<sup>&reg;</sup> Certified Marketing Strategy Professional certification and study all processes in the SMstudy<sup>&reg;</sup> Guide – Marketing Strategy book before applying for the SMstudy<sup>&reg;</sup> Certified Marketing Strategy Specialist certification. It is also mandatory to earn 20 educational hours by attending Marketing Strategy Specialist classroom training provided by a SMstudy approved VMEdu Authorized Training Partner (V.A.T.P.).</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Marketing Strategy Specialist Self-Paced Online Course (including online certificates): Priced at £350.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -1230,6 +1373,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>There is no formal prerequisite for this certification. However, it is mandatory to complete the SMstudy<sup>&reg;</sup> Certified Digital Marketing Professional Certification and study all processes from Chapter 7 in the SMstudy<sup>&reg;</sup> Guide – Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified SEO Professional exam. All required resources are provided as part of the online certification course.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    SEO Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -1297,6 +1448,14 @@
                 <p>There is no formal prerequisite for this certification. However, it is mandatory to complete the SMstudy<sup>&reg;</sup> Certified Digital Marketing Professional Certification and study all processes from chapter 7 in the SMstudy<sup>&reg;</sup> Guide – Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Search Marketing Professional exam. All required resources are provided as part of the online certification course.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Search Marketing Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -1361,6 +1520,14 @@
                 <p>There is no formal prerequisite for this certification. However, it is mandatory to complete the SMstudy<sup>&reg;</sup> Certified Digital Marketing Professional Certification and study all processes from Chapter 7 in the SMstudy<sup>&reg;</sup> Guide – Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Search Marketing Professional exam. All required resources are provided as part of the online certification course.</p>
             </div>
         </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Social Media Marketing Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -1422,6 +1589,14 @@
 
                 <h2>Prerequisites</h2>
                 <p>The candidate should have passed the SMstudy<sup>&reg;</sup> Certified Digital Marketing Professional exam and studied all processes from chapter 7 of the SMstudy<sup>&reg;</sup> Guide –Digital Marketing book before applying for the SMstudy<sup>&reg;</sup> Certified Web Analytics Professional.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Web Analytics Expert Self-Paced Online Course (including online certificates): Priced at £500.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>

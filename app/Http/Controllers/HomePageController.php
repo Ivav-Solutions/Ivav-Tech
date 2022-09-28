@@ -231,9 +231,9 @@ class HomePageController extends Controller
         return view('game_development');
     }
 
-    public function it_trainings()
+    public function it_programs()
     {
-        return view('it_trainings');
+        return view('it_programs');
     }
 
     public function project_management()

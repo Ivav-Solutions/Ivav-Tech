@@ -24,7 +24,7 @@
                         <li><a href="/service/software_development/mobile_development">Mobile Development</a></li>
                         <li><a href="/service/software_development/desktop_development">Desktop Development</a></li>
                         <li><a href="/service/software_development/game_development">Game Development</a></li>
-                        <li><a href="/service/it_trainings">IT Trainings</a></li>
+                        <li><a href="/service/it_programs">IT Programs</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,6 +37,8 @@
                         <li><a href="/faqs">FAQs</a></li>
                         <li><a href="/contact">Contact</a></li>
                         <li><a href="/book_consultation">Book Consultation</a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Registert</a></li>
                     </ul>
                 </div>
             </div>

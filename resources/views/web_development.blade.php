@@ -58,6 +58,15 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-sm-6 item">
+                <div class="single-case">
+                    <div class="case-img">
+                        <a href="#">
+                            <img src="{{URL::asset('images/products/ivav_solutions.jpg')}}" alt="case">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="case-btn text-center">
             <p><a href="/contact">Contact us today </a></p>

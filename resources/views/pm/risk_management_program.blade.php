@@ -11,15 +11,23 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings">IT Trainings</a></li>
+                <li><a href="/service/it_programs">IT Programs</a></li>
                 <li class="active">Risk Management Program</li>
             </ul>
         </div>
     </div>
 </div>
 
-<section class="services-details-area" style="padding-top: 5rem;">
+<section class="services-details-area" style="padding-top: 2rem;">
     <div class="container">
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Risk Management Program Self-Paced Online Course (including online certificates): Priced at £150.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
         <div class="wrapper">
             <div id="rm-container">
                 <h1>Risk Management Program</h1>
@@ -179,6 +187,14 @@
                 </tr>
             </table>
 
+        </div>
+        <div class="col-12">
+                <div class="services-details-text">
+                    <h2>
+                        Risk Management Program Self-Paced Online Course (including online certificates): Priced at £150.
+                        <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                    </h2>
+                </div>
         </div>
     </div>
 </section>

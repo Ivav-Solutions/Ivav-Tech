@@ -21,11 +21,13 @@
                                 <li class="nav-item"><a class="nav-link {{ (request()->is('service/software_development/mobile_development')) ? 'active' : '' }}" href="/service/software_development/mobile_development">Mobile Development</a></li>
                                 <li class="nav-item"><a class="nav-link {{ (request()->is('service/software_development/desktop_development')) ? 'active' : '' }}" href="/service/software_development/desktop_development">Desktop Development</a></li>
                                 <li class="nav-item"><a class="nav-link {{ (request()->is('service/software_development/game_development')) ? 'active' : '' }}" href="/service/software_development/game_development">Game Development</a></li>
-                                <li class="nav-item"><a class="nav-link {{ (request()->is('service/it_training_packages')) ? 'active' : '' }}" href="/service/it_trainings">IT Trainings</a></li>
+                                <li class="nav-item"><a class="nav-link {{ (request()->is('service/it_programs')) ? 'active' : '' }}" href="/service/it_programs">IT Programs</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link {{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link {{ (request()->is('faqs')) ? 'active' : '' }}" href="/faqs">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="/login">Login</a></li>
+                        <li class="nav-item"><a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="/register">Register</a></li>
                     </ul>
                 </div>
                 <div class="nav-btn"><a class="box-btn" href="/book_consultation">Book Appointment</a></div>

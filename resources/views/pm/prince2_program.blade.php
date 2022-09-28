@@ -11,7 +11,7 @@
             <h2>Service</h2>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/service/it_trainings">IT Trainings</a></li>
+                <li><a href="/service/it_programs">IT Programs</a></li>
                 <li class="active">Prince2 Program</li>
             </ul>
         </div>
@@ -101,85 +101,91 @@
 
 <section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
-        <div class="wrapper">
-            <div id="scrum-container">
-                <h1>PRINCE2<sup>®</sup> Foundation Course</h1>
-                <p><strong>What you will learn</strong></p>
-                <p>The aim of this course is to provide delegates with sufficient knowledge and understanding of the PRINCE2<sup>®</sup> method to be able to work effectively with, or as a member of, a project management team working within an environment supporting PRINCE2<sup>®</sup>. The Foundation qualification is also a pre-requisite for the Practitioner qualification.</p>
-                <p>By the end of the course a delegate should understand the structure and key terminology of the method. Specifically the delegate should understand:</p>
-                <ul>
-                    <li>The characteristics and context of a project and the benefits of adopting PRINCE2<sup>®</sup></li>
-                    <li>The purpose of the PRINCE2<sup>®</sup> roles, management products and themes</li>
-                    <li>The PRINCE2<sup>®</sup> principles</li>
-                    <li>The purpose, objectives and context of the PRINCE2<sup>®</sup> processes.</li>
+        <div id="scrum-container">
+            <h1>PRINCE2<sup>®</sup> Foundation Course</h1>
+            <p><strong>What you will learn</strong></p>
+            <p>The aim of this course is to provide delegates with sufficient knowledge and understanding of the PRINCE2<sup>®</sup> method to be able to work effectively with, or as a member of, a project management team working within an environment supporting PRINCE2<sup>®</sup>. The Foundation qualification is also a pre-requisite for the Practitioner qualification.</p>
+            <p>By the end of the course a delegate should understand the structure and key terminology of the method. Specifically the delegate should understand:</p>
+            <ul>
+                <li>The characteristics and context of a project and the benefits of adopting PRINCE2<sup>®</sup></li>
+                <li>The purpose of the PRINCE2<sup>®</sup> roles, management products and themes</li>
+                <li>The PRINCE2<sup>®</sup> principles</li>
+                <li>The purpose, objectives and context of the PRINCE2<sup>®</sup> processes.</li>
 
-                </ul>
-                <p>There are no formal pre-requisites for this course.</p>
-                <p>Delegates should allow for 2 to 3 hours of evening work on each of the two evenings during the course. This is to allow consolidation of the learning provided during the day and to provide sufficient practice with the sample examination questions provided in order to pass.</p>
-                <p>The PRINCE2<sup>®</sup> Foundation examination is a closed- book 60 minute 75 multiple choice question paper with 5 questions to be trial and not counted in scores. The pass mark is 50% (35 marks required to pass out of 70 available).</p>
-                <h2>Audience Profile</h2>
-                <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including</p>
-                <strong>Project Board members</strong>
-                <ul>
-                    <li>Senior Responsible Owners</li>
-                    <li>Project Sponsors</li>
-                    <li>Senior management involved in making project-level decisions</li>
-                </ul>
-                <strong>Team Managers</strong>
-                <ul>
-                    <li>Product Delivery Managers</li>
-                    <li>Project team members</li>
-                    <li>Business Analysts</li>
-                    <li>Subject matter experts delivering or providing expertise to a project</li>
-                </ul>
-                <strong>Project Assurance</strong>
-                <ul>
-                    <li>Business Change Analysts</li>
-                    <li>Change Board members</li>
-                    <li>Risk managers</li>
-                    <li>Auditors</li>
-                    <li>Stakeholder representatives</li>
-                </ul>
-                <strong>Project Support</strong>
-                <ul>
-                    <li>Project office support staff</li>
-                    <li>Program office personnel</li>
-                    <li>Planners and plan creators</li>
-                    <li>Operational line managers/staff involved in a project, or intending to be involved </li>
-                </ul>
-                <h2>Prerequisite</h2>
-                <p>There are no formal prerequisites to the course.</p>
-                <h2>Course Outline</h2>
-                <p><strong>DAY 1</strong></p>
-                <ul>
-                    <li>Introduction to Principles, Themes and Processes</li>
-                    <li>Business Case Theme</li>
-                    <li>Organization Theme</li>
-                    <li>Starting Up a Project</li>
+            </ul>
+            <p>There are no formal pre-requisites for this course.</p>
+            <p>Delegates should allow for 2 to 3 hours of evening work on each of the two evenings during the course. This is to allow consolidation of the learning provided during the day and to provide sufficient practice with the sample examination questions provided in order to pass.</p>
+            <p>The PRINCE2<sup>®</sup> Foundation examination is a closed- book 60 minute 75 multiple choice question paper with 5 questions to be trial and not counted in scores. The pass mark is 50% (35 marks required to pass out of 70 available).</p>
+            <h2>Audience Profile</h2>
+            <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including</p>
+            <strong>Project Board members</strong>
+            <ul>
+                <li>Senior Responsible Owners</li>
+                <li>Project Sponsors</li>
+                <li>Senior management involved in making project-level decisions</li>
+            </ul>
+            <strong>Team Managers</strong>
+            <ul>
+                <li>Product Delivery Managers</li>
+                <li>Project team members</li>
+                <li>Business Analysts</li>
+                <li>Subject matter experts delivering or providing expertise to a project</li>
+            </ul>
+            <strong>Project Assurance</strong>
+            <ul>
+                <li>Business Change Analysts</li>
+                <li>Change Board members</li>
+                <li>Risk managers</li>
+                <li>Auditors</li>
+                <li>Stakeholder representatives</li>
+            </ul>
+            <strong>Project Support</strong>
+            <ul>
+                <li>Project office support staff</li>
+                <li>Program office personnel</li>
+                <li>Planners and plan creators</li>
+                <li>Operational line managers/staff involved in a project, or intending to be involved </li>
+            </ul>
+            <h2>Prerequisite</h2>
+            <p>There are no formal prerequisites to the course.</p>
+            <h2>Course Outline</h2>
+            <p><strong>DAY 1</strong></p>
+            <ul>
+                <li>Introduction to Principles, Themes and Processes</li>
+                <li>Business Case Theme</li>
+                <li>Organization Theme</li>
+                <li>Starting Up a Project</li>
 
-                </ul>
-                <p><strong>DAY 2</strong></p>
-                <ul>
-                    <li>Review of Day 1</li>
-                    <li>Initiating a Project</li>
-                    <li>Risk Theme</li>
-                    <li>Quality Theme</li>
-                    <li>Change Theme</li>
-                </ul>
-                <p><strong>DAY 3</strong></p>
-                <ul>
-                    <li>Review of Day 2</li>
-                    <li>Progress Theme</li>
-                    <li>Controlling a Stage</li>
-                    <li>Managing Product Delivery</li>
-                    <li>Managing a Stage Boundary</li>
-                    <li>Plans Theme</li>
-                    <li>Closing a Project</li>
-                    <li>Directing a Project – Review</li>
-                    <li>Revision and exam</li>
-                </ul>
-                <p>The timetable and order of events may be varied by the trainer where they see an opportunity to give delegates a better learning experience</p>
+            </ul>
+            <p><strong>DAY 2</strong></p>
+            <ul>
+                <li>Review of Day 1</li>
+                <li>Initiating a Project</li>
+                <li>Risk Theme</li>
+                <li>Quality Theme</li>
+                <li>Change Theme</li>
+            </ul>
+            <p><strong>DAY 3</strong></p>
+            <ul>
+                <li>Review of Day 2</li>
+                <li>Progress Theme</li>
+                <li>Controlling a Stage</li>
+                <li>Managing Product Delivery</li>
+                <li>Managing a Stage Boundary</li>
+                <li>Plans Theme</li>
+                <li>Closing a Project</li>
+                <li>Directing a Project – Review</li>
+                <li>Revision and exam</li>
+            </ul>
+            <p>The timetable and order of events may be varied by the trainer where they see an opportunity to give delegates a better learning experience</p>
 
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    PRINCE2<sup>®</sup> Foundation Self-Paced Online Course (including online certificates): Priced at £.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -187,68 +193,74 @@
 
 <section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
-        <div class="wrapper">
-            <div id="scrum-container">
-                <h1>PRINCE2<sup>®</sup> Practitioner Course</h1>
-                <p><strong>What you will learn</strong></p>
-                <p>At the end of this course the delegate will be prepared for the PRINCE2<sup>®</sup> practitioner exam.</p>
-                <p>The purpose of the Practitioner qualification is to confirm whether the candidate has achieved sufficient understanding of how to apply and tailor PRINCE2<sup>®</sup> in a scenario situation. A successful Practitioner candidate should, with suitable direction, be able to start applying the method to a real project but may not be sufficiently skilled to do this appropriately for all situations. Their individual project management expertise, complexity of the project and the support provided for the use of PRINCE2<sup>®</sup> in their work environment will all be factors that impact what the Practitioner can achieve.</p>
-                <p>Candidates should be able to apply and understand how to tailor PRINCE2<sup>®</sup> effectively to a project within an organization environment supporting PRINCE2<sup>®</sup>. Specifically candidates should</p>
-                <ul>
-                    <li>Understand the relationships between the roles, management products, principles, themes, techniques and processes</li>
-                    <li>Be able to apply the principles, themes and processes to a project</li>
-                    <li>Be able to create and assess management products.</li>
-                </ul>
-                <p>This course leads to the PRINCE2 <sup>®</sup> practitioner level certification. The Practitioner examination is normally taken on the final day of the course.</p>
-                <p>The Practitioner examination is an open- book objective test examination based on a given scenario and lasting 150 minutes. There are 8 questions each worth 10 marks, making a total of 80 marks available. The pass mark is 55% (44 marks required to pass out of 80 available).</p>
-                <h2>Audience Profile</h2>
-                <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including</p>
-                <strong>Project Board members</strong>
-                <ul>
-                    <li>Senior Responsible Owners</li>
-                    <li>Project Sponsors</li>
-                    <li>Senior management involved in making project-level decisions</li>
-                </ul>
-                <strong>Team Managers</strong>
-                <ul>
-                    <li>Product Delivery Managers</li>
-                    <li>Project team members</li>
-                    <li>Business Analysts</li>
-                    <li>Subject matter experts delivering or providing expertise to a project</li>
-                </ul>
-                <strong>Project Assurance</strong>
-                <ul>
-                    <li>Business Change Analysts</li>
-                    <li>Change Board members</li>
-                    <li>Risk managers</li>
-                    <li>Auditors</li>
-                    <li>Stakeholder representatives</li>
-                </ul>
-                <strong>Project Support</strong>
-                <ul>
-                    <li>Project office support staff</li>
-                    <li>Program office personnel</li>
-                    <li>Planners and plan creators</li>
-                    <li>Operational line managers/staff involved in a project, or intending to be involved </li>
-                </ul>
-                <h2>Prerequisite</h2>
-                <p>Delegates must have attained the Foundation qualification, or achieved Foundation level qualification in a previous version.</p>
-                <p>In addition, delegates should allow for around 2 to 3 hours of evening work prior to taking the Practitioner examination. This is to finalize exam preparation and confirm understanding in any areas of uncertainty.</p>
-                <h2>Course Outline</h2>
-                <p><strong>DAY 1</strong></p>
-                <ul>
-                    <li>Understanding the examination format</li>
-                    <li>Tips and tricks for answering the Practitioner</li>
-                    <li>Questions</li>
-                    <li>Review of PRINCE2<sup>®</sup></li>
-                    <li>Practice questions under examination conditions</li>
-                    <li>Review of answers</li>
-                </ul>
-                <p><strong>DAY 2</strong></p>
-                <ul>
-                    <li>Practitioner examination only</li>
-                </ul>
+        <div id="scrum-container">
+            <h1>PRINCE2<sup>®</sup> Practitioner Course</h1>
+            <p><strong>What you will learn</strong></p>
+            <p>At the end of this course the delegate will be prepared for the PRINCE2<sup>®</sup> practitioner exam.</p>
+            <p>The purpose of the Practitioner qualification is to confirm whether the candidate has achieved sufficient understanding of how to apply and tailor PRINCE2<sup>®</sup> in a scenario situation. A successful Practitioner candidate should, with suitable direction, be able to start applying the method to a real project but may not be sufficiently skilled to do this appropriately for all situations. Their individual project management expertise, complexity of the project and the support provided for the use of PRINCE2<sup>®</sup> in their work environment will all be factors that impact what the Practitioner can achieve.</p>
+            <p>Candidates should be able to apply and understand how to tailor PRINCE2<sup>®</sup> effectively to a project within an organization environment supporting PRINCE2<sup>®</sup>. Specifically candidates should</p>
+            <ul>
+                <li>Understand the relationships between the roles, management products, principles, themes, techniques and processes</li>
+                <li>Be able to apply the principles, themes and processes to a project</li>
+                <li>Be able to create and assess management products.</li>
+            </ul>
+            <p>This course leads to the PRINCE2 <sup>®</sup> practitioner level certification. The Practitioner examination is normally taken on the final day of the course.</p>
+            <p>The Practitioner examination is an open- book objective test examination based on a given scenario and lasting 150 minutes. There are 8 questions each worth 10 marks, making a total of 80 marks available. The pass mark is 55% (44 marks required to pass out of 80 available).</p>
+            <h2>Audience Profile</h2>
+            <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including</p>
+            <strong>Project Board members</strong>
+            <ul>
+                <li>Senior Responsible Owners</li>
+                <li>Project Sponsors</li>
+                <li>Senior management involved in making project-level decisions</li>
+            </ul>
+            <strong>Team Managers</strong>
+            <ul>
+                <li>Product Delivery Managers</li>
+                <li>Project team members</li>
+                <li>Business Analysts</li>
+                <li>Subject matter experts delivering or providing expertise to a project</li>
+            </ul>
+            <strong>Project Assurance</strong>
+            <ul>
+                <li>Business Change Analysts</li>
+                <li>Change Board members</li>
+                <li>Risk managers</li>
+                <li>Auditors</li>
+                <li>Stakeholder representatives</li>
+            </ul>
+            <strong>Project Support</strong>
+            <ul>
+                <li>Project office support staff</li>
+                <li>Program office personnel</li>
+                <li>Planners and plan creators</li>
+                <li>Operational line managers/staff involved in a project, or intending to be involved </li>
+            </ul>
+            <h2>Prerequisite</h2>
+            <p>Delegates must have attained the Foundation qualification, or achieved Foundation level qualification in a previous version.</p>
+            <p>In addition, delegates should allow for around 2 to 3 hours of evening work prior to taking the Practitioner examination. This is to finalize exam preparation and confirm understanding in any areas of uncertainty.</p>
+            <h2>Course Outline</h2>
+            <p><strong>DAY 1</strong></p>
+            <ul>
+                <li>Understanding the examination format</li>
+                <li>Tips and tricks for answering the Practitioner</li>
+                <li>Questions</li>
+                <li>Review of PRINCE2<sup>®</sup></li>
+                <li>Practice questions under examination conditions</li>
+                <li>Review of answers</li>
+            </ul>
+            <p><strong>DAY 2</strong></p>
+            <ul>
+                <li>Practitioner examination only</li>
+            </ul>
 
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    PRINCE2<sup>®</sup> Practitioner Self-Paced Online Course (including online certificates): Priced at £.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
@@ -256,96 +268,102 @@
 
 <section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
     <div class="container">
-        <div class="wrapper">
-            <div id="scrum-container">
-                <h1>PRINCE2<sup>®</sup> Combined Foundation & Practitioner Course</h1>
-                <p><strong>What you will learn</strong></p>
-                <p>The aim of this course is to provide delegates sufficient understanding of how to apply and tailor PRINCE2<sup>®</sup> in a project situation. A successful delegate should, with suitable direction and support, be able to start applying the method to their projects straight away.</p>
-                <p>Delegates will be able to apply and understand how to tailor PRINCE2<sup>®</sup> effectively to a project within an organization environment supporting PRINCE2<sup>®</sup>. Specifically delegates should</p>
-                <ul>
-                    <li>Understand the relationships between the roles, management products, principles, themes, techniques and processes </li>
-                    <li>Be able to apply the principles, themes and processes to a project </li>
-                    <li>Be able to create and assess management products</li>
-                </ul>
-                <p>This course leads to the PRINCE2 <sup>®</sup> practitioner level certification. Delegates are prepared for the Foundation examination and will normally take this examination on the third day of the course. The Foundation qualification is a pre-requisite for the Practitioner examination. The Practitioner examination is normally taken on the final day of the course.</p>
-                <p>The PRINCE2<sup>®</sup> Foundation examination is a closed- book 60 minute 75 multiple choice question paper with 5 questions to be trial and not counted in scores. The pass mark is 50% (35 marks required to pass out of 70 available). </p>
-                <p>The Practitioner examination is an open- book objective test examination based on a given scenario and lasting 150 minutes. There are 8 questions each worth 10 marks, making a total of 80 marks available. The pass mark is 55% (44 marks required to pass out of 80 available).</p>
-                <h2>Audience Profile</h2>
-                <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including:</p>
-                <strong>Project Board members</strong>
-                <ul>
-                    <li>Senior Responsible Owners</li>
-                    <li>Project Sponsors</li>
-                    <li>Senior management involved in making project-level decisions</li>
-                </ul>
-                <strong>Team Managers</strong>
-                <ul>
-                    <li>Product Delivery Managers</li>
-                    <li>Project team members</li>
-                    <li>Business Analysts</li>
-                    <li>Subject matter experts delivering or providing expertise to a project</li>
-                </ul>
-                <strong>Project Assurance</strong>
-                <ul>
-                    <li>Business Change Analysts</li>
-                    <li>Change Board members</li>
-                    <li>Risk managers</li>
-                    <li>Auditors</li>
-                    <li>Stakeholder representatives</li>
-                </ul>
-                <strong>Project Support</strong>
-                <ul>
-                    <li>Project office support staff</li>
-                    <li>Program office personnel</li>
-                    <li>Planners and plan creators</li>
-                    <li>Operational line managers/staff involved in a project, or intending to be involved </li>
-                </ul>
-                <h2>Prerequisite</h2>
-                <p>There are no formal pre-requisites for this course. However, it is anticipated that delegates will possess knowledge of projects or have experience of working in a project environment. This is to ensure that the intensive nature of the course does not cause delegates to struggle through the course. If such knowledge or experience does not exist, delegates may be advised to split the course into the separate Foundation and Practitioner courses. The course may be booked as a single unit, to achieve the cost effectiveness, but schedule each course in different weeks. Please call your local office for further details.</p>
-                <p>There is between 6 and 15 hours of pre-course preparation to be completed and it is vital to the success of the course that this work is completed. The course is intensive and there will be no opportunity during the course itself to try and catch up. The actual time taken by each delegate will vary enormously and will depend on the individual, their learning style, existing knowledge or skills, and project management experience.</p>
-                <p>In addition, delegates should allow for 2 to 3 hours of evening work on each evening during the course. This is to allow consolidation of the learning provided during the day and to provide sufficient practice with the sample examination questions provided in order to pass.</p>
-                <h2>Course Outline</h2>
-                <p><strong>DAY 1</strong></p>
-                <ul>
-                    <li>Introduction to Principles, Themes and </li>
-                    <li>Processes</li>
-                    <li>Business Case Theme </li>
-                    <li>Organisation Theme</li>
-                    <li>Starting Up a Project</li>
-                </ul>
-                <p><strong>DAY 2</strong></p>
-                <ul>
-                    <li>Review of Day 1</li>
-                    <li>Initiating a Project</li>
-                    <li>Risk Theme</li>
-                    <li>Quality Theme</li>
-                    <li>Change Theme</li>
-                </ul>
-                <p><strong>DAY 3</strong></p>
-                <ul>
-                    <li>Review of Day 2</li>
-                    <li>Progress Theme</li>
-                    <li>Controlling a Stage</li>
-                    <li>Managing Product Delivery</li>
-                    <li>Managing a Stage Boundary</li>
-                    <li>Plans Theme</li>
-                    <li>Closing a Project</li>
-                    <li>Directing a Project – Review</li>
-                    <li>Revision and exam</li>
-                </ul>
-                <p><strong>DAY 4</strong></p>
-                <ul>
-                    <li>Understanding the practitioner examination format</li>
-                    <li>Tips and tricks for answering the Practitioner Questions</li>
-                    <li>Review of PRINCE2<sup>®</sup></li>
-                    <li>Practice questions under examination conditions</li>
-                    <li>Review of answers</li>
-                </ul>
-                <p><strong>DAY 5</strong></p>
-                <ul>
-                    <li>Practitioner examination only</li>
-                    <li>The timetable and order of events may be varied by the trainer where they see an opportunity to give delegates a better learning experience.</li>
-                </ul>
+        <div id="scrum-container">
+            <h1>PRINCE2<sup>®</sup> Combined Foundation & Practitioner Course</h1>
+            <p><strong>What you will learn</strong></p>
+            <p>The aim of this course is to provide delegates sufficient understanding of how to apply and tailor PRINCE2<sup>®</sup> in a project situation. A successful delegate should, with suitable direction and support, be able to start applying the method to their projects straight away.</p>
+            <p>Delegates will be able to apply and understand how to tailor PRINCE2<sup>®</sup> effectively to a project within an organization environment supporting PRINCE2<sup>®</sup>. Specifically delegates should</p>
+            <ul>
+                <li>Understand the relationships between the roles, management products, principles, themes, techniques and processes </li>
+                <li>Be able to apply the principles, themes and processes to a project </li>
+                <li>Be able to create and assess management products</li>
+            </ul>
+            <p>This course leads to the PRINCE2 <sup>®</sup> practitioner level certification. Delegates are prepared for the Foundation examination and will normally take this examination on the third day of the course. The Foundation qualification is a pre-requisite for the Practitioner examination. The Practitioner examination is normally taken on the final day of the course.</p>
+            <p>The PRINCE2<sup>®</sup> Foundation examination is a closed- book 60 minute 75 multiple choice question paper with 5 questions to be trial and not counted in scores. The pass mark is 50% (35 marks required to pass out of 70 available). </p>
+            <p>The Practitioner examination is an open- book objective test examination based on a given scenario and lasting 150 minutes. There are 8 questions each worth 10 marks, making a total of 80 marks available. The pass mark is 55% (44 marks required to pass out of 80 available).</p>
+            <h2>Audience Profile</h2>
+            <p>This course is aimed at project managers, project management consultants and aspiring project managers. It is also relevant to other key staff involved in the design, development and delivery of projects, including:</p>
+            <strong>Project Board members</strong>
+            <ul>
+                <li>Senior Responsible Owners</li>
+                <li>Project Sponsors</li>
+                <li>Senior management involved in making project-level decisions</li>
+            </ul>
+            <strong>Team Managers</strong>
+            <ul>
+                <li>Product Delivery Managers</li>
+                <li>Project team members</li>
+                <li>Business Analysts</li>
+                <li>Subject matter experts delivering or providing expertise to a project</li>
+            </ul>
+            <strong>Project Assurance</strong>
+            <ul>
+                <li>Business Change Analysts</li>
+                <li>Change Board members</li>
+                <li>Risk managers</li>
+                <li>Auditors</li>
+                <li>Stakeholder representatives</li>
+            </ul>
+            <strong>Project Support</strong>
+            <ul>
+                <li>Project office support staff</li>
+                <li>Program office personnel</li>
+                <li>Planners and plan creators</li>
+                <li>Operational line managers/staff involved in a project, or intending to be involved </li>
+            </ul>
+            <h2>Prerequisite</h2>
+            <p>There are no formal pre-requisites for this course. However, it is anticipated that delegates will possess knowledge of projects or have experience of working in a project environment. This is to ensure that the intensive nature of the course does not cause delegates to struggle through the course. If such knowledge or experience does not exist, delegates may be advised to split the course into the separate Foundation and Practitioner courses. The course may be booked as a single unit, to achieve the cost effectiveness, but schedule each course in different weeks. Please call your local office for further details.</p>
+            <p>There is between 6 and 15 hours of pre-course preparation to be completed and it is vital to the success of the course that this work is completed. The course is intensive and there will be no opportunity during the course itself to try and catch up. The actual time taken by each delegate will vary enormously and will depend on the individual, their learning style, existing knowledge or skills, and project management experience.</p>
+            <p>In addition, delegates should allow for 2 to 3 hours of evening work on each evening during the course. This is to allow consolidation of the learning provided during the day and to provide sufficient practice with the sample examination questions provided in order to pass.</p>
+            <h2>Course Outline</h2>
+            <p><strong>DAY 1</strong></p>
+            <ul>
+                <li>Introduction to Principles, Themes and </li>
+                <li>Processes</li>
+                <li>Business Case Theme </li>
+                <li>Organisation Theme</li>
+                <li>Starting Up a Project</li>
+            </ul>
+            <p><strong>DAY 2</strong></p>
+            <ul>
+                <li>Review of Day 1</li>
+                <li>Initiating a Project</li>
+                <li>Risk Theme</li>
+                <li>Quality Theme</li>
+                <li>Change Theme</li>
+            </ul>
+            <p><strong>DAY 3</strong></p>
+            <ul>
+                <li>Review of Day 2</li>
+                <li>Progress Theme</li>
+                <li>Controlling a Stage</li>
+                <li>Managing Product Delivery</li>
+                <li>Managing a Stage Boundary</li>
+                <li>Plans Theme</li>
+                <li>Closing a Project</li>
+                <li>Directing a Project – Review</li>
+                <li>Revision and exam</li>
+            </ul>
+            <p><strong>DAY 4</strong></p>
+            <ul>
+                <li>Understanding the practitioner examination format</li>
+                <li>Tips and tricks for answering the Practitioner Questions</li>
+                <li>Review of PRINCE2<sup>®</sup></li>
+                <li>Practice questions under examination conditions</li>
+                <li>Review of answers</li>
+            </ul>
+            <p><strong>DAY 5</strong></p>
+            <ul>
+                <li>Practitioner examination only</li>
+                <li>The timetable and order of events may be varied by the trainer where they see an opportunity to give delegates a better learning experience.</li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    PRINCE2<sup>®</sup> Combined Foundation & Practitioner Self-Paced Online Course (including online certificates): Priced at £.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
             </div>
         </div>
     </div>
