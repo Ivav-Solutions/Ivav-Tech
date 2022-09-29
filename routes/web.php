@@ -44,10 +44,14 @@ Route::get('/logouts', [App\Http\Controllers\HomeController::class, 'logouts'])-
 
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::prefix('dashboard')->group(function () {
-    Route::get('it_trainings', [App\Http\Controllers\HomeController::class, 'it_trainings'])->name('user.it.trainings');
-    Route::get('it_trainings/scrum_program', [App\Http\Controllers\HomeController::class, 'scrum_program'])->name('user.scrum.program');
+    Route::get('it_programs', [App\Http\Controllers\HomeController::class, 'it_programs'])->name('user.it.programs');
+    Route::get('it_programs/scrum_program', [App\Http\Controllers\HomeController::class, 'scrum_program'])->name('user.scrum.program');
+    Route::get('it_programs/prince2_program', [App\Http\Controllers\HomeController::class, 'prince2_program'])->name('user.prince2.program');
+    Route::get('it_programs/marketing_program', [App\Http\Controllers\HomeController::class, 'marketing_program'])->name('user.marketing.program');
+    Route::get('it_programs/risk_management_program', [App\Http\Controllers\HomeController::class, 'risk_management_program'])->name('user.risk.management.program');
+    Route::get('it_programs/quality_management_program', [App\Http\Controllers\HomeController::class, 'quality_management_program'])->name('user.quality.management.program');
+    Route::get('it_programs/itil_program', [App\Http\Controllers\HomeController::class, 'itil_program'])->name('user.itil.program');
     Route::get('/payment/callback', [App\Http\Controllers\HomeController::class, 'handleGatewayCallback'])->name('user.new.handleGatewayCallback');
-    Route::get('/subscriptions', [App\Http\Controllers\HomeController::class, 'subscriptions'])->name('user.subscriptions');
     Route::get('/deposits', [App\Http\Controllers\HomeController::class, 'deposits'])->name('user.deposits');
     Route::get('/account', [App\Http\Controllers\HomeController::class, 'account'])->name('user.account');
     Route::post('/account/upload_profile/{id}', [App\Http\Controllers\HomeController::class, 'update_profile'])->name('user.account.update.profile');

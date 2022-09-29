@@ -36,7 +36,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <a href="" style="color: #000;">
+                    <a href="{{route('user.prince2.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
                                 <div class="item-box text-center">
@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <a href="" style="color: #000;">
+                    <a href="{{route('user.marketing.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
                                 <div class="item-box text-center">
@@ -64,7 +64,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <a href="" style="color: #000;">
+                    <a href="{{route('user.quality.management.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
                                 <div class="item-box text-center">
@@ -78,7 +78,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <a href="" style="color: #000;">
+                    <a href="{{route('user.risk.management.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
                                 <div class="item-box text-center">
@@ -92,7 +92,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <a href="" style="color: #000;">
+                    <a href="{{route('user.itil.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
                                 <div class="item-box text-center">

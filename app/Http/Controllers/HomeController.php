@@ -41,14 +41,39 @@ class HomeController extends Controller
         return view('dashboard.dashboard');
     }
 
-    public function it_trainings()
+    public function it_programs()
     {
-        return view('dashboard.it_trainings');
+        return view('dashboard.it_programs');
     }
 
     public function scrum_program()
     {
         return view('dashboard.scrum_programs');
+    }
+
+    public function prince2_program()
+    {
+        return view('dashboard.prince2_program');
+    }
+
+    public function marketing_program()
+    {
+        return view('dashboard.marketing_program');
+    }
+
+    public function risk_management_program()
+    {
+        return view('dashboard.risk_management_program');
+    }
+
+    public function quality_management_program()
+    {
+        return view('dashboard.quality_management_program');
+    }
+
+    public function itil_program()
+    {
+        return view('dashboard.itil_program');
     }
 
     public function account()
