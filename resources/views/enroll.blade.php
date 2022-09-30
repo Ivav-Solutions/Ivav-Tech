@@ -90,6 +90,11 @@
                             <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" />
                         </div>
                     </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            {!! app('captcha')->display() !!}
+                        </div>
+                    </div>
                     <div class="col-12 text-center"><button type="submit" class="box-btn signup-btn">Sign Up</button></div>
                 </div>
             </form>

@@ -17887,6 +17887,34 @@ textarea.form-control {
     -webkit-transition: 0.9s;
     transition: 0.9s;
 }
+.whatsapp-go {
+    position: fixed;
+    cursor: pointer;
+    top: 50%;
+    right: 30px;
+    background-color: #1d42d9;
+    color: #fff;
+    width: 40px;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    z-index: 10
+}
+.whatsapp-go i 
+{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);   
+    color: #fff;
+    font-size: 1.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 .go-top i {
     position: absolute;
     top: 50%;
@@ -17900,9 +17928,22 @@ textarea.form-control {
     transition: 0.5s;
     font-size: 20px;
 }
+.go-whatsapp i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 20px;
+}
 .go-top i:last-child {
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
     top: 60%;
 }
 .go-top:before {

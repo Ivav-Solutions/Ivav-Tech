@@ -9,9 +9,9 @@
                         IT Training, and Career and Business Consulting.
                     </p>
                     <ul class="social">
-                        <li><a href="https://m.facebook.com/ivavtech/" target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                        <li><a href="https://instagram.com/ivav_tech?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="https://m.facebook.com/ivavtech/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://instagram.com/ivav_tech?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -46,10 +46,10 @@
                 <div class="content contacts">
                     <h3 class="ml-40">Contact</h3>
                     <ul class="footer-list foot-social">
-                        <li><a href="tel:+447949317523"><i class="bx bx-phone"></i>+447949317523</a></li>
-                        <li><a href="mailto:info@ivavtech.com"><i class="bx bxs-envelope"></i> <span class="__cf_email__" data-cfemail="ea828f868685aa90858185c4898587">info@ivavtech.com</span></a></li>
-                        <li><a href="mailto:contact@ivavtech.com "><i class="bx bxs-envelope"></i> <span class="__cf_email__" data-cfemail="42313732322d303602382d292d6c212d2f">contact@ivavtech.com</span></a></li>
-                        <li><i class="bx bxs-map"></i> Shelton, London <br> Lagos, Nigeria.</li>
+                        <li><a href="tel:+447949317523"><i class="fa fa-phone"></i>+447949317523</a></li>
+                        <li><a href="mailto:info@ivavtech.com"><i class="fa fa-envelope"></i> <span class="__cf_email__" data-cfemail="ea828f868685aa90858185c4898587">info@ivavtech.com</span></a></li>
+                        <li><a href="mailto:contact@ivavtech.com "><i class="fa fa-envelope"></i> <span class="__cf_email__" data-cfemail="42313732322d303602382d292d6c212d2f">contact@ivavtech.com</span></a></li>
+                        <li><i class="fa fa-map"></i> Shelton, London <br> Lagos, Nigeria.</li>
                     </ul>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="right">Copyright @
-                        <!-- -->2019
+                        <!-- -->{{ date('Y') }}
                         <!-- --> {{config('app.name')}} A Subsidiary of <a href="https://ivavsolutions.com/" target="_blank">Ivav Solutions</a>.
                     </p>
                 </div>

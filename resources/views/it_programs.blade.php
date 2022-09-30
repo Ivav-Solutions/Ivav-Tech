@@ -34,70 +34,72 @@
 <div class="home-service-area pt-100 pb-70">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-sm-6">
-                <a href="/service/it_programs/scrum_program">
-                    <div class="single-service">
-                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>    
+            <div class="col-lg-4">
+                <div class="single-service">
+                    <a href="/service/it_programs/scrum_program">
+                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
                         <div class="service-content">
                             <h3>Scrum Program</h3>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
-            
-            <div class="col-lg-4 col-sm-6">
-                <a href="/service/it_programs/prince2_program">
-                    <div class="single-service">
-                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div> 
+
+            <div class="col-lg-4">
+                <div class="single-service"> 
+                    <a href="/service/it_programs/prince2_program">
+                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
                         <div class="service-content">
                             <h3>Prince2 Program</h3>
                         </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-lg-4 col-sm-6">
-                <a href="/service/it_programs/marketing_program">
-                    <div class="single-service">
-                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div> 
-                        <div class="service-content">
-                            <h3>Marketing Program</h3>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
-                <a href="/service/it_programs/quality_management_program">
-                    <div class="single-service">
-                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div> 
+            <div class="col-lg-4">
+                <div class="single-service">
+                    <a href="/service/it_programs/marketing_program">
+                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
+                        <div class="service-content">
+                            <h3 class="ml-4 mr-4">Marketing Program</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="single-service">
+                    <a href="/service/it_programs/quality_management_program">
+                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
                         <div class="service-content">
                             <h3>Quality Management Program</h3>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
-            
-            <div class="col-lg-4 col-sm-6">
-                <a href="/service/it_programs/risk_management_program">
-                    <div class="single-service">
-                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div> 
+
+            <div class="col-lg-4">
+                <div class="single-service">
+                    <a href="/service/it_programs/risk_management_program">
+                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
                         <div class="service-content">
                             <h3>Risk Management Program</h3>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
-                        
-            <div class="col-lg-4 col-sm-6">
-                <a href="/service/it_programs/itil">
-                    <div class="single-service">
-                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div> 
+
+            <div class="col-lg-4">
+                <div class="single-service">
+                    <a href="/service/it_programs/itil">
+                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
                         <div class="service-content">
                             <h3>ITIL (IT services) Program</h3>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>

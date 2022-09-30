@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="single-contact">
-                        <div class="icon"><i class="bx bx-time"></i></div>
+                        <div class="icon"><i class="fa fa-clock-o "></i></div>
                         <div class="content">
                             <h3>Opening Hours</h3>
                             <p>Mon - Sat : 10:00 AM - 06:00 PM</p>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single-contact">
-                        <div class="icon"><i class="bx bx-location-plus"></i></div>
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
                         <div class="content">
                             <h3>Address</h3>
                             <p>Shelton, London <br> Lagos, Nigeria</p>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <div class="single-contact">
-                        <div class="icon"><i class="bx bx-phone-call"></i></div>
+                        <div class="icon"><i class="fa fa-phone-square"></i></div>
                         <div class="content">
                             <h3>Phone</h3>
                             <p>+447949317523</p>
