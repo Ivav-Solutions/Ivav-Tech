@@ -24089,13 +24089,14 @@ a {
 	padding: 0;
 }
 #scrum-container .youtube-list .yt-list {
+    display: flex;
 	margin-bottom: 30px;
 	min-height: 180px;
 	padding-bottom: 30px;
 	border-bottom: solid 1px #eee;
 }
 #scrum-container .youtube-list .yt-description{
-	/*margin-left:340px;*/
+	margin-left: 50px;
 }
 #scrum-container .youtube-list iframe {
 	float: left;
@@ -24228,7 +24229,6 @@ a {
 		float: right;
 		margin: 34px 0 20px 20px;
 	}
-
 }
 
 @media screen and (min-width:62em) {
@@ -24256,4 +24256,15 @@ a {
     right: 0;
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (max-width: 767px)
+  {
+    #scrum-container .youtube-list .yt-list {
+        display: block;
+    }
+    #scrum-container .youtube-list .yt-description
+    {
+        margin-left: 0px;
+    }
   }

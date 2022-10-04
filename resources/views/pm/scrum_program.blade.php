@@ -24,7 +24,12 @@
             <div id="scrum-container">
                 <h1>Why SCRUM?</h1>
                 <div class="media-block-holder">
-                    <iframe class="responsive-iframe" width="640" height="360" src="http://www.youtube.com/embed/aP3TBpWWwJ8?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <!-- <iframe class="responsive-iframe" width="640" height="360" src="http://www.youtube.com/embed/aP3TBpWWwJ8?rel=0" frameborder="0" allowfullscreen></iframe> -->
+                    <video style="width: 100%" height="360" controls>
+                        <source src="{{URL::asset('SCRUM in 6 minutes.mp4')}}" type="video/mp4">
+                        <source src="{{URL::asset('SCRUM in 6 minutes.ogg')}}" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <p>Scrum is one of the most popular agile methodologies. It is an adaptive, iterative, fast, flexible, and effective methodology designed to deliver significant value quickly and throughout a project. Scrum ensures transparency in communication and creates an environment of collective accountability and continuous progress. The Scrum framework, as defined in the SBOK&trade; Guide, is structured in such a way that it supports product and service development in all types of industries and in any type of project, irrespective of its complexity.</p>
                 <p>A key strength of Scrum lies in its use of cross-functional, self-organized, and empowered teams who divide their work into short, concentrated work cycles called Sprints.</p>
@@ -155,21 +160,36 @@
                 <h1>SCRUM Videos</h1>
                 <div class="youtube-list">
                     <div class="yt-list">
-                        <iframe width="320" height="180" src="http://www.youtube.com/embed/bNwGXrSIoyU?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <!-- <iframe width="320" height="180" src="http://www.youtube.com/embed/bNwGXrSIoyU?rel=0" frameborder="0" allowfullscreen></iframe> -->
+                        <video style="width: 100%" height="180" controls>
+                            <source src="{{URL::asset('8. How to use SBOK™ Guide_.mp4')}}" type="video/mp4">
+                            <source src="{{URL::asset('8. How to use SBOK™ Guide_.ogg')}}" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="yt-description">
                             <h4>How to use SBOK Guide</h4>
                             <p>The SBOK&trade; Guide was developed as a means to create a necessary guide for organizations and project management practitioners who want to implement Scrum, as well as those already doing so who want to make needed improvements to their processes. It is based on experience drawn from thousands of projects across a variety of organizations and industries. The contributions of many Scrum experts and project management practitioners have been considered in its development.</p>
                         </div>
                     </div>
                     <div class="yt-list">
-                        <iframe width="320" height="180" src="http://www.youtube.com/embed/yq2OcJIPIW0?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <!-- <iframe width="320" height="180" src="http://www.youtube.com/embed/yq2OcJIPIW0?rel=0" frameborder="0" allowfullscreen></iframe> -->
+                        <video style="width: 100%" height="180" controls>
+                            <source src="{{URL::asset('Scrum Study_Why get certified in SCRUM.mp4')}}" type="video/mp4">
+                            <source src="{{URL::asset('Scrum Study_Why get certified in SCRUM.ogg')}}" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="yt-description">
                             <h4>Why get certified in SCRUM</h4>
                             <p>Scrum is one of the most popular Agile methodologies. It is an adaptive, iterative, fast, flexible, and effective methodology designed to deliver significant value quickly and throughout a project. Scrum ensures transparency in communication and creates an environment of collective accountability and continuous progress. A key strength of Scrum lies in its use of cross-functional, self-organized, and empowered teams who divide their work into short, concentrated work cycles called Sprints.</p>
                         </div>
                     </div>
                     <div class="yt-list">
-                        <iframe width="320" height="180" src="http://www.youtube.com/embed/KQb4VeE3iI0?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <!-- <iframe width="320" height="180" src="http://www.youtube.com/embed/KQb4VeE3iI0?rel=0" frameborder="0" allowfullscreen></iframe> -->
+                        <video style="width: 100%" height="180" controls>
+                            <source src="{{URL::asset('9. Scrum Principles.mp4')}}" type="video/mp4">
+                            <source src="{{URL::asset('9. Scrum Principles.ogg')}}" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="yt-description">
                             <h4>Scrum Principles </h4>
                             <p>Scrum principles are the core guidelines for applying the Scrum framework and should mandatorily be used in all Scrum projects. They are non-negotiable and must be applied as specified in the SBOK&trade;. Keeping the principles intact and using them appropriately instils confidence in the Scrum framework with regard to attaining the objectives of the project.</p>
@@ -396,6 +416,62 @@
     </div>
 </section>
 
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
+    <div class="container">
+        <div id="scrum-container">
+            <h1>Expert Scrum Master (ESM&trade;)</h1>
+            <div style="overflow-x:auto;">
+                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">                
+                    <tr>
+                        <th rowspan="2">Certification</th>
+                        <th colspan="2">Prerequisites</th>
+                        <th rowspan="2">Target Audience</th>
+                        <th rowspan="2">Maintaining Certification (RCUs)</th>
+                    </tr>
+                    <tr class="second-row">
+                        <th>Experience</th>
+                        <th>Education</th>
+                    </tr>
+                    <tr>
+                        <td>ESM<sup>&trade;</sup></td>
+                        <td>3 Years managing SCRUM/AGILE projects</td>
+                        <td>Should be SMC&trade;, SAMC&trade;, and SPOC&trade; Certified</td>
+                        <td>Experienced Scrum Professional</td>
+                        <td>60 Recertification units every 2 years</td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Overview </h2>
+            <p>Expert Scrum Master (ESM&trade;) certification is the next step for Scrum practitioners to further demonstrate their expertise in Scrum methodology. This will test your ability to manage complex Scrum projects and scale Scrum in complex projects involving big project teams, programs and portfolios. Applicants will be awarded the Expert Scrum Master (ESM&trade;) certificate by SCRUMstudy upon successfully passing the certification exam.</p>
+            <h2>Audience Profile:</h2>
+            <p>This Certification is suitable for anyone who is an expert in the SCRUM team and wants to handle complicated Scrum projects as an Expert Scrum Master.</p>
+            <h2>Prerequisites</h2>
+            <p>To become an ESM&trade; certified professional you should fulfil the following criteria:</p>
+            <ul>
+                <li>Should have three years of experience managing Scrum/Agile Projects</li>
+                <li>Should be SMC&trade;, SAMC&trade; and SPOC&trade; certified.</li>
+                <li>Should submit 500 words write up about two Scrum/Agile projects.</li>
+                <li>You can also attend a 2-day ESM&trade; classroom training provided by a SCRUMstudy R.E.P.</li>
+            </ul>
+            <h2>Exam Format </h2>
+            <ul>
+                <li>Objective testing. Case study and scenario based</li>
+                <li>240 minutes duration</li>
+                <li>Proctored online exam</li>
+                <li>Open book exam (SBOK&trade; Guide only)</li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Scrum Expert Scrum Master Self-Paced Online Course (including online certificates): Priced at £650.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="services-details-area" style="padding-top: 5rem;">
     <div class="container">
         <div class="wrapper">
@@ -485,59 +561,5 @@
     </div>
 </section>
 
-<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
-    <div class="container">
-        <div id="scrum-container">
-            <h1>Expert Scrum Master (ESM&trade;)</h1>
-            <div style="overflow-x:auto;">
-                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">                
-                    <tr>
-                        <th rowspan="2">Certification</th>
-                        <th colspan="2">Prerequisites</th>
-                        <th rowspan="2">Target Audience</th>
-                        <th rowspan="2">Maintaining Certification (RCUs)</th>
-                    </tr>
-                    <tr class="second-row">
-                        <th>Experience</th>
-                        <th>Education</th>
-                    </tr>
-                    <tr>
-                        <td>ESM<sup>&trade;</sup></td>
-                        <td>3 Years managing SCRUM/AGILE projects</td>
-                        <td>Should be SMC&trade;, SAMC&trade;, and SPOC&trade; Certified</td>
-                        <td>Experienced Scrum Professional</td>
-                        <td>60 Recertification units every 2 years</td>
-                    </tr>
-                </table>
-            </div>
-            <h2>Overview </h2>
-            <p>Expert Scrum Master (ESM&trade;) certification is the next step for Scrum practitioners to further demonstrate their expertise in Scrum methodology. This will test your ability to manage complex Scrum projects and scale Scrum in complex projects involving big project teams, programs and portfolios. Applicants will be awarded the Expert Scrum Master (ESM&trade;) certificate by SCRUMstudy upon successfully passing the certification exam.</p>
-            <h2>Audience Profile:</h2>
-            <p>This Certification is suitable for anyone who is an expert in the SCRUM team and wants to handle complicated Scrum projects as an Expert Scrum Master.</p>
-            <h2>Prerequisites</h2>
-            <p>To become an ESM&trade; certified professional you should fulfil the following criteria:</p>
-            <ul>
-                <li>Should have three years of experience managing Scrum/Agile Projects</li>
-                <li>Should be SMC&trade;, SAMC&trade; and SPOC&trade; certified.</li>
-                <li>Should submit 500 words write up about two Scrum/Agile projects.</li>
-                <li>You can also attend a 2-day ESM&trade; classroom training provided by a SCRUMstudy R.E.P.</li>
-            </ul>
-            <h2>Exam Format </h2>
-            <ul>
-                <li>Objective testing. Case study and scenario based</li>
-                <li>240 minutes duration</li>
-                <li>Proctored online exam</li>
-                <li>Open book exam (SBOK&trade; Guide only)</li>
-            </ul>
-        </div>
-        <div class="col-12">
-            <div class="services-details-text">
-                <h2>
-                    Scrum Expert Scrum Master Self-Paced Online Course (including online certificates): Priced at £650.
-                    <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
-                </h2>
-            </div>
-        </div>
-    </div>
-</section>
+
 @endsection
