@@ -60,3 +60,13 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/notifications', [App\Http\Controllers\HomeController::class, 'notifications'])->name('notifications');
     Route::any('/notification/read/{id}', [App\Http\Controllers\HomeController::class, 'read_notification'])->name('read.notification');
 });
+
+Route::get('/admin/login', [App\Http\Controllers\HomePageController::class, 'admin_login']);
+Route::post('/admin/login', [App\Http\Controllers\HomePageController::class, 'login_admin'])->name('login.admin');
+Route::middleware(['auth', 'isAdmin'])->group(function () {
+    Route::get('/admin/dashboard', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
+    Route::get('/admin/account', [App\Http\Controllers\AdminController::class, 'account'])->name('admin.account');
+    Route::post('/admin/account/upload_profile/{id}', [App\Http\Controllers\AdminController::class, 'update_profile'])->name('admin.account.update.profile');
+    Route::post('/admin/account/upload_photo/{id}', [App\Http\Controllers\AdminController::class, 'upload_photo'])->name('admin.account.upload.photo');
+    Route::post('/admin/account/update_password/{id}', [App\Http\Controllers\AdminController::class, 'update_password'])->name('admin.account.update.password');
+});

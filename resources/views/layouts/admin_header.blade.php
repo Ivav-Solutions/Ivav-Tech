@@ -4,8 +4,8 @@
             <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="#"></a>
             <!-- sidebar-toggle-->
             <a class="logo-horizontal " href="/">
-                <img src="{{URL::asset('images/logo1.jpg')}}" class="header-brand-img desktop-logo" alt="logo" style="width: 150px; height: 50px;">
-                <img src="{{URL::asset('images/logo1.jpg')}}" class="header-brand-img light-logo1" alt="logo" style="width: 150px; height: 50px;">
+                <img src="{{URL::asset('images/logo.png')}}" class="header-brand-img desktop-logo" alt="logo" style="width: 80px; height: 50px;">
+                <img src="{{URL::asset('images/logo.png')}}" class="header-brand-img light-logo1" alt="logo" style="width: 70px; height: 50px;">
             </a>
             <!-- LOGO -->
             <div class="d-flex order-lg-2 ms-auto header-right-icons">
@@ -42,8 +42,8 @@
                             <div class="dropdown d-md-flex profile-1">
                                 <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex animate">
                                     <span>
-                                        @if(Auth::user()->photo)
-                                        <img src="{{Auth::user()->photo}}" alt="img" width="100px" class="avatar profile-user brround cover-image">
+                                        @if(Auth::user()->avatar)
+                                        <img src="{{Auth::user()->avatar}}" alt="img" width="100px" class="avatar profile-user brround cover-image">
                                         @else
                                         <div class="avatar profile-user brround cover-image" style="background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr(Auth::user()->last_name, 0, 1)) }}</div>
                                         @endif
@@ -59,7 +59,7 @@
                                         </svg>
                                         Profile
                                     </a>
-                                    <a class="dropdown-item" href="{{route('logout')}}">
+                                    <a class="dropdown-item" href="{{route('logouts')}}">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
                                             <path d="M10.6523438,16.140625c-0.09375,0.09375-0.1464233,0.2208862-0.1464233,0.3534546c0,0.276123,0.2238159,0.5,0.499939,0.500061c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l4.4941406-4.4941406c0.000061-0.000061,0.0001221-0.000061,0.0001831-0.0001221c0.1951294-0.1952515,0.1950684-0.5117188-0.0001831-0.7068481L11.359314,7.1524048c-0.1937256-0.1871338-0.5009155-0.1871338-0.6947021,0c-0.1986084,0.1918335-0.2041016,0.5083618-0.0122681,0.7069702L14.2930298,11.5H2.5C2.223877,11.5,2,11.723877,2,12s0.223877,0.5,0.5,0.5h11.7930298L10.6523438,16.140625z M16.4199829,3.0454102C11.4741821,0.5905762,5.4748535,2.6099243,3.0200195,7.5556641C2.8970337,7.8029175,2.9978027,8.1030884,3.2450562,8.2260742C3.4923706,8.3490601,3.7925415,8.248291,3.9155273,8.0010376c0.8737793-1.7612305,2.300354-3.1878052,4.0615845-4.0615845C12.428833,1.730835,17.828064,3.5492554,20.0366821,8.0010376c2.2085571,4.4517212,0.3901367,9.8509521-4.0615845,12.0595703c-4.4517212,2.2085571-9.8510132,0.3901367-12.0595703-4.0615845c-0.1229858-0.2473145-0.4231567-0.3480835-0.6704102-0.2250977c-0.2473145,0.1229858-0.3480835,0.4230957-0.2250977,0.6704102c1.6773682,3.4109497,5.1530762,5.5667114,8.9541016,5.5537109c3.7976685,0.0003662,7.2676392-2.1509399,8.9560547-5.5526733C23.3850098,11.4996338,21.3657227,5.5002441,16.4199829,3.0454102z" />
                                         </svg>

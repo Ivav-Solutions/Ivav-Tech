@@ -9,12 +9,12 @@
             <!-- PAGE-HEADER -->
             <div class="page-header">
                 <div>
-                    <h1 class="page-title">Account</h1>
+                    <h1 class="page-title">Profile</h1>
                 </div>
                 <div class="ms-auto pageheader-btn">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Account</li>
+                        <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile</li>
                     </ol>
                 </div>
             </div>
@@ -29,8 +29,8 @@
                                 <div class="col-lg-12 col-md-12 col-xl-6">
                                     <div class="d-flex flex-wrap align-items-center">
                                         <div class="profile-img-main rounded">
-                                            @if(Auth::user()->photo)
-                                            <img src="{{Auth::user()->photo}}" alt="img" width="100px" class="m-0 p-1 rounded hrem-6">
+                                            @if(Auth::user()->avatar)
+                                            <img src="{{Auth::user()->avatar}}" alt="img" width="100px" class="m-0 p-1 rounded hrem-6">
                                             @else
                                             <div class="m-0 p-1 rounded hrem-6" style="width: 6rem; align-items: center; font-size: 2rem; background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr(Auth::user()->last_name, 0, 1)) }}</div>        
                                             @endif
@@ -38,7 +38,6 @@
                                         <div class="ms-4">
                                             <h4>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</h4>
                                             <p class="text-muted mb-2">{{Auth::user()->email}}</p>
-                                            <a href="mail-inbox.html" class="btn btn-secondary btn-sm">{{Auth::user()->phone_number}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +94,28 @@
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <label for="pno" class="form-label">Phone Number</label>
-                                                                    <input type="tel" class="form-control" id="pno" name="phone_number" value="{{Auth::user()->phone_number}}" required>
+                                                                    <input type="tel" class="form-control" id="pno" name="phone_number" value="{{Auth::user()->phone_number}}">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <label for="pno" class="form-label">Gender</label>
+                                                                    <select class="form-control @error('gender') is-invalid @enderror" name="gender">
+                                                                        <option value="{{Auth::user()->gender}}">{{Auth::user()->gender}}</option>
+                                                                        <option value="">Select Gender</option>
+                                                                        <option value="Male">Male</option>
+                                                                        <option value="Female">Female</option>                                
+                                                                    </select>                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <label for="pno" class="form-label">Country</label>
+                                                                    <input type="text" class="form-control" id="pno" name="country" value="{{Auth::user()->country}}">
                                                                 </div>
                                                             </div>
                                                         </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Consultation;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,7 +11,7 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
 
-class HomeController extends Controller
+class AdminController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -19,66 +20,26 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware(['auth','verified']);
+        $this->middleware('auth');
     }
 
-    public function logouts()
-    {
-        Session::flush();
-
-        Auth::logout();
-
-        return redirect('/');
-    }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
-        return view('dashboard.dashboard');
-    }
+        $totalUsers = User::latest()->where('user_type', 'User')->get();
+        $totalConsultations = Consultation::latest()->get();
+        // $totalEnrollment = Consultation::latest()->get();
+        $latestFiveUsers = User::latest()->where('user_type', 'User')->take(5)->get();
 
-    public function it_programs()
-    {
-        return view('dashboard.it_programs');
-    }
-
-    public function scrum_program()
-    {
-        return view('dashboard.scrum_programs');
-    }
-
-    public function prince2_program()
-    {
-        return view('dashboard.prince2_program');
-    }
-
-    public function marketing_program()
-    {
-        return view('dashboard.marketing_program');
-    }
-
-    public function risk_management_program()
-    {
-        return view('dashboard.risk_management_program');
-    }
-
-    public function quality_management_program()
-    {
-        return view('dashboard.quality_management_program');
-    }
-
-    public function itil_program()
-    {
-        return view('dashboard.itil_program');
+        return view('admin.dashboard', [
+            'totalUsers' => $totalUsers,
+            'totalConsultations' => $totalConsultations,
+            'latestFiveUsers' => $latestFiveUsers
+        ]);
     }
 
     public function account()
     {
-        return view('dashboard.account');
+        return view('admin.account');
     }
 
     public function update_profile($id, Request $request)
@@ -86,9 +47,6 @@ class HomeController extends Controller
         $this->validate($request, [
             'first_name' => ['required', 'string'],
             'last_name' => ['required', 'string'],
-            'phone_number' => ['required', 'numeric'],
-            'country' => ['required', 'string'],
-            'gender' => ['required', 'string']
         ]);
 
         $userFinder = Crypt::decrypt($id);

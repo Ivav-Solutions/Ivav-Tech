@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Consultation;
 use App\Models\Transaction;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Hash;
 
 class HomePageController extends Controller
 {
@@ -274,5 +276,42 @@ class HomePageController extends Controller
     public function enroll()
     {
         return view('enroll');
+    }
+
+    public function admin_login()
+    {
+        return view ('auth.admin_login');
+    }
+
+    public function login_admin(Request $request)
+    {
+        $this->validate($request, [
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', 'min:8'],
+        ]);
+        
+        $input = $request->only(['email', 'password']);
+        
+        $user = User::query()->where('email', $request->email)->first();
+
+        if ($user && !Hash::check($request->password, $user->password)){
+            return back()->with('failure_report', 'Incorrect Password!');
+        }
+
+        if(!$user || !Hash::check($request->password, $user->password)) {
+            return back()->with('failure_report', 'Email does\'nt exist');
+        }
+
+        // authentication attempt
+        if (auth()->attempt($input)) {
+            if($user->user_type == 'Administrator'){
+                return redirect()->route('dashboard');
+            }
+           
+            return back()->with('failure_report', 'You are not an Administrator');
+                    
+        } else {
+            return back()->with('failure_report', 'User authentication failed.');
+        }
     }
 }

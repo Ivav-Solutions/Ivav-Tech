@@ -65,7 +65,21 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 ">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <select class="form-control @error('gender') is-invalid @enderror" name="gender">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>                                
+                            </select>
+                            @error('gender')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 ">
                         <div class="form-group">
                             <input type="text" class="form-control @error('country') is-invalid @enderror" name="country" placeholder="Country" />
                             @error('country')

@@ -13,7 +13,7 @@
                 </div>
                 <div class="ms-auto pageheader-btn">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                     </ol>
                 </div>
@@ -27,8 +27,8 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h3 class="mb-2 fw-semibold">{{$totalactiveusers->count()}}</h3>
-                                    <p class="text-muted fs-13 mb-0">Total Active Users</p>
+                                    <h3 class="mb-2 fw-semibold">{{$totalUsers->count()}}</h3>
+                                    <p class="text-muted fs-13 mb-0">Total Users</p>
                                 </div>
                                 <div class="col col-auto top-icn dash">
                                     <div class="counter-icon bg-primary dash ms-auto box-shadow-primary">
@@ -46,8 +46,8 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h3 class="mb-2 fw-semibold">{{$totalinactiveusers->count()}}</h3>
-                                    <p class="text-muted fs-13 mb-0">Total Inactive Users</p>
+                                    <h3 class="mb-2 fw-semibold">{{$totalConsultations->count()}}</h3>
+                                    <p class="text-muted fs-13 mb-0">Total Consultation</p>
                                 </div>
                                 <div class="col col-auto top-icn dash">
                                     <div class="counter-icon bg-primary dash ms-auto box-shadow-primary">
@@ -65,8 +65,8 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h3 class="mb-2 fw-semibold">₦{{number_format($deposits, 2)}}</h3>
-                                    <p class="text-muted fs-13 mb-0">Total Deposits</p>
+                                    <h3 class="mb-2 fw-semibold">0</h3>
+                                    <p class="text-muted fs-13 mb-0">Total Enrollment</p>
                                 </div>
                                 <div class="col col-auto top-icn dash">
                                     <div class="counter-icon bg-secondary dash ms-auto box-shadow-secondary">
@@ -99,27 +99,27 @@
                                             <th class="bg-transparent border-bottom-0">Email</th>
                                             <th class="bg-transparent border-bottom-0">Gender</th>
                                             <th class="bg-transparent border-bottom-0">Phone Number</th>
-                                            <th class="bg-transparent border-bottom-0">Subscription Status</th>
+                                            <th class="bg-transparent border-bottom-0">Country</th>
                                             <th class="bg-transparent border-bottom-0">Created At</th>
                                         </tr>
                                     </thead>
-                                    @if($latestusers->isEmpty())
+                                    @if($latestFiveUsers->isEmpty())
                                     <tbody>
                                         <tr>
                                             <td class="align-enter text-dark font-15" colspan="7">No Registered User.</td>
                                         </tr>
                                     </tbody>
                                     @else
-                                    @foreach($latestusers as $key => $latestuser)
+                                    @foreach($latestFiveUsers as $key => $latestFiveUser)
                                     <tbody class="table-body">
                                         <tr>
                                             <td class="text-dark fs-14 fw-semibold">{{$loop->iteration}}</td>
-                                            <td class="text-success fs-14 fw-semibold">{{$latestuser->first_name}} {{$latestuser->last_name}}</td>
-                                            <td class="text-success fs-14 fw-semibold">{{$latestuser->email}}</td>
-                                            <td class="text-success fs-14 fw-semibold">{{$latestuser->gender}}</td>
-                                            <td class="text-success fs-14 fw-semibold">{{$latestuser->phone_number}}</td>
-                                            <td class="text-dark fs-14 fw-semibold">{{$latestuser->subscription_status}}</td>
-                                            <td class="text-success fs-14 fw-semibold">{{$latestuser->created_at->toDayDateTimeString()}}</td>
+                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->first_name}} {{$latestFiveUser->last_name}}</td>
+                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->email}}</td>
+                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->gender}}</td>
+                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->phone_number}}</td>
+                                            <td class="text-dark fs-14 fw-semibold">{{$latestFiveUser->country}}</td>
+                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->created_at->toDayDateTimeString()}}</td>
                                         </tr>
                                     </tbody>
                                     @endforeach

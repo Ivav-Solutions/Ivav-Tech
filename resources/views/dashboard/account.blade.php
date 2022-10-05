@@ -102,6 +102,19 @@
                                                         <div class="form-group ">
                                                             <div class="row">
                                                                 <div class="col-12">
+                                                                    <label for="pno" class="form-label">Gender</label>
+                                                                    <select class="form-control @error('gender') is-invalid @enderror" name="gender" required>
+                                                                        <option value="{{Auth::user()->gender}}">{{Auth::user()->gender}}</option>
+                                                                        <option value="">Select Gender</option>
+                                                                        <option value="Male">Male</option>
+                                                                        <option value="Female">Female</option>                                
+                                                                    </select>                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <div class="row">
+                                                                <div class="col-12">
                                                                     <label for="pno" class="form-label">Country</label>
                                                                     <input type="text" class="form-control" id="pno" name="country" value="{{Auth::user()->country}}" required>
                                                                 </div>
