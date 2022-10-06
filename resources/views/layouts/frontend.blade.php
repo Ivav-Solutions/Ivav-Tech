@@ -34,7 +34,7 @@
 
         <!-- SECTION: FOOTER -->
         @includeIf('layouts.footer')
-        <a hre="" class="whatsapp-go"><i class="fa fa-whatsapp"></i></a></a>
+        <a href="https://wa.me/+447949317523" target="_blank" class="whatsapp-go"><i class="fa fa-whatsapp"></i></a></a>
         <div class="go-top "><i class="fa fa-angle-up"></i></div>
     </div>
 

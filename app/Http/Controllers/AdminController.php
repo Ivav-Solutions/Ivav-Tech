@@ -42,6 +42,56 @@ class AdminController extends Controller
         return view('admin.account');
     }
 
+    public function users()
+    {
+        $users = User::latest()->where('user_type', 'User')->get();
+
+        return view('admin.users', [
+            'users' => $users
+        ]);
+    }
+
+    public function view_edit_user($id, Request $request)
+    {
+        $userFinder = Crypt::decrypt($id);
+
+        $user = User::findorfail($userFinder);
+
+        return view('admin.view_edit_user', [
+            'user' => $user
+        ]);
+    }
+
+    public function delete_user($id)
+    {
+        $finder = Crypt::decrypt($id);
+
+        $user = User::find($finder);
+
+        Storage::delete(str_replace("storage", "public", $user->avatar));
+
+        $user->delete();
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'User Deleted!'
+        ]); 
+    }
+
+    public function consultations()
+    {
+        $consultations = Consultation::latest()->get();
+
+        return view('admin.consultations', [
+            'consultations' => $consultations
+        ]);
+    }
+
+    public function transactions()
+    {
+        return view('admin.transactions');
+    }
+
     public function update_profile($id, Request $request)
     {
         $this->validate($request, [

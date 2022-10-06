@@ -9,12 +9,12 @@
             <!-- PAGE-HEADER -->
             <div class="page-header">
                 <div>
-                    <h1 class="page-title">All Deposits</h1>
+                    <h1 class="page-title">All Transactions</h1>
                 </div>
                 <div class="ms-auto pageheader-btn">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Deposits</li>
+                        <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Transactions</li>
                     </ol>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header border-bottom">
-                            <h3 class="card-title">All Deposits</h3>
+                            <h3 class="card-title">All Transactions</h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -44,34 +44,7 @@
                                             <th class="border-bottom-0">Status</th>
                                         </tr>
                                     </thead>
-                                    @if($deposits->isEmpty())
-                                    <tbody>
-                                        <tr>
-                                            <td class="align-enter text-dark font-15" colspan="8">No Deposits.</td>
-                                        </tr>
-                                    </tbody>
-                                    @else
-                                    @foreach($deposits as $key => $deposit)
-                                    <tbody>
-                                        <tr>
-                                            <td>{{$loop->iteration}}</td>
-                                            <td>
-                                                {{$deposit->first_name}} {{$deposit->last_name}}
-                                            </td>
-                                            <td>
-                                                {{$deposit->email}}
-                                            </td>
-                                            <td>₦{{number_format($deposit->amount, 2)}}</td>
-                                            <td>{{$deposit->transaction_id}}</td>
-                                            <td>{{$deposit->ref_id}}</td>
-                                            <td>{{$deposit->paid_at}}</td>
-                                            <td>{{$deposit->channel}}</td>
-                                            <td>{{$deposit->ip_address}}</td>
-                                            <td class="bg-success text-white">{{$deposit->status}}</td>
-                                        </tr>
-                                    </tbody>
-                                    @endforeach
-                                    @endif
+                                    
                                 </table>
                             </div>
                         </div>

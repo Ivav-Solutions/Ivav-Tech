@@ -9,11 +9,11 @@
             <!-- PAGE-HEADER -->
             <div class="page-header">
                 <div>
-                    <h1 class="page-title">Active Users</h1>
+                    <h1 class="page-title">Users</h1>
                 </div>
                 <div class="ms-auto pageheader-btn">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Users</li>
                     </ol>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header border-bottom">
-                            <h3 class="card-title">All Active Users</h3>
+                            <h3 class="card-title">All Users</h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -34,21 +34,22 @@
                                         <tr> 
                                             <th class="border-bottom-0">S/N</th>
                                             <th class="border-bottom-0">Photo</th>
-                                            <th class="border-bottom-0">Name</th>
+                                            <th class="border-bottom-0">Full Name</th>
                                             <th class="border-bottom-0">Email</th>
                                             <th class="border-bottom-0">Phone Number</th>
-                                            <th class="border-bottom-0">Subscription Status</th>
+                                            <th class="border-bottom-0">Gender</th>
+                                            <th class="border-bottom-0">Country</th>
                                             <th class="border-bottom-0">Action</th>
                                         </tr>
                                     </thead>
-                                    @if($active_users->isEmpty())
+                                    <!-- @if($users->isEmpty())
                                     <tbody>
                                         <tr>
-                                            <td class="align-enter text-dark font-15" colspan="6">No Active User.</td>
+                                            <td class="align-enter text-dark font-15" colspan="8">No User.</td>
                                         </tr>
                                     </tbody>
-                                    @else
-                                    @foreach($active_users as $key => $user)
+                                    @else -->
+                                    @foreach($users as $key => $user)
                                     <tbody>
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
@@ -68,10 +69,11 @@
                                                 {{$user->email}}
                                             </td>
                                             <td>{{$user->phone_number}}</td>
-                                            <td class="bg-success text-white text-center">{{$user->subscription_status}}</td>
+                                            <td>{{$user->gender}}</td>
+                                            <td>{{$user->country}}</td>
                                             <td>
                                                 <a href="{{route('admin.view.edit.user', Crypt::encrypt($user->id))}}" class="btn btn-primary mt-3">View/Edit</a>
-                                                <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#sendmessage-{{$user->id}}">Send Message</button>
+                                                <!-- <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#sendmessage-{{$user->id}}">Send Message</button>
                                                 <div class="modal fade" id="sendmessage-{{$user->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                                         <form method="Post" action="{{route('admin.message.user', Crypt::encrypt($user->id))}}">
@@ -101,7 +103,7 @@
                                                             </div>
                                                         </form>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#delete-{{$user->id}}">Delete</button>
                                                 <div class="modal fade" id="delete-{{$user->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -129,7 +131,7 @@
                                         </tr>
                                     </tbody>
                                     @endforeach
-                                    @endif
+                                    <!-- @endif -->
                                 </table>
                             </div>
                         </div>

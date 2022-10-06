@@ -47,7 +47,7 @@
                             <div class="row">
                                 <div class="col">
                                     <h3 class="mb-2 fw-semibold">{{$totalConsultations->count()}}</h3>
-                                    <p class="text-muted fs-13 mb-0">Total Consultation</p>
+                                    <p class="text-muted fs-13 mb-0">Total Consultations</p>
                                 </div>
                                 <div class="col col-auto top-icn dash">
                                     <div class="counter-icon bg-primary dash ms-auto box-shadow-primary">

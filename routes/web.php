@@ -66,6 +66,12 @@ Route::post('/admin/login', [App\Http\Controllers\HomePageController::class, 'lo
 Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin/dashboard', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
     Route::get('/admin/account', [App\Http\Controllers\AdminController::class, 'account'])->name('admin.account');
+    Route::get('/admin/users', [App\Http\Controllers\AdminController::class, 'users'])->name('admin.users');
+    Route::get('/admin/users/view/edit//{id}', [App\Http\Controllers\AdminController::class, 'view_edit_user'])->name('admin.view.edit.user');
+    Route::post('/admin/users/message//{id}', [App\Http\Controllers\AdminController::class, 'message_user'])->name('admin.message.user');
+    Route::post('/admin/users/delete//{id}', [App\Http\Controllers\AdminController::class, 'delete_user'])->name('admin.delete.user');
+    Route::get('/admin/consultations', [App\Http\Controllers\AdminController::class, 'consultations'])->name('admin.consultations');
+    Route::get('/admin/transactions', [App\Http\Controllers\AdminController::class, 'transactions'])->name('admin.transactions');
     Route::post('/admin/account/upload_profile/{id}', [App\Http\Controllers\AdminController::class, 'update_profile'])->name('admin.account.update.profile');
     Route::post('/admin/account/upload_photo/{id}', [App\Http\Controllers\AdminController::class, 'upload_photo'])->name('admin.account.upload.photo');
     Route::post('/admin/account/update_password/{id}', [App\Http\Controllers\AdminController::class, 'update_password'])->name('admin.account.update.password');

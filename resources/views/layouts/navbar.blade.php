@@ -27,7 +27,11 @@
                         <li class="nav-item"><a class="nav-link {{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link {{ (request()->is('faqs')) ? 'active' : '' }}" href="/faqs">FAQs</a></li>
                         @auth
-                        <li class="nav-item"><a class="nav-link {{ (request()->is('dashboard')) ? 'active' : '' }}" href="/dashboard">Dashboard</a></li>
+                            @if(Auth::user()->user_type == "Administrator")
+                                <li class="nav-item"><a class="nav-link {{ (request()->is('admin/dashboard')) ? 'active' : '' }}" href="/admin/dashboard">Dashboard</a></li>
+                            @else
+                                <li class="nav-item"><a class="nav-link {{ (request()->is('/dashboard')) ? 'active' : '' }}" href="/dashboard">Dashboard</a></li>
+                            @endif
                         @else
                         <li class="nav-item"><a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="/login">Login</a></li>
                         <li class="nav-item"><a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="/register">Register</a></li>

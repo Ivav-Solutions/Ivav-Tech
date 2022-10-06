@@ -11,7 +11,7 @@
                     <ul class="social">
                         <li><a href="https://m.facebook.com/ivavtech/" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://instagram.com/ivav_tech?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/ivav-solutions/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>

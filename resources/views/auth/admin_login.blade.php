@@ -27,7 +27,7 @@
             <div class="container">
                 <div class="signup-form" style="width: 440px;">
                     <div class="section-tittle text-center">
-                        <img src="{{URL::asset('images/favicon.png')}}" class="mb-4" alt="logo" style="width: 60px; height: 50px;">
+                        <a href="/"><img src="{{URL::asset('images/favicon.png')}}" class="mb-4" alt="logo" style="width: 60px; height: 50px;"></a>
                         <h2>Admin Sign In</h2>
                     </div>
                     <form method="POST" action="{{ route('login.admin') }}">
