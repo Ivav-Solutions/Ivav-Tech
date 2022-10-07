@@ -24,6 +24,7 @@
                                 <li class="nav-item"><a class="nav-link {{ (request()->is('service/software_development/game_development')) ? 'active' : '' }}" href="/service/software_development/game_development">Game Development</a></li> -->
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="https://blog.ivavtech.com/">Blog</a></li>
                         <li class="nav-item"><a class="nav-link {{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link {{ (request()->is('faqs')) ? 'active' : '' }}" href="/faqs">FAQs</a></li>
                         @auth
