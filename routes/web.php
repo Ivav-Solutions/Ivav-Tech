@@ -51,6 +51,7 @@ Route::prefix('dashboard')->group(function () {
     Route::get('it_programs/risk_management_program', [App\Http\Controllers\HomeController::class, 'risk_management_program'])->name('user.risk.management.program');
     Route::get('it_programs/quality_management_program', [App\Http\Controllers\HomeController::class, 'quality_management_program'])->name('user.quality.management.program');
     Route::get('it_programs/itil_program', [App\Http\Controllers\HomeController::class, 'itil_program'])->name('user.itil.program');
+    Route::get('/access/details', [App\Http\Controllers\HomeController::class, 'access_details'])->name('user.access.details');
     Route::get('/payment/callback', [App\Http\Controllers\HomeController::class, 'handleGatewayCallback'])->name('user.new.handleGatewayCallback');
     Route::get('/deposits', [App\Http\Controllers\HomeController::class, 'deposits'])->name('user.deposits');
     Route::get('/account', [App\Http\Controllers\HomeController::class, 'account'])->name('user.account');
@@ -71,6 +72,10 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::post('/admin/users/message//{id}', [App\Http\Controllers\AdminController::class, 'message_user'])->name('admin.message.user');
     Route::post('/admin/users/delete//{id}', [App\Http\Controllers\AdminController::class, 'delete_user'])->name('admin.delete.user');
     Route::get('/admin/consultations', [App\Http\Controllers\AdminController::class, 'consultations'])->name('admin.consultations');
+    Route::get('/admin/access/details', [App\Http\Controllers\AdminController::class, 'access_details'])->name('admin.user.access.details');
+    Route::post('/admin/users/access/details/{id}', [App\Http\Controllers\AdminController::class, 'user_access_details'])->name('admin.access.details');
+    Route::post('/admin/users/update/access/details/{id}', [App\Http\Controllers\AdminController::class, 'user_update_ccess_details'])->name('admin.update.access.details');
+    Route::post('/admin/users/delete/access/details/{id}', [App\Http\Controllers\AdminController::class, 'user_delete_ccess_details'])->name('admin.delete.access.details');
     Route::get('/admin/transactions', [App\Http\Controllers\AdminController::class, 'transactions'])->name('admin.transactions');
     Route::post('/admin/account/upload_profile/{id}', [App\Http\Controllers\AdminController::class, 'update_profile'])->name('admin.account.update.profile');
     Route::post('/admin/account/upload_photo/{id}', [App\Http\Controllers\AdminController::class, 'upload_photo'])->name('admin.account.upload.photo');

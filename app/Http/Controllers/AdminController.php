@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AccessDetails;
 use App\Models\Consultation;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -191,6 +192,81 @@ class AdminController extends Controller
         return back()->with([
             'type' => 'success',
             'message' => 'Password Updated Successfully!'
+        ]); 
+    }
+
+    public function access_details(Request $reqeust)
+    {
+        $access =  AccessDetails::join('users', 'access_details.user_id', '=', 'users.id')
+                                ->get(['access_details.*', 'users.first_name', 'users.last_name']);
+
+        return view('admin.users_access',[
+            'access' => $access
+        ]);
+    }
+
+    public function user_access_details($id, Request $request)
+    {
+        $this->validate($request, [
+            'url' => ['required', 'string'],
+            'program' => ['required', 'string'],
+            'email' => ['required', 'string'],
+            'password' => ['required', 'string'],
+        ]);
+
+        $finder = Crypt::decrypt($id);
+
+        $user = User::find($finder);
+
+        AccessDetails::create([
+            'user_id' => $user->id,
+            'url' => $request->url,
+            'program' => $request->program,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'Access sent to '. $user->first_name .' '. $user->last_name
+        ]); 
+    }
+
+    public function user_update_ccess_details($id, Request $request)
+    {
+        $this->validate($request, [
+            'url' => ['required', 'string'],
+            'program' => ['required', 'string'],
+            'email' => ['required', 'string'],
+            'password' => ['required', 'string'],
+        ]);
+
+        $finder = Crypt::decrypt($id);
+
+        $access = AccessDetails::find($finder);
+
+        $access->update([
+            'url' => $request->url,
+            'program' => $request->program,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'Updated Successfully'
+        ]); 
+    }
+
+    public function user_delete_ccess_details($id)
+    {
+        $finder = Crypt::decrypt($id);
+
+        AccessDetails::find($finder)->delete();
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'Deleted Successfully'
         ]); 
     }
 }

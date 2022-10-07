@@ -15,7 +15,7 @@
                 <h2>Our Services</h2>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <div class="single-service">
                         <div class="service-img"><img src="images/services/service1.png" alt="service" /></div>
                         <div class="service-content">
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <div class="single-service">
                         <div class="service-img"><img src="images/services/service3.png" alt="service" /></div>
                         <div class="service-content">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <div class="single-service">
                         <div class="service-img"><img src="images/services/service2.png" alt="service" /></div>
                         <div class="service-content">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <div class="single-service">
                         <div class="service-img"><img src="images/services/service2.png" alt="service" /></div>
                         <div class="service-content">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <!-- <div class="col-lg-4 col-sm-6">
                     <div class="single-service">
                         <div class="service-img"><img src="images/services/service2.png" alt="service" /></div>
                         <div class="service-content">
@@ -68,7 +68,7 @@
                             <p>Games are often a tricky field of software development. We have a dedicated team of Game Developers who can handle your request to the letter. And our prices are affordable.</p><a class="line-bnt" href="/service/software_development/game_development">Read More</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

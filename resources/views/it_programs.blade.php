@@ -34,7 +34,7 @@
 <div class="home-service-area pt-100 pb-70">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="single-service">
                     <a href="/service/it_programs/scrum_program">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
                 <div class="single-service"> 
                     <a href="/service/it_programs/prince2_program">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -54,9 +54,9 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="single-service">
                     <a href="/service/it_programs/marketing_program">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -67,8 +67,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
-
+            <div class="col-lg-6">
                 <div class="single-service">
                     <a href="/service/it_programs/quality_management_program">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -79,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="single-service">
                     <a href="/service/it_programs/risk_management_program">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -90,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
                 <div class="single-service">
                     <a href="/service/it_programs/itil">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -99,8 +98,7 @@
                         </div>
                     </a>
                 </div>
-
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

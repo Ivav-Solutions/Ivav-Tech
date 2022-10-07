@@ -104,6 +104,42 @@
                                                         </form>
                                                     </div>
                                                 </div> -->
+                                                <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#sendaccess-{{$user->id}}">Send Access</button>
+                                                <div class="modal fade" id="sendaccess-{{$user->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendaccessLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <form method="Post" action="{{route('admin.access.details', Crypt::encrypt($user->id))}}" style="width: 100%;">
+                                                        @csrf
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="composemodalTitle">Send Access</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="mb-3">
+                                                                        <input type="text" class="form-control" value=" {{$user->first_name}} {{$user->last_name}}" readonly>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <input type="text" class="form-control" placeholder="Site URL:" name="url" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <input type="text" class="form-control" placeholder="Program Name:" name="program" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <input type="text" class="form-control" placeholder="Email:" name="email" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <input type="text" class="form-control" placeholder="Password:" name="password" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="submit" class="btn btn-primary">Send <i class="fab fa-telegram-plane ms-1"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                                 <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#delete-{{$user->id}}">Delete</button>
                                                 <div class="modal fade" id="delete-{{$user->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">

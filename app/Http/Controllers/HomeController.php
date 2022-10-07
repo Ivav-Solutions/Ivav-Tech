@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AccessDetails;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -184,5 +185,14 @@ class HomeController extends Controller
             'type' => 'success',
             'message' => 'Password Updated Successfully!'
         ]); 
+    }
+
+    public function access_details()
+    {
+        $access = AccessDetails::latest()->where('user_id', Auth::user()->id)->get();
+
+        return view('dashboard.access_details', [
+            'access' => $access
+        ]);
     }
 }

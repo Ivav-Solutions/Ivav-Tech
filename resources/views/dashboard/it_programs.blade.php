@@ -21,7 +21,7 @@
             <!-- PAGE-HEADER END -->
 
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 ">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
                     <a href="{{route('user.scrum.program')}}" style="color: #000;" >
                         <div class="card service">
                             <div class="card-body">
@@ -35,7 +35,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
                     <a href="{{route('user.prince2.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
@@ -48,8 +48,8 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                </div> -->
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <a href="{{route('user.marketing.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
@@ -63,21 +63,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <a href="{{route('user.quality.management.program')}}" style="color: #000;">
-                        <div class="card service">
-                            <div class="card-body">
-                                <div class="item-box text-center">
-                                    <div class="text-center text-warning mb-4"><i class="icon icon-action-redo"></i></div>
-                                    <div class="item-box-wrap">
-                                        <h5 class="mb-2">Quality Management Program</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <a href="{{route('user.risk.management.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
@@ -91,7 +77,21 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <a href="{{route('user.quality.management.program')}}" style="color: #000;">
+                        <div class="card service">
+                            <div class="card-body">
+                                <div class="item-box text-center">
+                                    <div class="text-center text-warning mb-4"><i class="icon icon-action-redo"></i></div>
+                                    <div class="item-box-wrap">
+                                        <h5 class="mb-2">Quality Management Program</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
                     <a href="{{route('user.itil.program')}}" style="color: #000;">
                         <div class="card service">
                             <div class="card-body">
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- CONTAINER END -->
