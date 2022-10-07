@@ -157,28 +157,4 @@
             </div>
         </div>
     </div>
-    <div class="feature-area bg-color ptb-100">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="contnet">
-                        <div class="feature-tittle"><span>Features</span>
-                            <h2>We Have Also Some Features That Provided by {{config('app.name')}}</h2>
-                        </div>
-                        <ul>
-                            <li><i class="flaticon-correct"></i>Freelancing Training Course</li>
-                            <li><i class="flaticon-correct"></i>Technological Consultation</li>
-                            <li><i class="flaticon-correct"></i>Monthly Paid Workspace</li>
-                            <li><i class="flaticon-correct"></i>IT Learning Institute</li>
-                            <li><i class="flaticon-correct"></i>Digital Marketing</li>
-                            <li><i class="flaticon-correct"></i>Professional/Personal</li>
-                        </ul><a class="box-btn" href="/contact">Lets Talk!</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="feature-img"><img src="images/feature-img.png" alt="feature" /></div>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
