@@ -35,6 +35,7 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/about-us">About Us</a></li>
                         <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="https://blog.ivavtech.com/">Blog</a></li>
                         <li><a href="/contact">Contact</a></li>
                         <li><a href="/book_consultation">Book Consultation</a></li>
                         <li><a href="/login">Login</a></li>
