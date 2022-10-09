@@ -24,10 +24,14 @@ Route::get('/service/software_development/game_development', [App\Http\Controlle
 Route::get('/service/it_programs', [App\Http\Controllers\HomePageController::class, 'it_programs']);
 // Route::get('/service/it_trainings/project_management', [App\Http\Controllers\HomePageController::class, 'project_management']);
 Route::get('/service/it_programs/scrum_program', [App\Http\Controllers\HomePageController::class, 'scrum_program']);
+Route::get('/service/it_programs/scrum_program/{name}', [App\Http\Controllers\HomePageController::class, 'scrum_program_name']);
 Route::get('/service/it_programs/quality_management_program', [App\Http\Controllers\HomePageController::class, 'quality_management_program']);
 Route::get('/service/it_programs/risk_management_program', [App\Http\Controllers\HomePageController::class, 'risk_management_program']);
+Route::get('/service/it_programs/quality_management_program', [App\Http\Controllers\HomePageController::class, 'quality_management_program']);
+Route::get('/service/it_programs/quality_management_program/{name}', [App\Http\Controllers\HomePageController::class, 'quality_management_program_name']);
 Route::get('/service/it_programs/prince2_program', [App\Http\Controllers\HomePageController::class, 'prince2_program']);
 Route::get('/service/it_programs/marketing_program', [App\Http\Controllers\HomePageController::class, 'marketing_program']);
+Route::get('/service/it_programs/marketing_program/{name}', [App\Http\Controllers\HomePageController::class, 'marketing_program_name']);
 Route::get('/service/it_programs/itil', [App\Http\Controllers\HomePageController::class, 'itil']);
 Route::get('/enroll', [App\Http\Controllers\HomePageController::class, 'enroll']);
 Route::get('/faqs', [App\Http\Controllers\HomePageController::class, 'faqs']);

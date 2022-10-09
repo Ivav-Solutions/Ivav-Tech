@@ -248,9 +248,23 @@ class HomePageController extends Controller
         return view('pm.scrum_program');
     }
 
+    public function scrum_program_name($name)
+    {
+        return view('scrum_programs.index', [
+            'name' => $name
+        ]);
+    }
+
     public function quality_management_program()
     {
         return view('pm.quality_management_program');
+    }
+
+    public function quality_management_program_name($name)
+    {
+        return view('quality_management_programs.index', [
+            'name' => $name
+        ]);
     }
 
     public function risk_management_program()
@@ -266,6 +280,13 @@ class HomePageController extends Controller
     public function marketing_program()
     {
         return view('pm.marketing_program');
+    }
+
+    public function marketing_program_name($name)
+    {
+        return view('marketing_programs.index', [
+            'name' => $name
+        ]);
     }
 
     public function itil()
