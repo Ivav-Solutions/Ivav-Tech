@@ -187,7 +187,7 @@
 <section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
     <div class="container">
         <div id="scrum-container">
-            <h1>SCRUMstudy Agile Master Certified (SAMC&trade;)</h1>  
+            <h1>SCRUMstudy Agile Master Certified (SAMC&trade;)</h1>
             <div style="overflow-x:auto;">
                 <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
                     <tr>
@@ -243,7 +243,7 @@
         <div id="scrum-container">
             <h1>Expert Scrum Master (ESM&trade;)</h1>
             <div style="overflow-x:auto;">
-                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">                
+                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                         <th rowspan="2">Certification</th>
                         <th colspan="2">Prerequisites</th>
@@ -288,6 +288,83 @@
                 <h2>
                     Scrum Expert Scrum Master Self-Paced Online Course (including online certificates): Priced at £650.
                     <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+@elseif($name == 'Scrum Fundamentals Certified (SFC™)')
+<section class="services-details-area" style="padding-top: 5rem; padding-bottom: 50px;">
+    <div class="container">
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Scrum Fundamentals Self-Paced Online Course (including online certificates): Free.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll In Free SFC</a>
+                </h2>
+            </div>
+        </div>
+        <div id="scrum-container">
+            <h1>Scrum Fundamentals Certified (SFC™)</h1>
+            <div style="overflow-x:auto;">
+                <table width="100%" class="comparison-table certification-details-table" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>Certification</th>
+                            <th>Prerequisite Experience</th>
+                            <th>Prerequisite Education</th>
+                            <th>Target Audience</th>
+                            <th>Cost of Exam</th>
+                            <th>Maintaining certification <sup></sup></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>Certification </span>Scrum Fundamentals Certified</td>
+                            <td><span>Prerequisite Experience: </span>Nil</td>
+                            <td><span>Prerequisite Education: </span>Nil</td>
+                            <td><span>Target Audience: </span>Anyone interested to know more about Scrum and Agile</td>
+                            <td><span>Cost of Exam: </span>0 </td>
+                            <td><span>Maintaining certification <sup></sup></span> Valid for lifetime. </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="small">
+            </p>
+            <p>
+                'Scrum Fundamentals Certified' course is tailored to help anyone interested to know more about Scrum; learn about key concepts in Scrum as defined in the SBOK<sup>®</sup> Guide; and to get a basic understanding of how Scrum framework works in delivering successful projects. This course is included as a part of Free Primary Lifetime Membership. The purpose of the 'Scrum Fundamentals Certified' exam is to confirm you have basic understanding of the Scrum framework. On passing the exam, you will be accredited as "Scrum Fundamentals Certified".
+            </p>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Exam Format</h3>
+                    <ul>
+                        <li>Multiple choice</li>
+                        <li>40 questions per exam</li>
+                        <li>One mark awarded for every right answer</li>
+                        <li>No negative marks for wrong answers</li>
+                        <li>30 questions need to be answered correctly to pass</li>
+                        <li>60 minutes duration</li>
+                        <li>Online unproctored exam</li>
+                    </ul>
+
+                    <h3>Audience Profile</h3>
+                    <p>Anyone interested in knowing more about Scrum and Agile can take up this course and exam for free.</p>
+
+                    <h3>Prerequisites</h3>
+                    <p>There is no formal prerequisite for this course.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="services-details-text">
+                <h2>
+                    Scrum Fundamentals Self-Paced Online Course (including online certificates): Free.
+                    <br><a class="box-btn signup-btn" href="/enroll">Enroll In Free SFC</a>
                 </h2>
             </div>
         </div>

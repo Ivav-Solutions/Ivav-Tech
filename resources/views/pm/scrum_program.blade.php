@@ -204,7 +204,18 @@
 <div class="home-service-area pt-100 pb-70">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
+                <div class="single-service">
+                    <a href="/service/it_programs/scrum_program/Scrum Fundamentals Certified (SFC™)">
+                        <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
+                        <div class="service-content">
+                            <h3>Scrum Fundamentals Certified (SFC™)</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
                 <div class="single-service">
                     <a href="/service/it_programs/scrum_program/Scrum Master Certified (SMC™)">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -215,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="single-service">
                     <a href="/service/it_programs/scrum_program/Scrum Developer Certified (SDC™)">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -226,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="single-service">
                     <a href="/service/it_programs/scrum_program/Scrum Product Owner Certified (SPOC™)">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -237,7 +248,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="single-service">
                     <a href="/service/it_programs/scrum_program/SCRUMstudy Agile Master Certified (SAMC™)">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
@@ -248,7 +259,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="single-service">
                     <a href="/service/it_programs/scrum_program/Expert Scrum Master (ESM™)">
                         <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
