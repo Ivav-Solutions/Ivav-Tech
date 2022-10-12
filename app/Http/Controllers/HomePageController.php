@@ -8,6 +8,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
+use Omnipay\Omnipay;
+use Omnipay\Common\CreditCard;
 
 class HomePageController extends Controller
 {
@@ -31,7 +33,7 @@ class HomePageController extends Controller
         return view('contact');
     }
 
-    public function contactConfirm(Request $request) 
+    public function contactConfirm(Request $request)
     {
         //Validate Request
         $this->validate($request, [
@@ -62,7 +64,7 @@ class HomePageController extends Controller
         return view('book_consultation');
     }
 
-    public function post_book_consultation(Request $request) 
+    public function post_book_consultation(Request $request)
     {
         //Validate Request
         $this->validate($request, [
@@ -78,7 +80,7 @@ class HomePageController extends Controller
             'platform' => $request->platform,
             'time' => $request->time,
             'date' => $request->date
-        ]);   
+        ]);
 
         $SECRET_KEY = config('app.paystack_secret_key');;
 
@@ -97,7 +99,7 @@ class HomePageController extends Controller
         $fields_string = http_build_query($fields);
         //open connection
         $ch = curl_init();
-        
+
         //set the url, number of POST vars, POST data
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POST, true);
@@ -106,13 +108,13 @@ class HomePageController extends Controller
             "Authorization: Bearer $SECRET_KEY",
             "Cache-Control: no-cache",
         ));
-        
+
         //So that curl_exec returns the contents of the cURL; rather than echoing it
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
-        
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
         //execute post
         $paystack_result = curl_exec($ch);
-        
+
         $result = json_decode($paystack_result);
 
         //  return $result;
@@ -131,14 +133,14 @@ class HomePageController extends Controller
     public function handleGatewayCallback()
     {
         $SECRET_KEY = config('app.paystack_secret_key');
-        
+
         $curl = curl_init();
 
         $reference = isset($_GET['reference']) ? $_GET['reference'] : '';
-            if(!$reference){
+        if (!$reference) {
             die('No reference supplied');
         }
-  
+
         curl_setopt_array($curl, array(
             CURLOPT_URL => "https://api.paystack.co/transaction/verify/" . rawurlencode($reference),
             CURLOPT_RETURNTRANSFER => true,
@@ -152,13 +154,13 @@ class HomePageController extends Controller
                 "Cache-Control: no-cache",
             ),
         ));
-        
+
         $paystack_response = curl_exec($curl);
         $err = curl_error($curl);
         curl_close($curl);
-            
+
         $result = json_decode($paystack_response);
-        
+
         if ($err) {
             // there was an error contacting the Paystack API
             die('Curl returned error: ' . $err);
@@ -193,7 +195,7 @@ class HomePageController extends Controller
                 'time' => $consultation->time,
                 'date' => $consultation->date,
             );
-    
+
             /** Send message to the admin */
             Mail::send('emails.consultation', $data, function ($m) use ($data) {
                 $m->to($data['email'])->subject('Consultation Details');
@@ -301,7 +303,7 @@ class HomePageController extends Controller
 
     public function admin_login()
     {
-        return view ('auth.admin_login');
+        return view('auth.admin_login');
     }
 
     public function login_admin(Request $request)
@@ -310,29 +312,85 @@ class HomePageController extends Controller
             'email' => ['required', 'string', 'email', 'max:255'],
             'password' => ['required', 'string', 'min:8'],
         ]);
-        
+
         $input = $request->only(['email', 'password']);
-        
+
         $user = User::query()->where('email', $request->email)->first();
 
-        if ($user && !Hash::check($request->password, $user->password)){
+        if ($user && !Hash::check($request->password, $user->password)) {
             return back()->with('failure_report', 'Incorrect Password!');
         }
 
-        if(!$user || !Hash::check($request->password, $user->password)) {
+        if (!$user || !Hash::check($request->password, $user->password)) {
             return back()->with('failure_report', 'Email does\'nt exist');
         }
 
         // authentication attempt
         if (auth()->attempt($input)) {
-            if($user->user_type == 'Administrator'){
+            if ($user->user_type == 'Administrator') {
                 return redirect()->route('dashboard');
             }
-           
+
             return back()->with('failure_report', 'You are not an Administrator');
-                    
         } else {
             return back()->with('failure_report', 'User authentication failed.');
         }
+    }
+
+    public function test()
+    {
+        $gateway = OmniPay::create('SagePay\Direct')->initialize([
+            'vendor' => 'reapivavsolutio',
+            'testMode' => true,
+        ]);
+                
+        // Create the credit card object from details entered by the user.
+
+        $card = new CreditCard([
+            'firstName' => 'Promise',
+            'lastName' => 'Ezema',
+
+            'number' => '4929000000006',
+            'expiryMonth' => '12',
+            'expiryYear' => '2023',
+            'CVV' => '123',
+
+            // Billing address details are required.
+            'BillingCountry' => 'NG',
+            'BillingAddress1' => 'metalbox road, ikeja, lagos state',
+            'BillingCity' => 'Ikeja',
+            'BillingPostCode' => '100001',
+
+            'shippingFirstName' => 'Prince',
+            'shippingLastName' => 'Kings',
+            'shippingAddress1' => 'metalbox road, ikeja, lagos state',
+            'shippingState' => 'Lagos',
+            'shippingCity' => 'Ikeja',
+            'shippingPostcode' => '100001',
+            'shippingCountry' => 'NG',
+            'shippingPhone' => '+2348161215848',
+        ]);
+
+        $transactionId = 'abcd12345';
+        // Create the minimal request message.
+
+        $requestMessage = $gateway->purchase([
+            'amount' => '99.99',
+            'currency' => 'GBP',
+            'card' => $card,
+            'transactionId' => $transactionId,
+            'description' => 'Pizzas for everyone at PHPNE',
+
+            // If 3D Secure is enabled, then provide a return URL for
+            // when the user comes back from 3D Secure authentication.
+
+            'returnUrl' => 'https://example.co.uk/sagepay-complete',
+        ]);
+
+        // Send the request message.
+
+        $responseMessage = $requestMessage->send();
+
+        dd($responseMessage);
     }
 }

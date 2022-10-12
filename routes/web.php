@@ -42,6 +42,8 @@ Route::post('/book_consultation', [App\Http\Controllers\HomePageController::clas
 Route::get('/payment/callback', [App\Http\Controllers\HomePageController::class, 'handleGatewayCallback'])->name('user.handleGatewayCallback');
 Route::get('/consultation/successfully', [App\Http\Controllers\HomePageController::class, 'consultation_successfully'])->name('consultation.successful');
 
+Route::get('/test', [App\Http\Controllers\HomePageController::class, 'test']);
+
 Auth::routes(['verify' => true]);
 
 Route::get('/logouts', [App\Http\Controllers\HomeController::class, 'logouts'])->name('logouts');
