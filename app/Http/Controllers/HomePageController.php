@@ -396,14 +396,14 @@ class HomePageController extends Controller
             // If 3D Secure is enabled, then provide a return URL for
             // when the user comes back from 3D Secure authentication.
 
-            'returnUrl' => 'https://example.co.uk/sagepay-complete',
+            'notifyUrl' => 'http://example.com/your/notify.php',
         ]);
 
         // Send the request message.
 
         $responseMessage = $requestMessage->send();
 
-        dd($responseMessage);
+        // dd($responseMessage);
         if ($responseMessage->isSuccessful()) {
             // Should never happen for Sage Pay Server, since the user will always
             // be asked to go off-site to enter their credit card details.
