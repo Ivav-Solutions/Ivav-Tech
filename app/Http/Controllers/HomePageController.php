@@ -399,7 +399,22 @@ class HomePageController extends Controller
 
         $responseMessage = $requestMessage->send();
 
-        dd($responseMessage);
+        // dd($responseMessage);
+        if ($responseMessage->isSuccessful()) {
+            // Should never happen for Sage Pay Server, since the user will always
+            // be asked to go off-site to enter their credit card details.
+        } elseif ($responseMessage->isRedirect()) {
+            // Redirect to offsite payment gateway to capture the users credit card
+            // details. Note that no address details are needed, nor are they captured.
+        
+            // Here add the $response->getTransactionReference() to the stored transaction,
+            // as the notification handler will need it for checking the signature of the
+            // notification it receives.
+        
+            $responseMessage->redirect();
+        } else {
+            $reason = $responseMessage->getMessage();
+        }
     }
 
     function transaction_id($input, $strength = 5) {
