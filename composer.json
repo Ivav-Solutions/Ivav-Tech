@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.0",
+        "monarobase/country-list": "^3.3",
         "omnipay/sagepay": "~3.0"
     },
     "require-dev": {

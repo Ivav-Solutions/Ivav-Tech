@@ -66,6 +66,8 @@ Route::prefix('dashboard')->group(function () {
     Route::post('/account/update_password/{id}', [App\Http\Controllers\HomeController::class, 'update_password'])->name('user.account.update.password');
     Route::get('/notifications', [App\Http\Controllers\HomeController::class, 'notifications'])->name('notifications');
     Route::any('/notification/read/{id}', [App\Http\Controllers\HomeController::class, 'read_notification'])->name('read.notification');
+    Route::get('/it_programs/payment/{amount}', [App\Http\Controllers\HomeController::class, 'proceed_payment'])->name('user.it.programs.proceed.payment');
+    Route::post('/it_programs/make-payment/{id}', [App\Http\Controllers\HomeController::class, 'make_payment'])->name('user.proceed.to.payment.mysagepay');
 });
 
 Route::get('/admin/login', [App\Http\Controllers\HomePageController::class, 'admin_login']);
