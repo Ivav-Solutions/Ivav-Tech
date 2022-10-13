@@ -316,10 +316,14 @@ class HomeController extends Controller
 
         $responseMessage = $requestMessage->send();
 
-        // dd($responseMessage);
-        if ($responseMessage->isRedirect()) {
-            $responseMessage->redirect();
+        If ($responseMessage->isSuccessful())
+        {
+            return view('/');
         }
+        // dd($responseMessage);
+        // if ($responseMessage->isRedirect()) {
+        //     $responseMessage->redirect();
+        // }
     }
 
     function transaction_id($input, $strength = 5) {
