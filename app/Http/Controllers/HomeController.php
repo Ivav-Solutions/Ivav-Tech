@@ -318,7 +318,7 @@ class HomeController extends Controller
 
         If ($responseMessage->isSuccessful())
         {
-            return view('/');
+            return view('welcome');
         }
         // dd($responseMessage);
         // if ($responseMessage->isRedirect()) {
