@@ -339,14 +339,14 @@ class HomePageController extends Controller
 
     public function test()
     {
-        // $gateway = OmniPay::create('SagePay\Direct')->initialize([
-        //     'vendor' => 'reapivavsolutio',
-        //     'testMode' => true,
-        // ]);
-        $gateway = OmniPay::create('SagePay\Server');
+        $gateway = OmniPay::create('SagePay\Direct')->initialize([
+            'vendor' => 'reapivavsolutio',
+            'testMode' => true,
+        ]);
+        // $gateway = OmniPay::create('SagePay\Server');
 
-        $gateway->setVendor('reapivavsolutio');
-        $gateway->setTestMode(true); // For a test account
+        // $gateway->setVendor('reapivavsolutio');
+        // $gateway->setTestMode(true); // For a test account
                 
         // Create the credit card object from details entered by the user.
 
@@ -405,20 +405,8 @@ class HomePageController extends Controller
         $responseMessage = $requestMessage->send();
 
         // dd($responseMessage);
-        if ($responseMessage->isSuccessful()) {
-            // Should never happen for Sage Pay Server, since the user will always
-            // be asked to go off-site to enter their credit card details.
-        } elseif ($responseMessage->isRedirect()) {
-            // Redirect to offsite payment gateway to capture the users credit card
-            // details. Note that no address details are needed, nor are they captured.
-        
-            // Here add the $response->getTransactionReference() to the stored transaction,
-            // as the notification handler will need it for checking the signature of the
-            // notification it receives.
-        
+        if ($responseMessage->isRedirect()) {
             $responseMessage->redirect();
-        } else {
-            $reason = $responseMessage->getMessage();
         }
     }
 
