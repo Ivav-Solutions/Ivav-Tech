@@ -404,7 +404,7 @@ class HomePageController extends Controller
 
         $responseMessage = $requestMessage->send();
 
-        // dd($responseMessage);
+        dd($responseMessage);
         if ($responseMessage->isRedirect()) {
             $responseMessage->redirect();
         }
