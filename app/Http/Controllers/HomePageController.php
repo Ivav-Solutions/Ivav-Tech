@@ -354,10 +354,10 @@ class HomePageController extends Controller
             'firstName' => 'Promise',
             'lastName' => 'Ezema',
 
-            'number' => '4929000000006',
-            'expiryMonth' => '12',
-            'expiryYear' => '2023',
-            'CVV' => '123',
+            // 'number' => '4929000000006',
+            // 'expiryMonth' => '12',
+            // 'expiryYear' => '2023',
+            // 'CVV' => '123',
 
             // Billing address details are required.
             'billingFirstName' => 'Joe',
@@ -396,7 +396,8 @@ class HomePageController extends Controller
             // If 3D Secure is enabled, then provide a return URL for
             // when the user comes back from 3D Secure authentication.
 
-            'notifyUrl' => 'http://example.com/your/notify.php',
+            'notifyUrl' => 'https://www.ivavtech.com',
+            'returnUrl' => 'https://www.ivavtech.com',
         ]);
 
         // Send the request message.
