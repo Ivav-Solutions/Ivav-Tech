@@ -404,7 +404,7 @@ class HomePageController extends Controller
 
         $responseMessage = $requestMessage->send();
 
-        dd($responseMessage);
+        // dd($responseMessage);
         if ($responseMessage->isSuccessful()) {
             // Should never happen for Sage Pay Server, since the user will always
             // be asked to go off-site to enter their credit card details.
