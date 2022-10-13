@@ -396,8 +396,8 @@ class HomePageController extends Controller
             // If 3D Secure is enabled, then provide a return URL for
             // when the user comes back from 3D Secure authentication.
 
-            'notifyUrl' => 'https://www.ivavtech.com/sagepay-complete',
-            // 'returnUrl' => 'https://www.ivavtech.com/sagepay-complete',
+            // 'notifyUrl' => 'https://www.ivavtech.com/sagepay-complete',
+            'returnUrl' => 'https://www.ivavtech.com/sagepay-complete',
         ]);
 
         // Send the request message.
