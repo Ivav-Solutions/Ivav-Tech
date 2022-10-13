@@ -360,18 +360,18 @@ class HomePageController extends Controller
             // 'CVV' => '123',
 
             // Billing address details are required.
-            'billingFirstName' => 'Joe',
-            'billingLastName' => 'Bloggs',
-            'billingAddress1' => 'Billing Address 1',
+            'billingFirstName' => 'Promise',
+            'billingLastName' => 'Ezema',
+            'billingAddress1' => 'Metalbox Road',
             'billingAddress2' => 'Billing Address 2',
             //'billingState' => '',
-            'billingCity' => 'Billing City',
-            'billingPostcode' => 'BPOSTC',
-            'billingCountry' => 'GB',
-            'billingPhone' => '01234 567 890',
+            'billingCity' => 'Ikeja',
+            'billingPostcode' => '100001',
+            'billingCountry' => 'NG',
+            'billingPhone' => '08161215848',
             //
-            'email' =>  'test@example.com',
-            'clientIp' => '123.123.123.123',
+            'email' =>  'promiseezema11@gmail.com',
+            'clientIp' => '169.150.197.237',
             //
             'shippingFirstName' => 'Joe',
             'shippingLastName' => 'Bloggs',
@@ -404,7 +404,7 @@ class HomePageController extends Controller
 
         $responseMessage = $requestMessage->send();
 
-        // dd($responseMessage);
+        dd($responseMessage);
         if ($responseMessage->isSuccessful()) {
             // Should never happen for Sage Pay Server, since the user will always
             // be asked to go off-site to enter their credit card details.
