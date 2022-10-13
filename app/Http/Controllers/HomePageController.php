@@ -356,19 +356,27 @@ class HomePageController extends Controller
             'CVV' => '123',
 
             // Billing address details are required.
-            'BillingCountry' => 'NG',
-            'BillingAddress1' => 'metalbox road, ikeja, lagos state',
-            'BillingCity' => 'Ikeja',
-            'BillingPostCode' => '100001',
-
-            'shippingFirstName' => 'Prince',
-            'shippingLastName' => 'Kings',
-            'shippingAddress1' => 'metalbox road, ikeja, lagos state',
-            'shippingState' => 'Lagos',
-            'shippingCity' => 'Ikeja',
-            'shippingPostcode' => '100001',
-            'shippingCountry' => 'NG',
-            'shippingPhone' => '+2348161215848',
+            'billingFirstName' => 'Joe',
+            'billingLastName' => 'Bloggs',
+            'billingAddress1' => 'Billing Address 1',
+            'billingAddress2' => 'Billing Address 2',
+            //'billingState' => '',
+            'billingCity' => 'Billing City',
+            'billingPostcode' => 'BPOSTC',
+            'billingCountry' => 'GB',
+            'billingPhone' => '01234 567 890',
+            //
+            'email' =>  'test@example.com',
+            'clientIp' => '123.123.123.123',
+            //
+            'shippingFirstName' => 'Joe',
+            'shippingLastName' => 'Bloggs',
+            'shippingAddress1' => '99',
+            'shippingState' => 'NY',
+            'shippingCity' => 'City1',
+            'shippingPostcode' => 'SPOSTC',
+            'shippingCountry' => 'US',
+            'shippingPhone' => '01234 567 890 SS',
         ]);
 
         $transactionId = 'abcd12345';
@@ -378,7 +386,7 @@ class HomePageController extends Controller
             'amount' => '99.99',
             'currency' => 'GBP',
             'card' => $card,
-            'transactionId' => $transactionId,
+            'transactionId' => $this->transaction_id(7),
             'description' => 'Pizzas for everyone at PHPNE',
 
             // If 3D Secure is enabled, then provide a return URL for
@@ -392,5 +400,17 @@ class HomePageController extends Controller
         $responseMessage = $requestMessage->send();
 
         dd($responseMessage);
+    }
+
+    function transaction_id($input, $strength = 5) {
+        $input = '0123456789abcdefghijklmnopqrstuvwxyz';
+        $input_length = strlen($input);
+        $random_string = '';
+        for($i = 0; $i < $strength; $i++) {
+            $random_character = $input[mt_rand(0, $input_length - 1)];
+            $random_string .= $random_character;
+        }
+    
+        return $random_string;
     }
 }
