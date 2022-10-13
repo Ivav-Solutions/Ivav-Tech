@@ -339,10 +339,14 @@ class HomePageController extends Controller
 
     public function test()
     {
-        $gateway = OmniPay::create('SagePay\Direct')->initialize([
-            'vendor' => 'reapivavsolutio',
-            'testMode' => true,
-        ]);
+        // $gateway = OmniPay::create('SagePay\Direct')->initialize([
+        //     'vendor' => 'reapivavsolutio',
+        //     'testMode' => true,
+        // ]);
+        $gateway = OmniPay::create('SagePay\Server');
+
+        $gateway->setVendor('reapivavsolutio');
+        $gateway->setTestMode(true); // For a test account
                 
         // Create the credit card object from details entered by the user.
 
@@ -379,7 +383,7 @@ class HomePageController extends Controller
             'shippingPhone' => '01234 567 890 SS',
         ]);
 
-        $transactionId = 'abcd12345';
+        // $transactionId = 'abcd12345';
         // Create the minimal request message.
 
         $requestMessage = $gateway->purchase([
@@ -399,7 +403,7 @@ class HomePageController extends Controller
 
         $responseMessage = $requestMessage->send();
 
-        // dd($responseMessage);
+        dd($responseMessage);
         if ($responseMessage->isSuccessful()) {
             // Should never happen for Sage Pay Server, since the user will always
             // be asked to go off-site to enter their credit card details.
