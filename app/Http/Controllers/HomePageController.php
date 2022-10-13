@@ -354,10 +354,10 @@ class HomePageController extends Controller
             'firstName' => 'Promise',
             'lastName' => 'Ezema',
 
-            // 'number' => '4929000000006',
-            // 'expiryMonth' => '12',
-            // 'expiryYear' => '2023',
-            // 'CVV' => '123',
+            'number' => '4929000000006',
+            'expiryMonth' => '12',
+            'expiryYear' => '2023',
+            'CVV' => '123',
 
             // Billing address details are required.
             'billingFirstName' => 'Promise',
@@ -397,7 +397,7 @@ class HomePageController extends Controller
             // when the user comes back from 3D Secure authentication.
 
             // 'notifyUrl' => 'https://www.ivavtech.com/sagepay-complete',
-            'returnUrl' => 'https://www.ivavtech.com/sagepay-complete',
+            // 'returnUrl' => 'https://www.ivavtech.com/sagepay-complete',
         ]);
 
         // Send the request message.
