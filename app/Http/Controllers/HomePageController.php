@@ -397,14 +397,14 @@ class HomePageController extends Controller
             // when the user comes back from 3D Secure authentication.
 
             // 'notifyUrl' => 'https://www.ivavtech.com/sagepay-complete',
-            'returnUrl' => 'https://www.ivavtech.com/sagepay-complete',
+            'returnUrl' => 'https://www.ivavtech.com',
         ]);
 
         // Send the request message.
 
         $responseMessage = $requestMessage->send();
 
-        dd($responseMessage);
+        // dd($responseMessage);
         if ($responseMessage->isRedirect()) {
             $responseMessage->redirect();
         }
