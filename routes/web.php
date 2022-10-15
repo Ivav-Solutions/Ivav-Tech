@@ -66,8 +66,9 @@ Route::prefix('dashboard')->group(function () {
     Route::post('/account/update_password/{id}', [App\Http\Controllers\HomeController::class, 'update_password'])->name('user.account.update.password');
     Route::get('/notifications', [App\Http\Controllers\HomeController::class, 'notifications'])->name('notifications');
     Route::any('/notification/read/{id}', [App\Http\Controllers\HomeController::class, 'read_notification'])->name('read.notification');
-    Route::get('/it_programs/payment/{amount}', [App\Http\Controllers\HomeController::class, 'proceed_payment'])->name('user.it.programs.proceed.payment');
+    Route::get('/it_programs/payment/{amount}/{program}', [App\Http\Controllers\HomeController::class, 'proceed_payment'])->name('user.it.programs.proceed.payment');
     Route::post('/it_programs/make-payment/{id}', [App\Http\Controllers\HomeController::class, 'make_payment'])->name('user.proceed.to.payment.mysagepay');
+    Route::get('/success/{id}', [App\Http\Controllers\HomeController::class, 'successful_payment'])->name('user.successful.payment');
 });
 
 Route::get('/admin/login', [App\Http\Controllers\HomePageController::class, 'admin_login']);
@@ -88,4 +89,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::post('/admin/account/upload_profile/{id}', [App\Http\Controllers\AdminController::class, 'update_profile'])->name('admin.account.update.profile');
     Route::post('/admin/account/upload_photo/{id}', [App\Http\Controllers\AdminController::class, 'upload_photo'])->name('admin.account.upload.photo');
     Route::post('/admin/account/update_password/{id}', [App\Http\Controllers\AdminController::class, 'update_password'])->name('admin.account.update.password');
+    Route::get('/admin/notification/read/{id}', [App\Http\Controllers\AdminController::class, 'read_notification'])->name('admin.notification.read');
+    Route::get('/admin/notifications', [App\Http\Controllers\AdminController::class, 'notifications'])->name('admin.notifications');
+    Route::get('/admin/program/payments', [App\Http\Controllers\AdminController::class, 'program_payments'])->name('admin.program.payments');
 });

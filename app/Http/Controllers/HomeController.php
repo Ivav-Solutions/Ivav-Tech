@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\AccessDetails;
+use App\Models\Notification;
+use App\Models\Payment;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,6 +12,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Monarobase\CountryList\CountryListFacade;
 use Omnipay\Omnipay;
 use Omnipay\Common\CreditCard;
@@ -200,21 +203,21 @@ class HomeController extends Controller
     }
 
 
-    public function proceed_payment($amount)
+    public function proceed_payment($amount, $program)
     {
         $countries = CountryListFacade::getList('en');
         $userAmount = Crypt::decrypt($amount);
+        $programDescription = Crypt::decrypt($program);
 
         return view('dashboard.payment', [
             'userAmount' => $userAmount,
-            'countries' => $countries
+            'countries' => $countries,
+            'programDescription' => $programDescription
         ]);
     }
 
     public function make_payment($id, Request $request)
     {   
-        // dd($request->shippingCountry);
-
         $this->validate($request, [
             'firstName' => ['required', 'string'],
             'lastName' => ['required', 'string'],
@@ -250,11 +253,6 @@ class HomeController extends Controller
             'vendor' => 'reapivavsolutio',
             'testMode' => true,
         ]);
-        // $gateway = OmniPay::create('SagePay\Server');
-
-        // $gateway->setVendor('reapivavsolutio');
-        // $gateway->setTestMode(true); // For a test account
-                
         // Create the credit card object from details entered by the user.
 
         $card = new CreditCard([
@@ -295,14 +293,14 @@ class HomeController extends Controller
             'shippingPhone' => $request->shippingPhone,
         ]);
 
-        // $transactionId = 'abcd12345';
         // Create the minimal request message.
+        $transaction_ids = $this->transaction_id(7);
 
         $requestMessage = $gateway->purchase([
             'amount' => $request->amount,
             'currency' => 'GBP',
             'card' => $card,
-            'transactionId' => $this->transaction_id(7),
+            'transactionId' => $transaction_ids,
             'description' => $request->description,
 
             // If 3D Secure is enabled, then provide a return URL for
@@ -313,20 +311,34 @@ class HomeController extends Controller
         ]);
 
         // Send the request message.
-
         $responseMessage = $requestMessage->send();
 
         If ($responseMessage->isSuccessful())
         {
-            return view('welcome');
+            Payment::create([
+                'user_id' => $user->id,
+                'amount' => $request->amount,
+                'transaction_id' => $transaction_ids,
+                'description' => $request->description,
+            ]);
+
+            Notification::create([
+                'from' => $user->id,
+                'subject' => 'Enrollment',
+                'description' => $user->first_name.' has successfully applied to enroll in '.$request->description.' Program'
+            ]);
+
+            return redirect()->route('user.successful.payment', Crypt::encrypt($transaction_ids));
+        } else {
+            $reason = $responseMessage->getMessage();
+            return back()->with([
+                'type' => 'danger',
+                'message' => $reason
+            ]);
         }
-        // dd($responseMessage);
-        // if ($responseMessage->isRedirect()) {
-        //     $responseMessage->redirect();
-        // }
     }
 
-    function transaction_id($input, $strength = 5) {
+    function transaction_id($input, $strength = 7) {
         $input = '0123456789abcdefghijklmnopqrstuvwxyz';
         $input_length = strlen($input);
         $random_string = '';
@@ -335,5 +347,24 @@ class HomeController extends Controller
             $random_string .= $random_character;
         }    
         return $random_string;
+    }
+
+    public function successful_payment($id)
+    {
+        $transaction_id = Crypt::decrypt($id);
+
+        $admin = array(
+            'name' => 'Admin',
+            'email' => 'info@ivavtech.com'
+        );
+
+        /** Send message to the admin */
+        Mail::send('emails.notification', $admin, function ($m) use ($admin) {
+            $m->to($admin['email'])->subject('Notification');
+        });
+
+        return view('dashboard.success_payment', [
+            'transaction_id' => $transaction_id
+        ]);
     }
 }

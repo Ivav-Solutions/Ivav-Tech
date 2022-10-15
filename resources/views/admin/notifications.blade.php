@@ -13,7 +13,7 @@
                 </div>
                 <div class="ms-auto pageheader-btn">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Notifications</li>
                     </ol>
                 </div>
@@ -37,27 +37,28 @@
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-inbox table-hover text-nowrap mb-0">
-                                        @if($notifications->isEmpty())
+                                        @if($allNotifications->isEmpty())
                                         <tbody>
                                             <tr>
                                                 <td class="align-enter text-dark font-15">No Notification.</td>
                                             </tr>
                                         </tbody>
                                         @else
-                                        @foreach($notifications as $key => $notification)
+                                        @foreach($allNotifications as $key => $notification)
                                         <tbody>
                                             @if($notification->status == 'Unread')
                                             <tr>
                                                 <td class="inbox-small-cells">
                                                     <label class="custom-control custom-checkbox mb-0">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
+                                                        <a href="{{route('admin.notification.read', Crypt::encrypt($notification->id))}}">
+                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
                                                         <span class="custom-control-label"></span>
+                                                    </a>
                                                     </label>
                                                 </td>
-                                                <td class="view-message dont-show fw-semibold">{{$notification->from}}</td>
                                                 <td class="view-message dont-show fw-semibold">{{$notification->first_name}} {{$notification->last_name}}</td>
                                                 <td class="view-message dont-show fw-semibold">{{$notification->subject}}</td>
-                                                <td class="view-message">{{$notification->message}}</td>
+                                                <td class="view-message">{{$notification->description}}</td>
                                                 <td class="view-message text-end fw-semibold">{{$notification->created_at->toDateString()}}</td>
                                             </tr>
                                             @else
@@ -68,10 +69,9 @@
                                                         <span class="custom-control-label"></span>
                                                     </label>
                                                 </td>
-                                                <td class="view-message dont-show fw-semibold">{{$notification->from}}</td>
-                                                <td class="view-message dont-show fw-semibold">{{$notification->to}}</td>
+                                                <td class="view-message dont-show fw-semibold">{{$notification->first_name}} {{$notification->last_name}}</td>
                                                 <td class="view-message  dont-show">{{$notification->subject}}</td>
-                                                <td class="view-message ">{{$notification->message}}</td>
+                                                <td class="view-message ">{{$notification->description}}</td>
                                                 <td class="view-message  text-end">{{$notification->created_at->toDateString()}}</td>
                                             </tr>
                                             @endif

@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\AccessDetails;
 use App\Models\Consultation;
+use App\Models\Notification;
+use App\Models\Payment;
+use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -30,25 +33,57 @@ class AdminController extends Controller
         $totalConsultations = Consultation::latest()->get();
         // $totalEnrollment = Consultation::latest()->get();
         $latestFiveUsers = User::latest()->where('user_type', 'User')->take(5)->get();
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
+                                    // dd($notifications);
 
         return view('admin.dashboard', [
             'totalUsers' => $totalUsers,
             'totalConsultations' => $totalConsultations,
-            'latestFiveUsers' => $latestFiveUsers
+            'latestFiveUsers' => $latestFiveUsers,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
         ]);
     }
 
     public function account()
     {
-        return view('admin.account');
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
+        return view('admin.account',[
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
+        ]);
     }
 
     public function users()
     {
         $users = User::latest()->where('user_type', 'User')->get();
 
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
         return view('admin.users', [
-            'users' => $users
+            'users' => $users,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
         ]);
     }
 
@@ -57,9 +92,18 @@ class AdminController extends Controller
         $userFinder = Crypt::decrypt($id);
 
         $user = User::findorfail($userFinder);
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
         return view('admin.view_edit_user', [
-            'user' => $user
+            'user' => $user,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
         ]);
     }
 
@@ -82,15 +126,37 @@ class AdminController extends Controller
     public function consultations()
     {
         $consultations = Consultation::latest()->get();
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
         return view('admin.consultations', [
-            'consultations' => $consultations
+            'consultations' => $consultations,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
         ]);
     }
 
     public function transactions()
     {
-        return view('admin.transactions');
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $transactions = Transaction::latest()->get();
+
+        return view('admin.transactions', [
+            'transactions' => $transactions,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
+        ]);
     }
 
     public function update_profile($id, Request $request)
@@ -199,9 +265,19 @@ class AdminController extends Controller
     {
         $access =  AccessDetails::join('users', 'access_details.user_id', '=', 'users.id')
                                 ->get(['access_details.*', 'users.first_name', 'users.last_name']);
+        
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
         return view('admin.users_access',[
-            'access' => $access
+            'access' => $access,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
         ]);
     }
 
@@ -268,5 +344,57 @@ class AdminController extends Controller
             'type' => 'success',
             'message' => 'Deleted Successfully'
         ]); 
+    }
+
+    public function read_notification($id)
+    {
+        $finder = Crypt::decrypt($id);
+
+        $notification = Notification::findorfail($finder);
+
+        $notification->update([
+            'status' => 'Read'
+        ]);
+
+        return back();
+    }
+
+    public function notifications()
+    {   
+        $allNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->take(5)
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                                    ->where('notifications.status', 'Unread')
+                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
+
+        return view('admin.notifications', [
+            'allNotifications' => $allNotifications,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
+        ]);
+    }
+
+    public function program_payments()
+    {
+        $payments = Payment::join('users', 'payments.user_id', '=', 'users.id')
+                    ->get(['payments.*', 'users.first_name', 'users.last_name', 'users.email']);
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                ->where('notifications.status', 'Unread')
+                ->take(5)
+                ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+                ->where('notifications.status', 'Unread')
+                ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
+        return view('admin.payments', [
+            'payments' => $payments,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
+        ]);
     }
 }

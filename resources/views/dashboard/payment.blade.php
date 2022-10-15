@@ -34,23 +34,23 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <label for="firstName" class="form-label">First Name</label>
-                                                <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" value="{{Auth::user()->first_name}}" required>
+                                                <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" value="{{Auth::user()->first_name}}" readonly required>
                                             </div>
                                             <div class="col-6">
                                                 <label for="lastName" class="form-label">Last Name</label>
-                                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" value="{{Auth::user()->last_name}}"required>
+                                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" value="{{Auth::user()->last_name}}" readonly required>
                                             </div>
                                             <div class="col-12">
                                                 <label for="email" class="form-label">Email</label>
-                                                <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="{{Auth::user()->email}}"required>
+                                                <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="{{Auth::user()->email}}" readonly required>
                                             </div>
                                             <div class="col-12">
                                                 <label for="amount" class="form-label">Amount</label>
-                                                <input type="text" class="form-control" id="amount" value="{{$userAmount}}" placeholder="Amount" name="amount" required>
+                                                <input type="text" class="form-control" id="amount" value="{{$userAmount}}" placeholder="Amount" name="amount" required readonly>
                                             </div>
                                             <div class="col-12">
                                                 <label for="description" class="form-label">Description</label>
-                                                <textarea type="text" class="form-control" id="description" placeholder="Description" name="description" required></textarea>
+                                                <textarea type="text" class="form-control" id="description" placeholder="Description" name="description" value="{{$programDescription}}" readonly required>{{$programDescription}}</textarea>
                                             </div>
                                         </div>
                                     </div>

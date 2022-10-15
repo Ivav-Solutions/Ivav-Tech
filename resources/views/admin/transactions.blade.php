@@ -44,7 +44,26 @@
                                             <th class="border-bottom-0">Status</th>
                                         </tr>
                                     </thead>
-                                    
+                                    @foreach($transactions as $key => $transaction)
+                                        <td>{{$loop->iteration}}</td>
+                                        <td>{{$transaction->name}}</td>
+                                        <td class="text-black">{{$transaction->email}}</td>
+                                        <td class="text-black">{{$transaction->amount}}</td>
+                                        <td>{{$transaction->transaction_id}}</td>
+                                        <td class="text-black">{{$transaction->ref_id}}</td>
+                                        <td>{{$transaction->paid_at}}</td>
+                                        <td class="text-black">{{$transaction->channel}}</td>
+                                        <td class="text-black">{{$transaction->ip_address}}</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                @if($transaction->status == 'success')
+                                                <a class="btn btn-rounded btn-success mr-auto text-nowrap" href="#">{{$transaction->status}}</a>
+                                                @else
+                                                <a class="btn btn-rounded btn-danger mr-auto text-nowrap" href="#">{{$transaction->status}}</a>
+                                                @endif
+                                            </div>
+                                        </td>
+                                    @endforeach
                                 </table>
                             </div>
                         </div>
