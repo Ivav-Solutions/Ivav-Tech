@@ -9,12 +9,12 @@
             <!-- PAGE-HEADER -->
             <div class="page-header">
                 <div>
-                    <h1 class="page-title">Deposits</h1>
+                    <h1 class="page-title">All Program Payments</h1>
                 </div>
                 <div class="ms-auto pageheader-btn">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Deposits</li>
+                        <li class="breadcrumb-item active" aria-current="page">Payments</li>
                     </ol>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header border-bottom">
-                            <h3 class="card-title">All Deposits</h3>
+                            <h3 class="card-title">All Program Payments</h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -34,36 +34,26 @@
                                         <tr> 
                                             <th class="border-bottom-0">S/N</th>
                                             <th class="border-bottom-0">Amount</th>
+                                            <th class="border-bottom-0">Description</th>
                                             <th class="border-bottom-0">Transaction ID</th>
-                                            <th class="border-bottom-0">Ref ID</th>
                                             <th class="border-bottom-0">Paid At</th>
-                                            <th class="border-bottom-0">Channel</th>
-                                            <th class="border-bottom-0">IP Address</th>
-                                            <th class="border-bottom-0">Status</th>
                                         </tr>
                                     </thead>
-                                    @if($deposits->isEmpty())
-                                    <tbody>
-                                        <tr>
-                                            <td class="align-enter text-dark font-15" colspan="8">No Deposits.</td>
-                                        </tr>
-                                    </tbody>
-                                    @else
-                                    @foreach($deposits as $key => $deposit)
+                                    @foreach($payments as $key => $payment)
                                     <tbody>
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
-                                            <td>₦{{number_format($deposit->amount, 2)}}</td>
-                                            <td>{{$deposit->transaction_id}}</td>
-                                            <td>{{$deposit->ref_id}}</td>
-                                            <td>{{$deposit->paid_at}}</td>
-                                            <td>{{$deposit->channel}}</td>
-                                            <td>{{$deposit->ip_address}}</td>
-                                            <td class="bg-success text-white">{{$deposit->status}}</td>
+                                            <td>£{{$payment->amount}}</td>
+                                            <td>{{$payment->description}}</td>
+                                            <td>
+                                                {{$payment->transaction_id}}
+                                            </td>
+                                            <td>
+                                                {{$payment->created_at->toDayDateTimeString()}}
+                                            </td>
                                         </tr>
                                     </tbody>
                                     @endforeach
-                                    @endif
                                 </table>
                             </div>
                         </div>

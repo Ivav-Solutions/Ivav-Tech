@@ -28,7 +28,7 @@
                             <h3 class="mb-3">PRINCE2<sup>®</sup> Foundation Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £</span>.</p>
                             <a href="/service/it_programs/prince2_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt()}}/{{Crypt::encrypt('PRINCE2 Foundation Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -38,7 +38,7 @@
                             <h3 class="mb-3">PRINCE2<sup>®</sup> Practitioner Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £</span>.</p>
                             <a href="/service/it_programs/prince2_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt()}}/{{Crypt::encrypt('PRINCE2 Practitioner Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -48,7 +48,7 @@
                             <h3 class="mb-3">PRINCE2<sup>®</sup> Combined Foundation & Practitioner Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £</span>.</p>
                             <a href="/service/it_programs/prince2_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt()}}/{{Crypt::encrypt('PRINCE2 Combined Foundation & Practitioner Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -58,7 +58,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -92,5 +92,5 @@
                 </div>
             </div>
     </div>
-</div>
+</div> -->
 @endsection

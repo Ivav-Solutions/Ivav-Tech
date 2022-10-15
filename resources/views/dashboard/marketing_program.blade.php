@@ -28,7 +28,7 @@
                             <h3 class="mb-3">Affiliate Marketing Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('Affiliate Marketing Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -38,17 +38,17 @@
                             <h3 class="mb-3">Corporate Sales Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Corporate Sales Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
                 <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4">
                     <div class="card text-center overflow-hidden">
                         <div class="card-body">
-                            <h3 class="mb-3"> Corporate Sales Expert Course</h3>
+                            <h3 class="mb-3">Corporate Sales Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('Corporate Sales Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -58,7 +58,7 @@
                             <h3 class="mb-3">Corporate Sales Professional Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Corporate Sales Professional Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -68,7 +68,7 @@
                             <h3 class="mb-3">Corporate Sales Specialist Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £350</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(350)}}/{{Crypt::encrypt('Corporate Sales Specialist Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -78,7 +78,7 @@
                             <h3 class="mb-3">Digital Marketing Associate Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Digital Marketing Associate Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -88,7 +88,7 @@
                             <h3 class="mb-3">Digital Marketing Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('Digital Marketing Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -98,7 +98,7 @@
                             <h3 class="mb-3">Digital Marketing Professional Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Digital Marketing Professional Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -108,7 +108,7 @@
                             <h3 class="mb-3">Digital Marketing Specialist Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £350</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(350)}}/{{Crypt::encrypt('Digital Marketing Specialist Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -118,7 +118,7 @@
                             <h3 class="mb-3">Email Marketing Professional Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Email Marketing Professional Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -128,7 +128,7 @@
                             <h3 class="mb-3">Marketing Research Associate Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Marketing Research Associate Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -138,7 +138,7 @@
                             <h3 class="mb-3">Marketing Research Professional Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Marketing Research Professional Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -148,7 +148,7 @@
                             <h3 class="mb-3">Marketing Research Specialist Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £350</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(350)}}/{{Crypt::encrypt('Marketing Research Specialist Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -158,7 +158,7 @@
                             <h3 class="mb-3">Marketing Strategy Associate Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £350</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(350)}}/{{Crypt::encrypt('Marketing Strategy Associate Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -168,7 +168,7 @@
                             <h3 class="mb-3">Marketing Strategy Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('Marketing Strategy Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -178,7 +178,7 @@
                             <h3 class="mb-3">Marketing Strategy Professional Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £200</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(200)}}/{{Crypt::encrypt('Marketing Strategy Professional Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -188,7 +188,7 @@
                             <h3 class="mb-3">Marketing Strategy Specialist Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £350</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(350)}}/{{Crypt::encrypt('Marketing Strategy Specialist Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -198,7 +198,7 @@
                             <h3 class="mb-3">SEO Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('SEO Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -208,7 +208,7 @@
                             <h3 class="mb-3">Search Marketing Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('Search Marketing Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -218,7 +218,7 @@
                             <h3 class="mb-3">Social Media Marketing Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('Social Media Marketing Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -228,49 +228,13 @@
                             <h3 class="mb-3">Web Analytics Expert Course</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £500</span>.</p>
                             <a href="/service/it_programs/marketing_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(500)}}/{{Crypt::encrypt('Web Analytics Expert Course')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
             </div>
         </div>
         <!-- CONTAINER END -->
-    </div>
-</div>
-
-<div class="modal fade" id="view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="composemodalTitle">Terms of Bank Transfer</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3 text-center">
-                        <p>Kindly make payment to </p>
-                        <h4 class="mb-3">
-                            <p>Local Transaction For Those Sending Within UK</p>
-                            <p class="fw-700">REAPIVAV SOLUTIONS LTD</p>
-                            <p class="fw-700">Account number: 19067303</p>
-                            <p class="fw-700">Sort code: 04-06-05</b></p>
-                        </h4>
-                        <h4 class="mt-5 mb-3">
-                            <p>Additional Details If Paying From A Non-UK Account</p>
-                            <p class="fw-700">REAPIVAV SOLUTIONS LTD</p>
-                            <p class="fw-700">IBAN: GB02CLRB04060519067303</p>
-                            <p class="fw-700">BIC/SWIFT: CLRBGB22</b></p>
-                        </h4>
-                        <p class="fw-500">Please, attach tour payment receipt here and forward it to contact@ivavtech.com with your name as the subject, 
-                            followed by your enrollment course(program) as the body.</p>
-                        <p class="fw-500">Your enrollment will be confirmed upon receipt of payment.</p>
-                        <p class="fw-500">Thanks.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
     </div>
 </div>
 @endsection

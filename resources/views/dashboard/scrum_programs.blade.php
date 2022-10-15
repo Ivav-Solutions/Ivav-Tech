@@ -38,7 +38,7 @@
                             <h3 class="mb-3">Scrum Master</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £350</span>.</p>
                             <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(350)}}/{{Crypt::encrypt('Scrum Master')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -48,7 +48,7 @@
                             <h3 class="mb-3">Product Owner</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £450</span>.</p>
                             <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(450)}}/{{Crypt::encrypt('Product Owner')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -58,7 +58,7 @@
                             <h3 class="mb-3">Expert Master</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £650</span>.</p>
                             <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(650)}}/{{Crypt::encrypt('Expert Developer')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -68,7 +68,7 @@
                             <h3 class="mb-3">Agile Master</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £450</span>.</p>
                             <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(450)}}/{{Crypt::encrypt('Agile Master')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
@@ -77,7 +77,7 @@
                         <div class="card-body">
                             <h3 class="mb-3">Sealer-Scrum Master</h3>
                             <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#view" class="btn btn-info">Enroll</a>
+                            <a href="#" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div> -->

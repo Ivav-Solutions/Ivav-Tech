@@ -217,7 +217,7 @@ class HomeController extends Controller
         ]);
     }
 
-    public function make_payment($id, Request $request)
+    public function make_payment($id, $amount, Request $request)
     {   
         $this->validate($request, [
             'firstName' => ['required', 'string'],
@@ -239,21 +239,33 @@ class HomeController extends Controller
             'shippingFirstName' => ['required', 'string'],
             'shippingLastName' => ['required', 'string'],
             'shippingAddress1' => ['required', 'string'],
-            'shippingState' => ['required', 'string'],
+            'shippingState' => ['required', 'min:2', 'max:2'],
             'shippingCity' => ['required', 'string'],
             'shippingPostcode' => ['required', 'string'],
             'shippingCountry' => ['required', 'string'],
             'shippingPhone' => ['required', 'numeric']
         ]);
 
+        
+
         $userFinder = Crypt::decrypt($id);
+        $amount = Crypt::decrypt($amount);
+
+        if(intval($request->amount) !== $amount) {
+            return back()->with([
+                'type' => 'danger',
+                'message' => "The amount of the project doesn't correspond"
+            ]);
+        }
 
         $user = User::findorfail($userFinder);
+
+        $shippingState = strtoupper($request->shippingState);
 
         try {
             $gateway = OmniPay::create('SagePay\Direct')->initialize([
                 'vendor' => 'reapivavsolutio',
-                'testMode' => true,
+                'testMode' => false,
             ]);
             // Create the credit card object from details entered by the user.
 
@@ -279,7 +291,7 @@ class HomeController extends Controller
                 // 'billingState' => '',
                 'billingCity' => $request->billingCity,
                 'billingPostcode' => $request->billingPostcode,
-                'billingCountry' => 'NG',
+                'billingCountry' => $request->billingCountry,
                 'billingPhone' => $request->billingPhone,
                 //
                 'email' =>  $request->email,
@@ -288,10 +300,10 @@ class HomeController extends Controller
                 'shippingFirstName' => $request->shippingFirstName,
                 'shippingLastName' => $request->shippingLastName,
                 'shippingAddress1' => $request->shippingAddress1,
-                'shippingState' => 'NY',
+                'shippingState' => $shippingState,
                 'shippingCity' => $request->shippingCity,
                 'shippingPostcode' => $request->shippingPostcode,
-                'shippingCountry' => 'US',
+                'shippingCountry' => $request->shippingCountry,
                 'shippingPhone' => $request->shippingPhone,
             ]);
 
@@ -373,6 +385,15 @@ class HomeController extends Controller
 
         return view('dashboard.success_payment', [
             'transaction_id' => $transaction_id
+        ]);
+    }
+
+    public function payments()
+    {
+        $payments = Payment::latest()->where('user_id', Auth::user()->id)->get();
+
+        return view('dashboard.payments', [
+            'payments' => $payments
         ]);
     }
 }

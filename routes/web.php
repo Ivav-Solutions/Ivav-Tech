@@ -59,7 +59,6 @@ Route::prefix('dashboard')->group(function () {
     Route::get('it_programs/itil_program', [App\Http\Controllers\HomeController::class, 'itil_program'])->name('user.itil.program');
     Route::get('/access/details', [App\Http\Controllers\HomeController::class, 'access_details'])->name('user.access.details');
     Route::get('/payment/callback', [App\Http\Controllers\HomeController::class, 'handleGatewayCallback'])->name('user.new.handleGatewayCallback');
-    Route::get('/deposits', [App\Http\Controllers\HomeController::class, 'deposits'])->name('user.deposits');
     Route::get('/account', [App\Http\Controllers\HomeController::class, 'account'])->name('user.account');
     Route::post('/account/upload_profile/{id}', [App\Http\Controllers\HomeController::class, 'update_profile'])->name('user.account.update.profile');
     Route::post('/account/upload_photo/{id}', [App\Http\Controllers\HomeController::class, 'upload_photo'])->name('user.account.upload.photo');
@@ -67,8 +66,9 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/notifications', [App\Http\Controllers\HomeController::class, 'notifications'])->name('notifications');
     Route::any('/notification/read/{id}', [App\Http\Controllers\HomeController::class, 'read_notification'])->name('read.notification');
     Route::get('/it_programs/payment/{amount}/{program}', [App\Http\Controllers\HomeController::class, 'proceed_payment'])->name('user.it.programs.proceed.payment');
-    Route::post('/it_programs/make-payment/{id}', [App\Http\Controllers\HomeController::class, 'make_payment'])->name('user.proceed.to.payment.mysagepay');
+    Route::post('/it_programs/make-payment/{id}/{amount}', [App\Http\Controllers\HomeController::class, 'make_payment'])->name('user.proceed.to.payment.mysagepay');
     Route::get('/success/{id}', [App\Http\Controllers\HomeController::class, 'successful_payment'])->name('user.successful.payment');
+    Route::get('/payments', [App\Http\Controllers\HomeController::class, 'payments'])->name('user.payments');
 });
 
 Route::get('/admin/login', [App\Http\Controllers\HomePageController::class, 'admin_login']);
