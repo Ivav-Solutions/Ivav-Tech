@@ -69,6 +69,7 @@ Route::prefix('dashboard')->group(function () {
     Route::post('/it_programs/make-payment/{id}/{amount}', [App\Http\Controllers\HomeController::class, 'make_payment'])->name('user.proceed.to.payment.mysagepay');
     Route::get('/success/{id}', [App\Http\Controllers\HomeController::class, 'successful_payment'])->name('user.successful.payment');
     Route::get('/payments', [App\Http\Controllers\HomeController::class, 'payments'])->name('user.payments');
+    Route::get('/free-success/{id}', [App\Http\Controllers\HomeController::class, 'free'])->name('user.free');
 });
 
 Route::get('/admin/login', [App\Http\Controllers\HomePageController::class, 'admin_login']);

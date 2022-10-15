@@ -25,6 +25,16 @@
                 <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4">
                     <div class="card text-center overflow-hidden">
                         <div class="card-body">
+                            <h3 class="mb-3">Scrum Fundamentals</h3>
+                            <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Free</span>.</p>
+                            <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
+                            <a href="{{URL::asset('')}}" class="btn btn-info">Enroll</a>
+                        </div>
+                    </div>
+                </div><!-- COL-END -->
+                <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4">
+                    <div class="card text-center overflow-hidden">
+                        <div class="card-body">
                             <h3 class="mb-3">Scrum Developer</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Priced at £150</span>.</p>
                             <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
