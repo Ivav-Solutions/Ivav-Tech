@@ -291,7 +291,7 @@ class HomeController extends Controller
                 // 'billingState' => '',
                 'billingCity' => $request->billingCity,
                 'billingPostcode' => $request->billingPostcode,
-                'billingCountry' => 'GB',
+                'billingCountry' => $request->billingCountry,
                 'billingPhone' => $request->billingPhone,
                 //
                 'email' =>  $request->email,
@@ -303,7 +303,7 @@ class HomeController extends Controller
                 'shippingState' => $shippingState,
                 'shippingCity' => $request->shippingCity,
                 'shippingPostcode' => $request->shippingPostcode,
-                'shippingCountry' => 'GB',
+                'shippingCountry' => $request->shippingCountry,
                 'shippingPhone' => $request->shippingPhone,
             ]);
 
