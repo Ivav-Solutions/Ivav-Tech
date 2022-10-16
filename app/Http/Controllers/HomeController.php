@@ -273,15 +273,15 @@ class HomeController extends Controller
                 'firstName' => $request->firstName,
                 'lastName' => $request->lastName,
 
-                // 'number' => '4929000000006',
-                // 'expiryMonth' => '12',
-                // 'expiryYear' => '2023',
-                // 'CVV' => '123',
+                'number' => '4929000000006',
+                'expiryMonth' => '12',
+                'expiryYear' => '2023',
+                'CVV' => '123',
 
-                'number' => $request->number,
-                'expiryMonth' => $request->expiryMonth,
-                'expiryYear' => $request->expiryYear,
-                'CVV' => $request->CVV,
+                // 'number' => $request->number,
+                // 'expiryMonth' => $request->expiryMonth,
+                // 'expiryYear' => $request->expiryYear,
+                // 'CVV' => $request->CVV,
 
                 // Billing address details are required.
                 'billingFirstName' => $request->billingFirstName,
@@ -291,7 +291,7 @@ class HomeController extends Controller
                 // 'billingState' => '',
                 'billingCity' => $request->billingCity,
                 'billingPostcode' => $request->billingPostcode,
-                'billingCountry' => $request->billingCountry,
+                'billingCountry' => 'GB',
                 'billingPhone' => $request->billingPhone,
                 //
                 'email' =>  $request->email,
@@ -303,7 +303,7 @@ class HomeController extends Controller
                 'shippingState' => $shippingState,
                 'shippingCity' => $request->shippingCity,
                 'shippingPostcode' => $request->shippingPostcode,
-                'shippingCountry' => $request->shippingCountry,
+                'shippingCountry' => 'GB',
                 'shippingPhone' => $request->shippingPhone,
             ]);
 
