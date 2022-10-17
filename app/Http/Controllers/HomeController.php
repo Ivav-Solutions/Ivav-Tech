@@ -358,7 +358,8 @@ class HomeController extends Controller
         }
     }
 
-    function transaction_id($input, $strength = 7) {
+    function transaction_id($input, $strength = 7) 
+    {
         $input = '0123456789abcdefghijklmnopqrstuvwxyz';
         $input_length = strlen($input);
         $random_string = '';
