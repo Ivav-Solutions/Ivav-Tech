@@ -397,4 +397,23 @@ class HomeController extends Controller
             'payments' => $payments
         ]);
     }
+
+    public function free($id)
+    {
+        $courseName = Crypt::decrypt($id);
+
+        $admin = array(
+            'name' => 'Admin',
+            'email' => 'info@ivavtech.com'
+        );
+
+        /** Send message to the admin */
+        Mail::send('emails.notification', $admin, function ($m) use ($admin) {
+            $m->to($admin['email'])->subject('Notification');
+        });
+
+        return view('dashboard.success_message', [
+            'courseName' => $courseName
+        ]);
+    }
 }

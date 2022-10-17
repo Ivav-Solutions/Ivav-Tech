@@ -2,9 +2,8 @@
 	"use strict";
 	
 	// Toolbar extra buttons
-	var btnFinish = $('<button></button>').text('Finish')
-		.addClass('btn btn-secondary')
-		.on('click', function(){ alert('Finish Clicked'); });
+	var btnFinish = $('<button type="submit"></button>').text('Finish')
+		.addClass('btn btn-primary');
 	var btnCancel = $('<button></button>').text('Cancel')
 		.addClass('btn btn-secondary')
 		.on('click', function(){ $('#smartwizard-3').smartWizard("reset"); });

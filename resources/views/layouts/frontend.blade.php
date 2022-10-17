@@ -22,6 +22,11 @@
 </head>
 
 <body>
+    <div id='loader'>
+        <div class="loader-inner">
+            <div class="loading-content"></div>
+        </div>
+    </div>
     <div>
         <!--SECTION: NavBar -->
         @yield('navbar')
@@ -52,6 +57,14 @@
     <script src="{{URL::asset('js/magnific-popup.min.js')}}"></script>
 
     <script src="{{URL::asset('js/main.js')}}"></script>
+
+    <script>
+        $(function() {
+            $("form").submit(function() {
+                $('#loader').show();
+            });
+        });
+    </script>
 </body>
 
 </html>

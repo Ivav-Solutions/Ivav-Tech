@@ -82,6 +82,10 @@
 
     <!-- CHART-CIRCLE JS-->
     <script src="{{URL::asset('dash/assets/js/circle-progress.min.js')}}"></script>
+    
+    <!-- FORM WIZARD JS-->
+	<script src="{{URL::asset('dash/assets/plugins/formwizard/jquery.smartWizard.js')}}"></script>
+	<script src="{{URL::asset('dash/assets/plugins/formwizard/fromwizard.js')}}"></script>
 
     <!-- INTERNAL DATA-TABLES JS-->
     <script src="{{URL::asset('dash/assets/plugins/datatable/js/jquery.dataTables.min.js')}}"></script>
@@ -90,6 +94,14 @@
     <script src="{{URL::asset('dash/assets/plugins/datatable/dataTables.responsive.min.js')}}"></script>
 	<script src="{{URL::asset('dash/assets/plugins/datatable/responsive.bootstrap5.min.js')}}"></script>
 	<script src="{{URL::asset('dash/assets/js/table-data.js')}}"></script>
+    
+    <!-- INTERNAl JQUERY.STEPS JS -->
+    <script src="{{URL::asset('dash/assets/plugins/jquery-steps/jquery.steps.min.js')}}"></script>
+    <script src="{{URL::asset('dash/assets/plugins/parsleyjs/parsley.min.js')}}"></script>
+
+    <!-- INTERNAL ACCORDION-WIZARD-FORM JS-->
+    <!-- <script src="{{URL::asset('dash/assets/plugins/accordion-Wizard-Form/jquery.accordion-wizard.min.js')}}"></script>
+    <script src="{{URL::asset('dash/assets/js/form-wizard.js')}}"></script> -->
 
     <!-- INDEX JS -->
     <script src="{{URL::asset('dash/assets/js/index1.js')}}"></script>

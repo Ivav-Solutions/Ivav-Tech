@@ -28,10 +28,11 @@
                             <h3 class="mb-3">Scrum Fundamentals</h3>
                             <p>Self-Paced Online Course (including online certificates): <br><span class="fs-20 fw-700">Free</span>.</p>
                             <a href="/service/it_programs/scrum_program" class="btn btn-info">Read More</a>
-                            <a href="{{URL::asset('')}}" class="btn btn-info">Enroll</a>
+                            <a href="{{route('user.free', Crypt::encrypt('Scrum Fundamentals'))}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
-                </div><!-- COL-END -->
+                </div>
+                <!-- COL-END -->
                 <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4">
                     <div class="card text-center overflow-hidden">
                         <div class="card-body">
@@ -41,7 +42,8 @@
                             <a href="payment/{{Crypt::encrypt(150)}}/{{Crypt::encrypt('Scrum Developer')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
-                </div><!-- COL-END -->
+                </div>
+                <!-- COL-END -->
                 <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4">
                     <div class="card text-center overflow-hidden">
                         <div class="card-body">
