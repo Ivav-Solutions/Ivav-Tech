@@ -246,8 +246,6 @@ class HomeController extends Controller
             'shippingPhone' => ['required', 'numeric']
         ]);
 
-        
-
         $userFinder = Crypt::decrypt($id);
         $amount = Crypt::decrypt($amount);
 
@@ -362,7 +360,7 @@ class HomeController extends Controller
         {
             $total = $amount * 0.1;
             $totalCost = $amount - $total;
-            
+
             try {
                 $gateway = OmniPay::create('SagePay\Direct')->initialize([
                     'vendor' => 'reapivavsolutio',
@@ -377,7 +375,7 @@ class HomeController extends Controller
                     // 'number' => '4929000000006',
                     // 'expiryMonth' => '12',
                     // 'expiryYear' => '2023',
-                    // 'CVV' => '123',
+                    // 'CVV' => '123',w
 
                     'number' => $request->number,
                     'expiryMonth' => $request->expiryMonth,
