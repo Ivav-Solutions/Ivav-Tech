@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html lang="en">
 
 <head>
     <link rel="icon" type="image/png" href="{{URL::asset('images/favicon.png')}}" />
     <meta charSet="utf-8" />
     <title>{{config('app.name')}}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="next-head-count" content="7" />
     <link rel="stylesheet" href="{{URL::asset('css/meanmenu.min.css')}}"/>
     <link rel="stylesheet" href="{{URL::asset('css/95ec97780f5a3d3d899e.css')}}" />

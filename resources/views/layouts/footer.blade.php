@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="content">
-                    <div class="logo"><a href="/"><img src="{{URL::asset('images/logo.png')}}" alt="logo" width="100px" /></a></div>
+                    <div class="logo"><a href="/"><img src="{{URL::asset('images/logo.png')}}" alt="logo" width="100" /></a></div>
                     <p>
                         {{config('app.name')}} is an Arm of IVAV Solutions dedicated to the provision of Tech inclined services to its' clients. Such services include but are not limited to Software Development (Web, Mobile, Desktop), 
                         IT Training, and Career and Business Consulting.

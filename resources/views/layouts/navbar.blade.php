@@ -1,14 +1,14 @@
 <div class="navbar-area">
     <div class="mobile-nav">
         <a href="/" class="logo">
-            <img src="{{URL::asset('images/logo.png')}}" alt="logo"  width="80px" />
+            <img src="{{URL::asset('images/logo.png')}}" alt="logo"  width="80" />
         </a>
     </div>
     <div class="main-nav">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a href="/" class="logo mr-5">
-                    <img src="{{URL::asset('images/logo.png')}}" alt="logo"  width="80px" />
+                    <img src="{{URL::asset('images/logo.png')}}" alt="logo"  width="80" />
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav text-left">
