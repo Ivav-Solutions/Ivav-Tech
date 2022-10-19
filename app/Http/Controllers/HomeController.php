@@ -360,8 +360,9 @@ class HomeController extends Controller
             }
         } elseif (str_replace(' ', '', $request->discountCode) == "TUPMsociety1")
         {
-            $totalCost = $amount * 0.1;
-
+            $total = $amount * 0.1;
+            $totalCost = $amount - $total;
+            
             try {
                 $gateway = OmniPay::create('SagePay\Direct')->initialize([
                     'vendor' => 'reapivavsolutio',
