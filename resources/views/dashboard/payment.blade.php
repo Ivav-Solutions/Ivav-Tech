@@ -647,9 +647,15 @@
                                                         <input type="number" class="form-control" id="cvv2" name="CVV" required>
                                                     </div>
                                                 </div>
+                                                <div class="col-12" style="border: 1px solid #1d42d9; padding: 2rem;">
+                                                    <label class="form-label" for="discountCode">Discount Code <i class="fa fa-question-circle"></i></label>
+                                                    <input type="text" class="form-control" id="discountCode" placeholder="Discount Code" name="discountCode">
+                                                    <p>Apply code to get <span class="text-danger">10% discount off.</span></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             </form>
                         </div>
                     </div>

@@ -262,98 +262,204 @@ class HomeController extends Controller
 
         $shippingState = strtoupper($request->shippingState);
 
-        try {
-            $gateway = OmniPay::create('SagePay\Direct')->initialize([
-                'vendor' => 'reapivavsolutio',
-                'testMode' => false,
-            ]);
-            // Create the credit card object from details entered by the user.
+        if(str_replace(' ', '', $request->discountCode) == "")
+        {
+            try {
+                $gateway = OmniPay::create('SagePay\Direct')->initialize([
+                    'vendor' => 'reapivavsolutio',
+                    'testMode' => false,
+                ]);
+                // Create the credit card object from details entered by the user.
 
-            $card = new CreditCard([
-                'firstName' => $request->firstName,
-                'lastName' => $request->lastName,
+                $card = new CreditCard([
+                    'firstName' => $request->firstName,
+                    'lastName' => $request->lastName,
 
-                // 'number' => '4929000000006',
-                // 'expiryMonth' => '12',
-                // 'expiryYear' => '2023',
-                // 'CVV' => '123',
+                    // 'number' => '4929000000006',
+                    // 'expiryMonth' => '12',
+                    // 'expiryYear' => '2023',
+                    // 'CVV' => '123',
 
-                'number' => $request->number,
-                'expiryMonth' => $request->expiryMonth,
-                'expiryYear' => $request->expiryYear,
-                'CVV' => $request->CVV,
+                    'number' => $request->number,
+                    'expiryMonth' => $request->expiryMonth,
+                    'expiryYear' => $request->expiryYear,
+                    'CVV' => $request->CVV,
 
-                // Billing address details are required.
-                'billingFirstName' => $request->billingFirstName,
-                'billingLastName' => $request->billingLastName,
-                'billingAddress1' => $request->billingAddress1,
-                'billingAddress2' => '',
-                // 'billingState' => '',
-                'billingCity' => $request->billingCity,
-                'billingPostcode' => $request->billingPostcode,
-                'billingCountry' => $request->billingCountry,
-                'billingPhone' => $request->billingPhone,
-                //
-                'email' =>  $request->email,
-                'clientIp' => '169.150.197.237',
-                //
-                'shippingFirstName' => $request->shippingFirstName,
-                'shippingLastName' => $request->shippingLastName,
-                'shippingAddress1' => $request->shippingAddress1,
-                'shippingState' => $shippingState,
-                'shippingCity' => $request->shippingCity,
-                'shippingPostcode' => $request->shippingPostcode,
-                'shippingCountry' => $request->shippingCountry,
-                'shippingPhone' => $request->shippingPhone,
-            ]);
+                    // Billing address details are required.
+                    'billingFirstName' => $request->billingFirstName,
+                    'billingLastName' => $request->billingLastName,
+                    'billingAddress1' => $request->billingAddress1,
+                    'billingAddress2' => '',
+                    // 'billingState' => '',
+                    'billingCity' => $request->billingCity,
+                    'billingPostcode' => $request->billingPostcode,
+                    'billingCountry' => $request->billingCountry,
+                    'billingPhone' => $request->billingPhone,
+                    //
+                    'email' =>  $request->email,
+                    'clientIp' => '169.150.197.237',
+                    //
+                    'shippingFirstName' => $request->shippingFirstName,
+                    'shippingLastName' => $request->shippingLastName,
+                    'shippingAddress1' => $request->shippingAddress1,
+                    'shippingState' => $shippingState,
+                    'shippingCity' => $request->shippingCity,
+                    'shippingPostcode' => $request->shippingPostcode,
+                    'shippingCountry' => $request->shippingCountry,
+                    'shippingPhone' => $request->shippingPhone,
+                ]);
 
-            // Create the minimal request message.
-            $transaction_ids = $this->transaction_id(7);
+                // Create the minimal request message.
+                $transaction_ids = $this->transaction_id(7);
 
-            $requestMessage = $gateway->purchase([
-                'amount' => $request->amount,
-                'currency' => 'GBP',
-                'card' => $card,
-                'transactionId' => $transaction_ids,
-                'description' => $request->description,
-
-                // If 3D Secure is enabled, then provide a return URL for
-                // when the user comes back from 3D Secure authentication.
-
-                // 'notifyUrl' => 'https://www.ivavtech.com/sagepay-complete',
-                'returnUrl' => 'https://www.ivavtech.com',
-            ]);
-
-            // Send the request message.
-            $responseMessage = $requestMessage->send();
-
-            If ($responseMessage->isSuccessful())
-            {
-                Payment::create([
-                    'user_id' => $user->id,
+                $requestMessage = $gateway->purchase([
                     'amount' => $request->amount,
-                    'transaction_id' => $transaction_ids,
+                    'currency' => 'GBP',
+                    'card' => $card,
+                    'transactionId' => $transaction_ids,
                     'description' => $request->description,
+
+                    // If 3D Secure is enabled, then provide a return URL for
+                    // when the user comes back from 3D Secure authentication.
+
+                    // 'notifyUrl' => 'https://www.ivavtech.com/sagepay-complete',
+                    'returnUrl' => 'https://www.ivavtech.com',
                 ]);
 
-                Notification::create([
-                    'from' => $user->id,
-                    'subject' => 'Enrollment',
-                    'description' => $user->first_name.' has successfully applied to enroll in '.$request->description.' Program'
-                ]);
+                // Send the request message.
+                $responseMessage = $requestMessage->send();
 
-                return redirect()->route('user.successful.payment', Crypt::encrypt($transaction_ids));
-            } else {
-                $reason = $responseMessage->getMessage();
+                If ($responseMessage->isSuccessful())
+                {
+                    Payment::create([
+                        'user_id' => $user->id,
+                        'amount' => $request->amount,
+                        'transaction_id' => $transaction_ids,
+                        'description' => $request->description,
+                    ]);
+
+                    Notification::create([
+                        'from' => $user->id,
+                        'subject' => 'Enrollment',
+                        'description' => $user->first_name.' has successfully applied to enroll in '.$request->description.' Program'
+                    ]);
+
+                    return redirect()->route('user.successful.payment', Crypt::encrypt($transaction_ids));
+                } else {
+                    $reason = $responseMessage->getMessage();
+                    return back()->with([
+                        'type' => 'danger',
+                        'message' => $reason
+                    ]);
+                }
+            } catch(Exception $e) {
                 return back()->with([
                     'type' => 'danger',
-                    'message' => $reason
+                    'message' => $e->getMessage()
                 ]);
             }
-        } catch(Exception $e) {
+        } elseif (str_replace(' ', '', $request->discountCode) == "TUPMsociety1")
+        {
+            $totalCost = $amount * 0.1;
+
+            try {
+                $gateway = OmniPay::create('SagePay\Direct')->initialize([
+                    'vendor' => 'reapivavsolutio',
+                    'testMode' => false,
+                ]);
+                // Create the credit card object from details entered by the user.
+
+                $card = new CreditCard([
+                    'firstName' => $request->firstName,
+                    'lastName' => $request->lastName,
+
+                    // 'number' => '4929000000006',
+                    // 'expiryMonth' => '12',
+                    // 'expiryYear' => '2023',
+                    // 'CVV' => '123',
+
+                    'number' => $request->number,
+                    'expiryMonth' => $request->expiryMonth,
+                    'expiryYear' => $request->expiryYear,
+                    'CVV' => $request->CVV,
+
+                    // Billing address details are required.
+                    'billingFirstName' => $request->billingFirstName,
+                    'billingLastName' => $request->billingLastName,
+                    'billingAddress1' => $request->billingAddress1,
+                    'billingAddress2' => '',
+                    // 'billingState' => '',
+                    'billingCity' => $request->billingCity,
+                    'billingPostcode' => $request->billingPostcode,
+                    'billingCountry' => $request->billingCountry,
+                    'billingPhone' => $request->billingPhone,
+                    //
+                    'email' =>  $request->email,
+                    'clientIp' => '169.150.197.237',
+                    //
+                    'shippingFirstName' => $request->shippingFirstName,
+                    'shippingLastName' => $request->shippingLastName,
+                    'shippingAddress1' => $request->shippingAddress1,
+                    'shippingState' => $shippingState,
+                    'shippingCity' => $request->shippingCity,
+                    'shippingPostcode' => $request->shippingPostcode,
+                    'shippingCountry' => $request->shippingCountry,
+                    'shippingPhone' => $request->shippingPhone,
+                ]);
+
+                // Create the minimal request message.
+                $transaction_ids = $this->transaction_id(7);
+
+                $requestMessage = $gateway->purchase([
+                    'amount' => $totalCost,
+                    'currency' => 'GBP',
+                    'card' => $card,
+                    'transactionId' => $transaction_ids,
+                    'description' => $request->description,
+
+                    // If 3D Secure is enabled, then provide a return URL for
+                    // when the user comes back from 3D Secure authentication.
+
+                    // 'notifyUrl' => 'https://www.ivavtech.com/sagepay-complete',
+                    'returnUrl' => 'https://www.ivavtech.com',
+                ]);
+
+                // Send the request message.
+                $responseMessage = $requestMessage->send();
+
+                If ($responseMessage->isSuccessful())
+                {
+                    Payment::create([
+                        'user_id' => $user->id,
+                        'amount' => $totalCost,
+                        'transaction_id' => $transaction_ids,
+                        'description' => $request->description . 'Discount Code Applied',
+                    ]);
+
+                    Notification::create([
+                        'from' => $user->id,
+                        'subject' => 'Enrollment',
+                        'description' => $user->first_name.' has successfully applied to enroll in '.$request->description.' Program'
+                    ]);
+
+                    return redirect()->route('user.successful.payment', Crypt::encrypt($transaction_ids));
+                } else {
+                    $reason = $responseMessage->getMessage();
+                    return back()->with([
+                        'type' => 'danger',
+                        'message' => $reason
+                    ]);
+                }
+            } catch(Exception $e) {
+                return back()->with([
+                    'type' => 'danger',
+                    'message' => $e->getMessage()
+                ]);
+            }
+        } else {
             return back()->with([
                 'type' => 'danger',
-                'message' => $e->getMessage()
+                'message' => "Discount Code incorrect!"
             ]);
         }
     }
