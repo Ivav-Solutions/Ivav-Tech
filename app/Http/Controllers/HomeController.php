@@ -203,7 +203,6 @@ class HomeController extends Controller
         ]);
     }
 
-
     public function proceed_payment($amount, $program)
     {
         $countries = CountryListFacade::getList('en');

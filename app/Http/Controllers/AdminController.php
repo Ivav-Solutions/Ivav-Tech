@@ -11,6 +11,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
@@ -301,6 +302,16 @@ class AdminController extends Controller
             'email' => $request->email,
             'password' => $request->password,
         ]);
+
+        $notifyUser = array(
+            'name' => $user->first_name .' '. $user->last_name,
+            'email' => $user->email
+        );
+
+        /** Send message to the user */
+        Mail::send('emails.notify-user', $notifyUser, function ($m) use ($notifyUser) {
+            $m->to($notifyUser['email'])->subject(config('app.name').' Notification');
+        });
 
         return back()->with([
             'type' => 'success',

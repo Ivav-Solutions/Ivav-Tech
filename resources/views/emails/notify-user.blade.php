@@ -120,7 +120,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                     <tr>
                         <td align="center" valign="top" style="padding: 40px 30px 20px 30px; font-size: 20px;"> 
-                            <img src="{{URL::asset('images/logo.png')}}" alt="{{config('app.name')}}" width="100"></a>
+                            <img src="{URL::asset('images/logo.png')}}" alt="{{config('app.name')}}" width="100"></a>
 						</td>
                     </tr>
                 </table>
@@ -143,7 +143,8 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                     <tr>
                         <td align="left" style="padding: 20px 30px 20px 10px; color: #000; border-top: none; border-bottom: none; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-							<p>You have <span style="color: red;">1</span> new<sup style="color: red;">*</sup> Enrollment.</p>
+							<p>Your enrollment has been granted you can proceed to your dashboard to access your program (Access Page).</p>
+							<p>Thanks.</p>
                         </td>
                     </tr>		
                     <tr>
