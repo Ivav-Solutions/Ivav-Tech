@@ -77,6 +77,8 @@ Route::post('/admin/login', [App\Http\Controllers\HomePageController::class, 'lo
 Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin/dashboard', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
     Route::get('/admin/account', [App\Http\Controllers\AdminController::class, 'account'])->name('admin.account');
+    Route::get('/admin/user/add', [App\Http\Controllers\AdminController::class, 'add_user'])->name('admin.add.user');
+    Route::post('/admin/user/create', [App\Http\Controllers\AdminController::class, 'create_user'])->name('admin.create.user');
     Route::get('/admin/users', [App\Http\Controllers\AdminController::class, 'users'])->name('admin.users');
     Route::get('/admin/users/view/edit//{id}', [App\Http\Controllers\AdminController::class, 'view_edit_user'])->name('admin.view.edit.user');
     Route::post('/admin/users/message//{id}', [App\Http\Controllers\AdminController::class, 'message_user'])->name('admin.message.user');

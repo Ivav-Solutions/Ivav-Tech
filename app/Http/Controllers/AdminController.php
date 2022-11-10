@@ -35,14 +35,14 @@ class AdminController extends Controller
         // $totalEnrollment = Consultation::latest()->get();
         $latestFiveUsers = User::latest()->where('user_type', 'User')->take(5)->get();
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
-                                    // dd($notifications);
+        // dd($notifications);
 
         return view('admin.dashboard', [
             'totalUsers' => $totalUsers,
@@ -56,16 +56,77 @@ class AdminController extends Controller
     public function account()
     {
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
-        return view('admin.account',[
+        return view('admin.account', [
             'notifications' => $notifications,
             'unreadNotifications' => $unreadNotifications
+        ]);
+    }
+
+    public function add_user()
+    {
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
+        return view('admin.add_user', [
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
+        ]);
+    }
+
+    public function create_user(Request $request)
+    {
+        //Validate Request
+        $this->validate($request, [
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'phone_number' => ['required', 'numeric'],
+            'gender' => ['required', 'string', 'max:255'],
+            'country' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        ]);
+
+        $user = User::create([
+            'user_type' => 'User',
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'phone_number' => $request->phone_number,
+            'country' => $request->country,
+            'gender' => $request->gender,
+            'email' => $request->email,
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),
+        ]);
+
+        /** Store information to include in mail in $data as an array */
+        $data = array(
+            'first_name' => $user->first_name,
+            'last_name' => $user->last_name,
+            'phone_number' => $user->phone_number,
+            'country' => $user->country,
+            'gender' => $user->gender,
+            'email' => $user->email,
+            'password' => 'password',
+        );
+        /** Send message to the admin */
+        Mail::send('emails.welcome', $data, function ($m) use ($data) {
+            $m->to($data['email'])->subject('Welcome To '. config('app.name'));
+        });
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'User Registered Successfully'
         ]);
     }
 
@@ -74,12 +135,12 @@ class AdminController extends Controller
         $users = User::latest()->where('user_type', 'User')->get();
 
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
         return view('admin.users', [
             'users' => $users,
@@ -94,12 +155,12 @@ class AdminController extends Controller
 
         $user = User::findorfail($userFinder);
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
         return view('admin.view_edit_user', [
             'user' => $user,
@@ -121,19 +182,19 @@ class AdminController extends Controller
         return back()->with([
             'type' => 'success',
             'message' => 'User Deleted!'
-        ]); 
+        ]);
     }
 
     public function consultations()
     {
         $consultations = Consultation::latest()->get();
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
         return view('admin.consultations', [
             'consultations' => $consultations,
@@ -145,12 +206,12 @@ class AdminController extends Controller
     public function transactions()
     {
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $transactions = Transaction::latest()->get();
 
         return view('admin.transactions', [
@@ -171,8 +232,7 @@ class AdminController extends Controller
 
         $user = User::findorfail($userFinder);
 
-        if($user->email == $request->email)
-        {
+        if ($user->email == $request->email) {
             $user->update([
                 'first_name' => $request->first_name,
                 'last_name' => $request->last_name,
@@ -184,8 +244,7 @@ class AdminController extends Controller
             return back()->with([
                 'type' => 'success',
                 'message' => 'Profile Updated Successfully!'
-            ]); 
-
+            ]);
         } else {
             $this->validate($request, [
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
@@ -207,7 +266,7 @@ class AdminController extends Controller
         }
     }
 
-    public function upload_photo($id, Request $request) 
+    public function upload_photo($id, Request $request)
     {
         //Validate Request
         $this->validate($request, [
@@ -223,13 +282,13 @@ class AdminController extends Controller
         //Validate User
         if (request()->hasFile('photo')) {
             $filename = request()->photo->getClientOriginalName();
-            if($profile->avatar) {
+            if ($profile->avatar) {
                 Storage::delete(str_replace("storage", "public", $profile->avatar));
             }
             request()->photo->storeAs('users_avatar', $filename, 'public');
-            $profile->avatar = '/storage/users_avatar/'.$filename;
+            $profile->avatar = '/storage/users_avatar/' . $filename;
             $profile->save();
-            
+
             return back()->with([
                 'type' => 'success',
                 'message' => 'Photo Updated Successfully!'
@@ -242,7 +301,7 @@ class AdminController extends Controller
         }
     }
 
-    public function update_password ($id, Request $request) 
+    public function update_password($id, Request $request)
     {
         $this->validate($request, [
             'new_password' => ['required', 'string', 'min:8', 'confirmed'],
@@ -251,7 +310,7 @@ class AdminController extends Controller
         $userFinder = Crypt::decrypt($id);
 
         $user = User::findorfail($userFinder);
-        
+
         $user->password = Hash::make($request->new_password);
 
         $user->save();
@@ -259,23 +318,23 @@ class AdminController extends Controller
         return back()->with([
             'type' => 'success',
             'message' => 'Password Updated Successfully!'
-        ]); 
+        ]);
     }
 
     public function access_details(Request $reqeust)
     {
         $access =  AccessDetails::join('users', 'access_details.user_id', '=', 'users.id')
-                                ->get(['access_details.*', 'users.first_name', 'users.last_name']);
-        
-        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
-        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->get(['access_details.*', 'users.first_name', 'users.last_name']);
 
-        return view('admin.users_access',[
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
+        return view('admin.users_access', [
             'access' => $access,
             'notifications' => $notifications,
             'unreadNotifications' => $unreadNotifications
@@ -304,19 +363,19 @@ class AdminController extends Controller
         ]);
 
         $notifyUser = array(
-            'name' => $user->first_name .' '. $user->last_name,
+            'name' => $user->first_name . ' ' . $user->last_name,
             'email' => $user->email
         );
 
         /** Send message to the user */
         Mail::send('emails.notify-user', $notifyUser, function ($m) use ($notifyUser) {
-            $m->to($notifyUser['email'])->subject(config('app.name').' Notification');
+            $m->to($notifyUser['email'])->subject(config('app.name') . ' Notification');
         });
 
         return back()->with([
             'type' => 'success',
-            'message' => 'Access sent to '. $user->first_name .' '. $user->last_name
-        ]); 
+            'message' => 'Access sent to ' . $user->first_name . ' ' . $user->last_name
+        ]);
     }
 
     public function user_update_ccess_details($id, Request $request)
@@ -342,7 +401,7 @@ class AdminController extends Controller
         return back()->with([
             'type' => 'success',
             'message' => 'Updated Successfully'
-        ]); 
+        ]);
     }
 
     public function user_delete_ccess_details($id)
@@ -354,7 +413,7 @@ class AdminController extends Controller
         return back()->with([
             'type' => 'success',
             'message' => 'Deleted Successfully'
-        ]); 
+        ]);
     }
 
     public function read_notification($id)
@@ -371,16 +430,16 @@ class AdminController extends Controller
     }
 
     public function notifications()
-    {   
+    {
         $allNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->take(5)
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                                    ->where('notifications.status', 'Unread')
-                                    ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
 
         return view('admin.notifications', [
@@ -393,14 +452,14 @@ class AdminController extends Controller
     public function program_payments()
     {
         $payments = Payment::join('users', 'payments.user_id', '=', 'users.id')
-                    ->get(['payments.*', 'users.first_name', 'users.last_name', 'users.email']);
+            ->get(['payments.*', 'users.first_name', 'users.last_name', 'users.email']);
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                ->where('notifications.status', 'Unread')
-                ->take(5)
-                ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
-                ->where('notifications.status', 'Unread')
-                ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
 
         return view('admin.payments', [
             'payments' => $payments,
