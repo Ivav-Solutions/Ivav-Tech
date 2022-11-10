@@ -63,12 +63,78 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="services-details-text">
-                    <h2>
-                        Scrum Master Self-Paced Online Course (including online certificates): Priced at £350.
-                        <br><a class="box-btn signup-btn" href="/enroll">Enroll Now</a>
-                    </h2>
+            <div class="home-service-area pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="single-service">
+                                <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
+                                <div class="service-content">
+                                    <h3>Scrum Master Self-Paced Online Course (including online ceritifcates): Priced at £350.
+                                        <ul style="text-align: left !important; font-size: 1.2rem; margin-top: 1.2rem;">
+                                            <span style="font-size: 1.4rem;">Benifits</span>
+                                            <br>
+                                            <li>- Beginner friendly</li>
+                                            <li>- High video quality of clearly explained scrum topics</li>
+                                            <li>- Professional Certification</li>
+                                            <li>- Access to Scrum book of Knowledge</li>
+                                            <li>- Professional Membership</li>
+                                        </ul>
+                                        <br><a class="box-btn signup-btn" href="/login">Enroll</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="single-service">
+                                <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
+                                <div class="service-content">
+                                    <h3>Two(2) Days Live Training Via Zoom @ £499
+                                        <ul style="text-align: left !important; font-size: 1.2rem; margin-top: 1.2rem;">January 14 and 15 (2days Saturday and Sunday, 10am to 6pm each day, London time)
+                                            February 11 and 12 (2days Saturday and Sunday, 10am to 6pm each day, London time)
+                                            March 11 and 12 (2days Saturday and Sunday, 10am to 6pm each day, London time)
+                                        </ul>
+                                        <ul style="text-align: left !important; font-size: 1.2rem; margin-top: 1.2rem;">
+                                            <span style="font-size: 1.4rem;">Benifits</span>
+                                            <br>
+                                            <li>- Beginner friendly</li>
+                                            <li>- In-depth Trainings</li>
+                                            <li>- Live class giving opportunity to ask questions</li>
+                                            <li>- Professional Certification</li>
+                                            <li>- Professional Membership</li>
+                                            <li>- Access to Scrum Book of Knowledge</li>
+                                        </ul>
+                                        <br><a class="box-btn signup-btn" href="/login">Enroll</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="single-service">
+                                <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
+                                <div class="service-content">
+                                    <h3 class="ml-4 mr-4">Four(4) Weeks Live Training Via Zoom Nov 19 - Dec 10 (Saturdays only 12pm to 5pm) @ £1,499
+                                        <ul style="text-align: left !important; font-size: 1.2rem; margin-top: 1.2rem;">
+                                            <span style="font-size: 1.4rem;">Benifits</span>
+                                            <br>
+                                            <li>- Beginner friendly</li>
+                                            <li>- In-depth Trainings</li>
+                                            <li>- Up to 3months ongoing Mentorship after trainings while job hunting or while practicing</li>
+                                            <li>- CV-do</li>
+                                            <li>- Interview Preparations</li>
+                                            <li>- Professional Certification</li>
+                                            <li>- Exposure to industry tool's</li>
+                                            <li>- Professional Networking/Membership</li>
+                                            <li>- Access to Scrum book of Knowledge</li>
+                                        </ul>
+                                        <br><a class="box-btn signup-btn" href="/login">Enroll</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
