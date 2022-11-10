@@ -54,10 +54,6 @@
         </div>
         <div class="client-wrap owl-carousel owl-theme">
             <div class="single-client">
-                <p>Since I starting working with {{config('app.name')}}, my business has seen a 200% growth in revenue, 45% growth in profit, and 65% less staff turnover. This level of stability is unprecedented. I did not believe it was possible. I recommend {{config('app.name')}} 100%. Anyday. Anytime.</p>
-                <h3>Dr. Chidiogo O. P.</h3>
-            </div>
-            <div class="single-client">
                 <p>I've worked with the division for about 2 full years, and I can say this - they're customer service is satisfactory, the solutions they sell to are simple, straightforward and free of ambiguity. Their prices are also largely affordable.</p>
                 <p>It's simple here. You get what you paid for, and even more.</p>
                 <h3>Ms. Busola Adeoye</h3>
@@ -67,6 +63,13 @@
                 <p>I'd recommend them everyday and twice on Sundays.</p>
                 <h3>Engr. Garcia Anthony</h3>
             </div>
+            <div class="single-client">
+                <p>Since I starting working with {{config('app.name')}}, my business has seen a 200% growth in revenue, 45% growth in profit, and 65% less staff turnover. This level of stability is unprecedented. I did not believe it was possible. I recommend {{config('app.name')}} 100%. Anyday. Anytime.</p>
+                <h3>Dr. Chidiogo O. P.</h3>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="testimonials">Read More</a>
         </div>
     </div>
 </div>

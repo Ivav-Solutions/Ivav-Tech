@@ -35,6 +35,7 @@ Route::get('/service/it_programs/marketing_program/{name}', [App\Http\Controller
 Route::get('/service/it_programs/itil', [App\Http\Controllers\HomePageController::class, 'itil']);
 Route::get('/enroll', [App\Http\Controllers\HomePageController::class, 'enroll']);
 Route::get('/faqs', [App\Http\Controllers\HomePageController::class, 'faqs']);
+Route::get('/testimonials', [App\Http\Controllers\HomePageController::class, 'testimonials']);
 Route::get('/contact', [App\Http\Controllers\HomePageController::class, 'contact']);
 Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm']);
 Route::get('/book_consultation', [App\Http\Controllers\HomePageController::class, 'book_consultation']);

@@ -28,6 +28,11 @@ class HomePageController extends Controller
         return view('faqs');
     }
 
+    public function testimonials()
+    {
+        return view('testimonials');
+    }
+
     public function contact()
     {
         return view('contact');
