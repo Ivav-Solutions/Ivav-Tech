@@ -32,7 +32,7 @@
                                             @if($user->avatar)
                                             <img src="{{$user->avatar}}" alt="img" width="100px" class="m-0 p-1 rounded hrem-6">
                                             @else
-                                            <div class="m-0 p-1 rounded hrem-6" style="width: 6rem; align-items: center; font-size: 2rem; background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr($user->last_name, 0, 1)) }}</div>        
+                                            <div class="m-0 p-1 rounded hrem-6" style="width: 6rem; align-items: center; font-size: 2rem; background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr($user->first_name, 0, 1)) }}</div>        
                                             @endif
                                         </div>
                                         <div class="ms-4">
@@ -68,7 +68,10 @@
                                         <table class="table row table-borderless">
                                             <tbody class="col-lg-12 col-xl-6 p-0">
                                                 <tr>
-                                                    <td><strong>Full Name :</strong> {{$user->first_name}} {{$user->last_name}}</td>
+                                                    <td><strong>First Name :</strong> {{$user->first_name}} </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Last Name :</strong> {{$user->last_name}}</td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>Email :</strong> {{$user->email}}</td>

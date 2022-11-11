@@ -40,7 +40,7 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <label for="lname" class="form-label">Last Name</label>
-                                            <input type="text" class="form-control" id="lname" name="last_name" required>
+                                            <input type="text" class="form-control" id="lname" name="last_name">
                                         </div>
                                     </div>
                                 </div>

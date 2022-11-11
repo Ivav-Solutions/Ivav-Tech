@@ -144,6 +144,7 @@
                     <tr>
                         <td align="left" style="padding: 20px 30px 20px 10px; color: #000; border-top: none; border-bottom: none; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
 							<p>You have <span style="color: red;">1</span> new<sup style="color: red;">*</sup> Enrollment.</p>
+                            <p>Description: {{$description}}</p>
                         </td>
                     </tr>		
                     <tr>

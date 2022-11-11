@@ -478,9 +478,12 @@ class HomeController extends Controller
     {
         $transaction_id = Crypt::decrypt($id);
 
+        $payment = Payment::where('transaction_id', $transaction_id)->first();
+
         $admin = array(
             'name' => 'Admin',
-            'email' => 'info@ivavtech.com'
+            'email' => 'contact@ivavtech.com',
+            'description' => $payment->description
         );
 
         /** Send message to the admin */
@@ -506,9 +509,16 @@ class HomeController extends Controller
     {
         $courseName = Crypt::decrypt($id);
 
+        Notification::create([
+            'from' => Auth::user()->id,
+            'subject' => 'Enrollment',
+            'description' => Auth::user()->first_name.' has successfully applied to enroll in Scrum Fundamentals Program'
+        ]);
+
         $admin = array(
             'name' => 'Admin',
-            'email' => 'info@ivavtech.com'
+            'email' => 'contact@ivavtech.com',
+            'description' => 'Scrum Fundamentals Program'
         );
 
         /** Send message to the admin */

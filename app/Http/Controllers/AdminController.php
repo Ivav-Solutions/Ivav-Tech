@@ -90,10 +90,10 @@ class AdminController extends Controller
         //Validate Request
         $this->validate($request, [
             'first_name' => ['required', 'string', 'max:255'],
-            'last_name' => ['required', 'string', 'max:255'],
-            'phone_number' => ['required', 'numeric'],
-            'gender' => ['required', 'string', 'max:255'],
-            'country' => ['required', 'string', 'max:255'],
+            // 'last_name' => ['required', 'string', 'max:255'],
+            // 'phone_number' => ['required', 'numeric'],
+            // 'gender' => ['required', 'string', 'max:255'],
+            // 'country' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
         ]);
 
@@ -112,10 +112,10 @@ class AdminController extends Controller
         /** Store information to include in mail in $data as an array */
         $data = array(
             'first_name' => $user->first_name,
-            'last_name' => $user->last_name,
-            'phone_number' => $user->phone_number,
-            'country' => $user->country,
-            'gender' => $user->gender,
+            // 'last_name' => $user->last_name,
+            // 'phone_number' => $user->phone_number,
+            // 'country' => $user->country,
+            // 'gender' => $user->gender,
             'email' => $user->email,
             'password' => 'password',
         );

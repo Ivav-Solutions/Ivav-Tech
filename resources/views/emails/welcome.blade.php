@@ -120,7 +120,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                     <tr>
                         <td bgcolor="#ffffff" align="left" valign="top" style="border: 2px solid #010e1f; padding: 10px 30px 10px 30px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400;">
-                            <h1 style="font-size: 20px; font-weight: 400;">Welcome {{ $last_name }},</h1> 
+                            <h1 style="font-size: 20px; font-weight: 400;">Welcome {{ $first_name }},</h1> 
                         </td>
                     </tr>
                 </table>
@@ -131,16 +131,11 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                     <tr>
                         <td align="left" style="padding: 20px 30px 40px 30px; color: #000; border-top: none; border-bottom: none; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-							<p>Welcome to {{ config('app.name') }}, you made the right decision to join us and 
-							we’re excited about giving you exceptional services. <br></p>
-							
-							<p>Below is your <b>Account Information:</b></p>
-							<p>Name: <b>{{$first_name}} {{$last_name}}</b></p>
-							<p>Phone Number: <b>{{$phone_number}}</b></p>
-                            <p>Country: <b>{{$country}}</b></p>
-                            <p>Gender: <b>{{$gender}}</b></p>
-
-                            <br>
+							<p>An account has been created for you on {{ config('app.name') }},
+                                Kindly use the login details below to access your account.</p>
+                            
+                            <p><span style="color: red;">Note: </span>For certification Purpose, update your profile information.</p>
+						
                             <p>Login Details:</p>
                             <p>Email: <b>{{$email}}</b></p>
 							<p>Password: <b>{{$password}}</b></p>

@@ -34,11 +34,13 @@
                                         <tr> 
                                             <th class="border-bottom-0">S/N</th>
                                             <th class="border-bottom-0">Photo</th>
-                                            <th class="border-bottom-0">Full Name</th>
+                                            <th class="border-bottom-0">First Name</th>
+                                            <th class="border-bottom-0">Last Name</th>
                                             <th class="border-bottom-0">Email</th>
                                             <th class="border-bottom-0">Phone Number</th>
                                             <th class="border-bottom-0">Gender</th>
                                             <th class="border-bottom-0">Country</th>
+                                            <th class="border-bottom-0">Created At</th>
                                             <th class="border-bottom-0">Action</th>
                                         </tr>
                                     </thead>
@@ -58,12 +60,15 @@
                                                     @if($user->photo)
                                                     <img alt="avatar" class="rounded-circle" src="{{$user->photo}}">
                                                     @else
-                                                    <div class="rounded-circle" style="width: 2.5rem; align-items: center; font-size: 1rem; background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr($user->last_name, 0, 1)) }}</div>
+                                                    <div class="rounded-circle" style="width: 2.5rem; align-items: center; font-size: 1rem; background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr($user->first_name, 0, 1)) }}</div>
                                                     @endif
                                                 </div>
                                             </td>
                                             <td>
-                                                {{$user->first_name}} {{$user->last_name}}
+                                                {{$user->first_name}}
+                                            </td>
+                                            <td>
+                                                {{$user->last_name}}
                                             </td>
                                             <td>
                                                 {{$user->email}}
@@ -71,6 +76,7 @@
                                             <td>{{$user->phone_number}}</td>
                                             <td>{{$user->gender}}</td>
                                             <td>{{$user->country}}</td>
+                                            <td>{{$user->created_at->toDayDateTimeString()}}</td>
                                             <td>
                                                 <a href="{{route('admin.view.edit.user', Crypt::encrypt($user->id))}}" class="btn btn-primary mt-3">View/Edit</a>
                                                 <!-- <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#sendmessage-{{$user->id}}">Send Message</button>

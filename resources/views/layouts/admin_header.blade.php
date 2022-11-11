@@ -84,7 +84,7 @@
                                         @if(Auth::user()->avatar)
                                         <img src="{{Auth::user()->avatar}}" alt="img" width="100px" class="avatar profile-user brround cover-image">
                                         @else
-                                        <div class="avatar profile-user brround cover-image" style="background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr(Auth::user()->last_name, 0, 1)) }}</div>
+                                        <div class="avatar profile-user brround cover-image" style="background:#0d6efd; color: #fff; display: flex; justify-content: center;">{{ ucfirst(substr(Auth::user()->first_name, 0, 1)) }}</div>
                                         @endif
                                     </span>
                                     <div class="text-center p-1 d-flex d-lg-none-max">
