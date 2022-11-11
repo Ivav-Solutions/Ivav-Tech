@@ -57,28 +57,28 @@
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
                                             <td>
-                                                {{$user->name}}
+                                                {{$consultation->name}}
                                             </td>
                                             <td>
-                                                {{$user->email}}
+                                                {{$consultation->email}}
                                             </td>
-                                            <td>{{$user->phone_number}}</td>
-                                            <td>{{$user->sex}}</td>
-                                            <td>{{$user->service}}</td>
+                                            <td>{{$consultation->phone_number}}</td>
+                                            <td>{{$consultation->sex}}</td>
+                                            <td>{{$consultation->service}}</td>
                                             <td>
-                                                {{$user->platform}}
+                                                {{$consultation->platform}}
                                             </td>
                                             <td>
-                                                {{$user->date}}
+                                                {{$consultation->date}}
                                             </td>
-                                            <td>{{$user->time}}</td>
-                                            <td>₦{{ number_format($user->amount, 2)}}</td>
+                                            <td>{{$consultation->time}}</td>
+                                            <td>₦{{ number_format($consultation->amount, 2)}}</td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    @if($user->payment_status == 'Success')
-                                                    <a class="btn btn-rounded btn-success mr-auto text-nowrap" href="#">{{$user->payment_status}}</a>
+                                                    @if($consultation->payment_status == 'Success')
+                                                    <a class="btn btn-rounded btn-success mr-auto text-nowrap" href="#">{{$consultation->payment_status}}</a>
                                                     @else
-                                                    <a class="btn btn-rounded btn-danger mr-auto text-nowrap" href="#">{{$user->payment_status}}</a>
+                                                    <a class="btn btn-rounded btn-danger mr-auto text-nowrap" href="#">{{$consultation->payment_status}}</a>
                                                     @endif
                                                 </div>
                                             </td>
