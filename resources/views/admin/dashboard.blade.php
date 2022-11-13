@@ -65,7 +65,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h3 class="mb-2 fw-semibold">0</h3>
+                                    <h3 class="mb-2 fw-semibold">{{$totalEnrollment->count()}}</h3>
                                     <p class="text-muted fs-13 mb-0">Total Enrollment</p>
                                 </div>
                                 <div class="col col-auto top-icn dash">
@@ -95,7 +95,8 @@
                                     <thead class="table-head">
                                         <tr>
                                             <th class="bg-transparent border-bottom-0">S/N</th>
-                                            <th class="bg-transparent border-bottom-0">Full Name</th>
+                                            <th class="bg-transparent border-bottom-0">First Name</th>
+                                            <th class="bg-transparent border-bottom-0">Last Name</th>
                                             <th class="bg-transparent border-bottom-0">Email</th>
                                             <th class="bg-transparent border-bottom-0">Gender</th>
                                             <th class="bg-transparent border-bottom-0">Phone Number</th>
@@ -114,7 +115,8 @@
                                     <tbody class="table-body">
                                         <tr>
                                             <td class="text-dark fs-14 fw-semibold">{{$loop->iteration}}</td>
-                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->first_name}} {{$latestFiveUser->last_name}}</td>
+                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->first_name}}</td> 
+                                            <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->last_name}}</td>
                                             <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->email}}</td>
                                             <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->gender}}</td>
                                             <td class="text-success fs-14 fw-semibold">{{$latestFiveUser->phone_number}}</td>

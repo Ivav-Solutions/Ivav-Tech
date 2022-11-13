@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\AccessDetails;
+use App\Models\Country;
+use App\Models\Enrollment;
 use App\Models\Notification;
 use App\Models\Payment;
 use App\Models\User;
@@ -46,7 +48,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard.dashboard');
+        $totalEnrollment = Enrollment::latest()->where('user_id', Auth::user()->id)->get();
+        $totalPayments = Payment::latest()->where('user_id', Auth::user()->id)->take(5)->get();
+
+        return view('dashboard.dashboard', [
+            'totalEnrollment' => $totalEnrollment,
+            'totalPayments' => $totalPayments
+        ]);
     }
 
     public function it_programs()
@@ -205,14 +213,14 @@ class HomeController extends Controller
 
     public function proceed_payment($amount, $program)
     {
-        $countries = CountryListFacade::getList('en');
         $userAmount = Crypt::decrypt($amount);
         $programDescription = Crypt::decrypt($program);
+        $countries = Country::all();
 
         return view('dashboard.payment', [
             'userAmount' => $userAmount,
-            'countries' => $countries,
-            'programDescription' => $programDescription
+            'programDescription' => $programDescription,
+            'countries' => $countries
         ]);
     }
 
@@ -480,6 +488,12 @@ class HomeController extends Controller
 
         $payment = Payment::where('transaction_id', $transaction_id)->first();
 
+        Enrollment::create([
+            'user_id' => Auth::user()->id,
+            'amount' => $payment->amount,
+            'description' => $payment->description
+        ]);
+
         $admin = array(
             'name' => 'Admin',
             'email' => 'contact@ivavtech.com',
@@ -515,6 +529,12 @@ class HomeController extends Controller
             'description' => Auth::user()->first_name.' has successfully applied to enroll in Scrum Fundamentals Program'
         ]);
 
+        Enrollment::create([
+            'user_id' => Auth::user()->id,
+            'amount' => 'Free',
+            'description' => 'Scrum Fundamentals Program'
+        ]);
+
         $admin = array(
             'name' => 'Admin',
             'email' => 'contact@ivavtech.com',
@@ -528,6 +548,15 @@ class HomeController extends Controller
 
         return view('dashboard.success_message', [
             'courseName' => $courseName
+        ]);
+    }
+
+    public function enrollments()
+    {
+        $enrollments = Enrollment::where('user_id', Auth::user()->id)->get();
+
+        return view('dashboard.enrollments', [
+            'enrollments' => $enrollments
         ]);
     }
 }

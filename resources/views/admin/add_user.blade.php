@@ -63,8 +63,8 @@
                                 <div class="form-group ">
                                     <div class="row">
                                         <div class="col-12">
-                                            <label for="pno" class="form-label">Gender</label>
-                                            <select class="form-control @error('gender') is-invalid @enderror" name="gender">
+                                            <label class="form-label">Gender</label>
+                                            <select class="form-control" name="gender">
                                                 <option value="">Select Gender</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>                                
@@ -75,8 +75,12 @@
                                 <div class="form-group ">
                                     <div class="row">
                                         <div class="col-12">
-                                            <label for="pno" class="form-label">Country</label>
-                                            <input type="text" class="form-control" id="pno" name="country">
+                                            <label for="country" class="form-label">Country</label>
+                                            <select class="form-control" id="country" name="country">
+                                                @foreach ($countries as $key => $country)
+                                                    <option value="{{$country->name}}">{{ $country->name }}</option>
+                                                @endforeach
+                                            </select>
                                         </div>
                                     </div>
                                 </div>

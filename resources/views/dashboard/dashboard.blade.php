@@ -38,7 +38,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h3 class="mb-2 fw-semibold">0</h3>
+                                    <h3 class="mb-2 fw-semibold">{{$totalEnrollment->count()}}</h3>
                                     <p class="text-muted fs-80 mb-0">Total Enrollment</p>
                                 </div>
                                 <div class="col col-auto top-icn dash">
@@ -60,7 +60,7 @@
                 <div class="col-12 col-sm-12">
                     <div class="card product-sales-main">
                         <div class="card-header border-bottom">
-                            <h3 class="card-title mb-0">Transactions History</h3>
+                            <h3 class="card-title mb-0">Payment History</h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -71,18 +71,18 @@
                                             <th class="bg-transparent border-bottom-0">Amount</th>
                                             <th class="bg-transparent border-bottom-0">Transaction ID</th>
                                             <th class="bg-transparent border-bottom-0">Paid At</th>
-                                            <th class="bg-transparent border-bottom-0">Channel</th>
                                         </tr>
                                     </thead>
+                                    @foreach($totalPayments as $key => $totalPayment)
                                     <tbody class="table-body">
                                         <tr>
-                                            <td class="text-dark fs-14 fw-semibold"></td>
-                                            <td class="text-dark fs-13"></td>
-                                            <td class="text-danger fs-14 fw-semibold"></td>
-                                            <td class="text-success fs-14 fw-semibold"></td>
-                                            <td class="text-success fs-14 fw-semibold"></td>
+                                            <td class="text-dark fs-14 fw-semibold">{{$totalPayment->description}}</td>
+                                            <td class="text-dark fs-13">£{{$totalPayment->amount}}</td>
+                                            <td class="text-danger fs-14 fw-semibold">{{$totalPayment->transaction_id}}</td>
+                                            <td class="text-success fs-14 fw-semibold">{{$totalPayment->created_at->toDayDateTimeString()}}</td>
                                         </tr>
                                     </tbody>
+                                    @endforeach
                                 </table>
                             </div>
                         </div>

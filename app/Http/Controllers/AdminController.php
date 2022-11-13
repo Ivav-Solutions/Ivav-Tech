@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\AccessDetails;
 use App\Models\Consultation;
+use App\Models\Country;
+use App\Models\Enrollment;
 use App\Models\Notification;
 use App\Models\Payment;
 use App\Models\Transaction;
@@ -32,7 +34,7 @@ class AdminController extends Controller
     {
         $totalUsers = User::latest()->where('user_type', 'User')->get();
         $totalConsultations = Consultation::latest()->get();
-        // $totalEnrollment = Consultation::latest()->get();
+        $totalEnrollment = Enrollment::latest()->get();
         $latestFiveUsers = User::latest()->where('user_type', 'User')->take(5)->get();
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
             ->where('notifications.status', 'Unread')
@@ -49,7 +51,8 @@ class AdminController extends Controller
             'totalConsultations' => $totalConsultations,
             'latestFiveUsers' => $latestFiveUsers,
             'notifications' => $notifications,
-            'unreadNotifications' => $unreadNotifications
+            'unreadNotifications' => $unreadNotifications,
+            'totalEnrollment' => $totalEnrollment
         ]);
     }
 
@@ -62,10 +65,12 @@ class AdminController extends Controller
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
             ->where('notifications.status', 'Unread')
             ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $countries = Country::all();
 
         return view('admin.account', [
             'notifications' => $notifications,
-            'unreadNotifications' => $unreadNotifications
+            'unreadNotifications' => $unreadNotifications,
+            'countries' => $countries
         ]);
     }
 
@@ -78,10 +83,12 @@ class AdminController extends Controller
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
             ->where('notifications.status', 'Unread')
             ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $countries = Country::all();
 
         return view('admin.add_user', [
             'notifications' => $notifications,
-            'unreadNotifications' => $unreadNotifications
+            'unreadNotifications' => $unreadNotifications,
+            'countries' => $countries
         ]);
     }
 
@@ -161,11 +168,13 @@ class AdminController extends Controller
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
             ->where('notifications.status', 'Unread')
             ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $countries = Country::all();
 
         return view('admin.view_edit_user', [
             'user' => $user,
             'notifications' => $notifications,
-            'unreadNotifications' => $unreadNotifications
+            'unreadNotifications' => $unreadNotifications,
+            'countries' => $countries
         ]);
     }
 
@@ -198,6 +207,26 @@ class AdminController extends Controller
 
         return view('admin.consultations', [
             'consultations' => $consultations,
+            'notifications' => $notifications,
+            'unreadNotifications' => $unreadNotifications
+        ]);
+    }
+
+    public function enrollments()
+    {
+        $enrollments = Enrollment::join('users', 'enrollments.user_id', '=', 'users.id')
+                                ->latest()
+                                ->get(['enrollments.*', 'users.first_name', 'users.last_name', 'users.email']);
+        $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+            ->where('notifications.status', 'Unread')
+            ->take(5)
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+        $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+            ->where('notifications.status', 'Unread')
+            ->get(['notifications.*', 'users.first_name', 'users.last_name']);
+
+        return view('admin.enrollments', [
+            'enrollments' => $enrollments,
             'notifications' => $notifications,
             'unreadNotifications' => $unreadNotifications
         ]);

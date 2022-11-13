@@ -114,8 +114,14 @@
                                                         <div class="form-group ">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <label for="pno" class="form-label">Country</label>
-                                                                    <input type="text" class="form-control" id="pno" name="country" value="{{Auth::user()->country}}">
+                                                                    <label for="country" class="form-label">Country</label>
+                                                                    <select class="form-control" id="country" name="country">
+                                                                        <option value="{{Auth::user()->country}}">{{Auth::user()->country}}</option>
+                                                                        <option value="">-- Select Country --</option>
+                                                                        @foreach ($countries as $key => $country)
+                                                                            <option value="{{$country->name}}">{{ $country->name }}</option>
+                                                                        @endforeach
+                                                                    </select>
                                                                 </div>
                                                             </div>
                                                         </div>

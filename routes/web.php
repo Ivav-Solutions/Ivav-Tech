@@ -58,6 +58,7 @@ Route::prefix('dashboard')->group(function () {
     Route::get('it_programs/risk_management_program', [App\Http\Controllers\HomeController::class, 'risk_management_program'])->name('user.risk.management.program');
     Route::get('it_programs/quality_management_program', [App\Http\Controllers\HomeController::class, 'quality_management_program'])->name('user.quality.management.program');
     Route::get('it_programs/itil_program', [App\Http\Controllers\HomeController::class, 'itil_program'])->name('user.itil.program');
+    Route::get('/enrollments', [App\Http\Controllers\HomeController::class, 'enrollments'])->name('user.enrollments');
     Route::get('/access/details', [App\Http\Controllers\HomeController::class, 'access_details'])->name('user.access.details');
     Route::get('/payment/callback', [App\Http\Controllers\HomeController::class, 'handleGatewayCallback'])->name('user.new.handleGatewayCallback');
     Route::get('/account', [App\Http\Controllers\HomeController::class, 'account'])->name('user.account');
@@ -84,6 +85,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin/users/view/edit//{id}', [App\Http\Controllers\AdminController::class, 'view_edit_user'])->name('admin.view.edit.user');
     Route::post('/admin/users/message//{id}', [App\Http\Controllers\AdminController::class, 'message_user'])->name('admin.message.user');
     Route::post('/admin/users/delete//{id}', [App\Http\Controllers\AdminController::class, 'delete_user'])->name('admin.delete.user');
+    Route::get('/admin/enrollments', [App\Http\Controllers\AdminController::class, 'enrollments'])->name('admin.enrollments');
     Route::get('/admin/consultations', [App\Http\Controllers\AdminController::class, 'consultations'])->name('admin.consultations');
     Route::get('/admin/access/details', [App\Http\Controllers\AdminController::class, 'access_details'])->name('admin.user.access.details');
     Route::post('/admin/users/access/details/{id}', [App\Http\Controllers\AdminController::class, 'user_access_details'])->name('admin.access.details');
