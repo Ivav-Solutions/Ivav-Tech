@@ -47,33 +47,19 @@
                                         @foreach($allNotifications as $key => $notification)
                                         <tbody>
                                             @if($notification->status == 'Unread')
-                                            <tr>
-                                                <td class="inbox-small-cells">
-                                                    <label class="custom-control custom-checkbox mb-0">
-                                                        <a href="{{route('admin.notification.read', Crypt::encrypt($notification->id))}}">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
-                                                        <span class="custom-control-label"></span>
-                                                    </a>
-                                                    </label>
-                                                </td>
-                                                <td class="view-message dont-show fw-semibold">{{$notification->first_name}} {{$notification->last_name}}</td>
-                                                <td class="view-message dont-show fw-semibold">{{$notification->subject}}</td>
-                                                <td class="view-message">{{$notification->description}}</td>
-                                                <td class="view-message text-end fw-semibold">{{$notification->created_at->toDateString()}}</td>
-                                            </tr>
+                                                <tr class="unread">
+                                                    <td class="view-message dont-show fw-bold"><a href="{{route('admin.notification.read', Crypt::encrypt($notification->id))}}" style="color: #000;">{{$notification->first_name}} {{$notification->last_name}}</a></td>
+                                                    <td class="view-message dont-show fw-bold"><a href="{{route('admin.notification.read', Crypt::encrypt($notification->id))}}" style="color: #000;">{{$notification->subject}}</a></td>
+                                                    <td class="view-message fw-bold"><a href="{{route('admin.notification.read', Crypt::encrypt($notification->id))}}" style="color: #000;">{{$notification->description}}</a></td>
+                                                    <td class="view-message text-end fw-bold"><a href="{{route('admin.notification.read', Crypt::encrypt($notification->id))}}" style="color: #000;">{{$notification->created_at->toDateString()}}</a></td>
+                                                </tr>
                                             @else
-                                            <tr class="unread">
-                                                <td class="inbox-small-cells">
-                                                    <label class="custom-control custom-checkbox mb-0">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2" checked>
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </td>
-                                                <td class="view-message dont-show fw-semibold">{{$notification->first_name}} {{$notification->last_name}}</td>
-                                                <td class="view-message  dont-show">{{$notification->subject}}</td>
-                                                <td class="view-message ">{{$notification->description}}</td>
-                                                <td class="view-message  text-end">{{$notification->created_at->toDateString()}}</td>
-                                            </tr>
+                                                <tr>
+                                                    <td class="view-message dont-show">{{$notification->first_name}} {{$notification->last_name}}</td>
+                                                    <td class="view-message dont-show">{{$notification->subject}}</td>
+                                                    <td class="view-message ">{{$notification->description}}</td>
+                                                    <td class="view-message  text-end">{{$notification->created_at->toDateString()}}</td>
+                                                </tr>
                                             @endif
                                         </tbody>
                                         @endforeach

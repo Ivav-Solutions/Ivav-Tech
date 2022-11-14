@@ -460,7 +460,7 @@ class AdminController extends Controller
 
     public function notifications()
     {
-        $allNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
+        $allNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')->latest()
             ->get(['notifications.*', 'users.first_name', 'users.last_name']);
         $notifications = Notification::join('users', 'notifications.from', '=', 'users.id')
             ->where('notifications.status', 'Unread')
@@ -469,7 +469,6 @@ class AdminController extends Controller
         $unreadNotifications = Notification::join('users', 'notifications.from', '=', 'users.id')
             ->where('notifications.status', 'Unread')
             ->get(['notifications.*', 'users.first_name', 'users.last_name']);
-
 
         return view('admin.notifications', [
             'allNotifications' => $allNotifications,
