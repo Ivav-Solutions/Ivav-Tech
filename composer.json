@@ -13,7 +13,8 @@
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.0",
         "monarobase/country-list": "^3.3",
-        "omnipay/sagepay": "~3.0"
+        "omnipay/sagepay": "~3.0",
+        "spatie/laravel-honeypot": "^4.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

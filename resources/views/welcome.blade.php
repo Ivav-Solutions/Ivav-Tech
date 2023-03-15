@@ -46,7 +46,7 @@
                     <div class="single-service">
                         <div class="service-img"><img src="images/services/service2.png" alt="service" /></div>
                         <div class="service-content">
-                            <h3>Moble Development</h3>
+                            <h3>Mobile Development</h3>
                             <p>From simple to complex Mobile Apps, whether it is for your business, or a personal affair, we have what it Takes. Rest Assured. Your Mobile Applications will work on as many devices and Mobile Apps as possible.</p><a class="line-bnt" href="/service/software_development/mobile_development">Read More</a>
                         </div>
                     </div>
