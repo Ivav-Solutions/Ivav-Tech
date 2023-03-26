@@ -40,7 +40,7 @@ Route::get('/testimonials', [App\Http\Controllers\HomePageController::class, 'te
 Route::get('/contact', [App\Http\Controllers\HomePageController::class, 'contact']);
 Route::post('/contact-us', [App\Http\Controllers\HomePageController::class, 'contactConfirm'])->middleware(ProtectAgainstSpam::class);
 Route::get('/book_consultation', [App\Http\Controllers\HomePageController::class, 'book_consultation']);
-Route::post('/book_consultation', [App\Http\Controllers\HomePageController::class, 'post_book_consultation'])->name('user.book.consultation');;
+Route::post('/book_consultation', [App\Http\Controllers\HomePageController::class, 'post_book_consultation'])->name('user.book.consultation')->middleware(ProtectAgainstSpam::class);
 Route::get('/payment/callback', [App\Http\Controllers\HomePageController::class, 'handleGatewayCallback'])->name('user.handleGatewayCallback');
 Route::get('/consultation/successfully', [App\Http\Controllers\HomePageController::class, 'consultation_successfully'])->name('consultation.successful');
 

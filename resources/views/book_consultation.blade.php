@@ -28,6 +28,7 @@
                     @includeIf('layouts.error_template')
                     <form action="{{route('user.book.consultation')}}" method="post">
                         @csrf
+                        @honeypot
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
