@@ -34,7 +34,7 @@
         </div>
         <p>And if you’re just hearing about Scrum, in simple terms, Scrum is a lucrative tech area of interest that helps teams and organizations produce maximum value while working on different projects.</p>
         <p>Hello, I'm Oluwaseun</p>
-        <p>In 2015, I graduated with a degree in Geography but the first job opportunity I after NYSC was in Digital Marketing.</p>
+        <p>In 2015, I graduated with a degree in Geography but the first job opportunity I had after NYSC was in Digital Marketing.</p>
         <p>To cut the long story short, I only practiced as a Digital Marketing professional until around mid- 2022 when I joined my current company as a Marketing Manager and through this new job opportunity, my aspirations of working alongside highly technical teams started becoming a reality.</p>
         <p>Is Digital Marketing not full of opportunities?</p>
         <p>Of course, it is! I knew Digital Marketing is very lucrative but Scrum and Product Ownership have risen to become the new 'oil' and experts in these areas are highly sought after.</p>
