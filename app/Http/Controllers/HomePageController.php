@@ -28,6 +28,11 @@ class HomePageController extends Controller
         return view('faqs');
     }
 
+    public function scrum_webinar()
+    {
+        return view('scrum_webinar');
+    }
+
     public function testimonials()
     {
         return view('testimonials');
