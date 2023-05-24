@@ -14805,7 +14805,7 @@ body.sal-disabled [data-sal|=flip] {
 }
 @media only screen and (max-width: 1199px) {
   .header-one a.thumbnail img {
-    padding: 25px 0;
+    /* padding: 25px 0; */
   }
 }
 

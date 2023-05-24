@@ -24,7 +24,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6" style="margin-top: 1rem">
                     <a href="/" class="thumbnail">
-                        <img src="{{URL::asset('images/logo.png')}}" alt="Ivavtech" style="width: 80px; height: 75px;">
+                        <img src="{{URL::asset('images/logo.png')}}" class="ivavtech" alt="Ivavtech" style="height: 75px;">
                     </a>
                 </div>
             </div>
@@ -172,10 +172,6 @@
     <script src="assets/js/plugins/marquery.js"></script>
     <script src="assets/js/plugins/parallax.js"></script>
 
-    <script src="assets/js/plugins/contact-form.js"></script>
-
-    <!-- <script src="assets/js/vendor/scroll-smoother.js"></script> -->
-
     <script src="assets/js/vendor/swiper.js"></script>
     <script src="assets/js/vendor/sal.min.js"></script>
 
@@ -187,5 +183,6 @@
 
     <!-- main js hear -->
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>
