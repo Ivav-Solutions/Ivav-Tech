@@ -114,10 +114,6 @@
                                     <div class="row align-items-center">
                                         <div class="col-12 pb_sm--20">
                                             <div class="content-main">
-                                                <h2 class="title">
-                                                    Taking Dynamic Photos is all
-                                                    about my Passion
-                                                </h2>
                                                 <p class="about-disc">I know you've read a lot and watched several videos about how to get started but I'm a living proof that you can start your journey in Scrum without any tech related experience and my mentor also wants to show you in practical, how you can do that.</p>
                                                 <p class="about-disc">That's why he has organized a free webinar where he will reveal to you exactly how to transition smoothly into Scrum or Product Ownership (which some also call Product Management).</p>
                                                 <p class="about-disc">In this free webinar you will discover:</p>
