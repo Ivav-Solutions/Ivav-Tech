@@ -40,7 +40,7 @@
                             The new Tech Gold is here and Scrum is the new Gold.
                         </h2>
                         <p style="font-size: 16px; color: #000">If you're willing to become a Scrum Master or a Product Owner but you don't know how to get started, this is for you.</p>
-                        <a href="#" class="rts-btn btn-main-2 mb-5">Click Here To Register For The Free Webinar</a>
+                        <a href="https://events.teams.microsoft.com/event/5e35561b-952a-4bb9-9518-31a7fbee2f0c@a04beed5-fef1-4da6-864e-b8619a28973d/registration?fbclid=PAAaaGZfbgxnX4thXop3ON016xtjTYebod30yFL0y2nwKbv3FlLLyBxAOXNCo" class="rts-btn btn-main-2 mb-5">Click Here To Register For The Free Webinar</a>
                         <p style="font-size: 16px; color: #000">And if you’re just hearing about Scrum, in simple terms, Scrum is a lucrative tech area of interest that helps teams and organizations produce maximum value while working on different projects.</p>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                                                     <li>What varieties of job opportunities are available to Scrum Masters and Product Owners.</li>
                                                     <li>What certifications are available and which is the best.</li>
                                                 </ul>
-                                                <a href="#" class="rts-btn btn-main-2 mb-5">Click Here To Register For The Free Webinar</a>
+                                                <a href="https://events.teams.microsoft.com/event/5e35561b-952a-4bb9-9518-31a7fbee2f0c@a04beed5-fef1-4da6-864e-b8619a28973d/registration?fbclid=PAAaaGZfbgxnX4thXop3ON016xtjTYebod30yFL0y2nwKbv3FlLLyBxAOXNCo" class="rts-btn btn-main-2 mb-5">Click Here To Register For The Free Webinar</a>
                                             </div>
                                         </div>
                                     </div>
