@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
 use Omnipay\Omnipay;
 use Omnipay\Common\CreditCard;
+use Srmklive\PayPal\Services\ExpressCheckout;
 
 class HomePageController extends Controller
 {
@@ -347,7 +348,7 @@ class HomePageController extends Controller
         }
     }
 
-    public function test()
+    public function me()
     {
         $gateway = OmniPay::create('SagePay\Direct')->initialize([
             'vendor' => 'reapivavsolutio',
@@ -418,6 +419,107 @@ class HomePageController extends Controller
         if ($responseMessage->isRedirect()) {
             $responseMessage->redirect();
         }
+    }
+
+    private $gateway;
+
+    public function __construct() {
+        $this->gateway = Omnipay::create('PayPal_Rest');
+        $this->gateway->setClientId(env('PAYPAL_CLIENT_ID'));
+        $this->gateway->setSecret(env('PAYPAL_CLIENT_SECRET'));
+        $this->gateway->setTestMode(true);
+    }
+
+    public function test(Request $request)
+    {
+        try {
+
+            $response = $this->gateway->purchase(array(
+                'amount' => 400,
+                'currency' => env('PAYPAL_CURRENCY'),
+                'returnUrl' => route('success.payment'),
+                'cancelUrl' => route('cancel.payment')
+            ))->send();
+
+            if ($response->isRedirect()) {
+                $response->redirect();
+            }
+            else{
+                return $response->getMessage();
+            }
+
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+    public function paymentSuccess(Request $request)
+    {
+        if ($request->input('paymentId') && $request->input('PayerID')) {
+            $transaction = $this->gateway->completePurchase(array(
+                'payer_id' => $request->input('PayerID'),
+                'transactionReference' => $request->input('paymentId')
+            ));
+
+            $response = $transaction->send();
+
+            if ($response->isSuccessful()) {
+
+                $arr = $response->getData();
+
+                // $payment = new Payment();
+                // $payment->payment_id = $arr['id'];
+                // $payment->payer_id = $arr['payer']['payer_info']['payer_id'];
+                // $payment->payer_email = $arr['payer']['payer_info']['email'];
+                // $payment->amount = $arr['transactions'][0]['amount']['total'];
+                // $payment->currency = env('PAYPAL_CURRENCY');
+                // $payment->payment_status = $arr['state'];
+
+                // $payment->save();
+
+                return "Payment is Successfull. Your Transaction Id is : " . $arr['id'];
+
+            }
+            else{
+                return $response->getMessage();
+            }
+        }
+        else{
+            return 'Payment declined!!';
+        }
+    }
+
+    public function paymentCancel()
+    {
+        return 'User declined the payment!';   
+    }
+
+    public function mmm()
+    {
+        $product = [];
+        $product['items'] = [
+            [
+                'name' => 'Nike Joyride 2',
+                'price' => 112,
+                'desc'  => 'Running shoes for Men',
+                'qty' => 2
+            ]
+        ];
+  
+        $product['invoice_id'] = 1;
+        $product['invoice_description'] = "Order #{$product['invoice_id']} Bill";
+        $product['return_url'] = route('success.payment');
+        $product['cancel_url'] = route('cancel.payment');
+        $product['total'] = 224;
+  
+        $paypalModule = new ExpressCheckout;
+  
+        $res = $paypalModule->setExpressCheckout($product);
+        $res = $paypalModule->setExpressCheckout($product, true);
+  
+        // return redirect($res['paypal_link']);
+
+        dd($res);
     }
 
     function transaction_id($input, $strength = 5) {

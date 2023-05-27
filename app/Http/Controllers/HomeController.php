@@ -22,6 +22,8 @@ use Omnipay\Common\CreditCard;
 
 class HomeController extends Controller
 {
+    private $gateway;
+
     /**
      * Create a new controller instance.
      *
@@ -30,7 +32,13 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware(['auth','verified']);
+        $this->gateway = Omnipay::create('PayPal_Rest');
+        $this->gateway->setClientId(env('PAYPAL_CLIENT_ID'));
+        $this->gateway->setSecret(env('PAYPAL_CLIENT_SECRET'));
+        $this->gateway->setTestMode(true);
     }
+
+
 
     public function logouts()
     {
@@ -217,13 +225,104 @@ class HomeController extends Controller
         $programDescription = Crypt::decrypt($program);
         $countries = Country::all();
 
-        return view('dashboard.payment', [
-            'userAmount' => $userAmount,
-            'programDescription' => $programDescription,
-            'countries' => $countries
-        ]);
+        try {
+            $response = $this->gateway->purchase(array(
+                'amount' => $userAmount,
+                'description' => $programDescription,
+                'currency' => env('PAYPAL_CURRENCY'),
+                'returnUrl' => route('success.payment'),
+                'cancelUrl' => route('cancel.payment')
+            ))->send();
+
+            if ($response->isRedirect()) {
+                $response->redirect();
+            }
+            else {
+                return back()->with([
+                    'type' => 'danger',
+                    'message' => $response->getMessage()
+                ]); 
+            }
+        } catch (\Throwable $th) {
+            return back()->with([
+                'type' => 'danger',
+                'message' => $th->getMessage()
+            ]); 
+        }
+
+        // return view('dashboard.payment', [
+        //     'userAmount' => $userAmount,
+        //     'programDescription' => $programDescription,
+        //     'countries' => $countries
+        // ]);
+    }
+    
+    public function paymentSuccess(Request $request)
+    {
+        if ($request->input('paymentId') && $request->input('PayerID')) {
+            $transaction = $this->gateway->completePurchase(array(
+                'payer_id' => $request->input('PayerID'),
+                'transactionReference' => $request->input('paymentId')
+            ));
+
+            $response = $transaction->send();
+
+            if ($response->isSuccessful()) {
+
+                $arr = $response->getData();
+
+                $user = User::find(Auth::user()->id); 
+
+                Payment::create([
+                    'user_id' => $user->id,
+                    'amount' => $arr['transactions'][0]['amount']['total'],
+                    'transaction_id' => $arr['id'],
+                    'description' => $arr['transactions'][0]['description'],
+                ]);
+
+                Notification::create([
+                    'from' => $user->id,
+                    'subject' => 'Enrollment',
+                    'description' => $user->first_name.' has successfully applied to enroll in '.$arr['transactions'][0]['description'].' Program'
+                ]);
+
+                // $payment = new Payment();
+                // $payment->payment_id = $arr['id'];
+                // $payment->payer_id = $arr['payer']['payer_info']['payer_id'];
+                // $payment->payer_email = $arr['payer']['payer_info']['email'];
+                // $payment->amount = $arr['transactions'][0]['amount']['total'];
+                // $payment->currency = env('PAYPAL_CURRENCY');
+                // $payment->payment_status = $arr['state'];
+
+                // $payment->save();
+
+                return redirect()->route('user.successful.payment', Crypt::encrypt($arr['id']));
+
+            }
+            else{
+                return back()->with([
+                    'type' => 'danger',
+                    'message' => $response->getMessage()
+                ]); 
+            }
+        }
+        else{
+            return back()->with([
+                'type' => 'danger',
+                'message' => 'Payment declined!!'
+            ]); 
+        }
     }
 
+    public function paymentCancel()
+    {
+        return back()->with([
+            'type' => 'danger',
+            'message' => 'User declined the payment!'
+        ]); 
+    }
+
+    // Opayo
     public function make_payment($id, $amount, Request $request)
     {   
         $this->validate($request, [

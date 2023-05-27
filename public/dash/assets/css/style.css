@@ -1580,9 +1580,9 @@ pre {
 }
 
 .alert-secondary {
-    color: #e984b1;
-    background-color: rgba(233, 132, 177, 0.15);
-    border-color: rgba(233, 132, 177, 0.15);
+    color: #fff;
+    background-color: #e984b1;
+    border-color: #e984b1;
 }
 
 .alert-secondary hr {
@@ -1594,9 +1594,9 @@ pre {
 }
 
 .alert-success {
-    color: #13bfa6;
-    background-color: rgba(19, 191, 166, 0.15);
-    border-color: rgba(19, 191, 166, 0.15);
+    color: #fff;
+    background-color: #13bfa6;
+    border-color: #13bfa6;
 }
 
 .alert-success hr {
@@ -1608,9 +1608,9 @@ pre {
 }
 
 .alert-info {
-    color: #1d42d9;
-    background-color: rgba(89, 173, 236, 0.15);
-    border-color: rgba(89, 173, 236, 0.15);
+    color: #fff;
+    background-color: #1d42d9;
+    border-color: #1d42d9;
 }
 
 .alert-info hr {
@@ -1622,9 +1622,9 @@ pre {
 }
 
 .alert-warning {
-    color: #e7c354;
-    background-color: rgba(231, 195, 84, 0.15);
-    border-color: rgba(231, 195, 84, 0.15);
+    color: #fff;
+    background-color: #e7c354;
+    border-color: #e7c354;
 }
 
 .alert-warning hr {
@@ -1636,9 +1636,9 @@ pre {
 }
 
 .alert-danger {
-    color: #d12c47;
-    background-color: rgba(209, 44, 71, 0.15);
-    border-color: rgba(209, 44, 71, 0.15);
+    color: #fff;
+    background-color: #d12c47;
+    border-color: #d12c47;
 }
 
 .alert-danger hr {

@@ -70,6 +70,8 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/notifications', [App\Http\Controllers\HomeController::class, 'notifications'])->name('notifications');
     Route::any('/notification/read/{id}', [App\Http\Controllers\HomeController::class, 'read_notification'])->name('read.notification');
     Route::get('/it_programs/payment/{amount}/{program}', [App\Http\Controllers\HomeController::class, 'proceed_payment'])->name('user.it.programs.proceed.payment');
+    Route::get('cancel-payment', [App\Http\Controllers\HomeController::class, 'paymentCancel'])->name('cancel.payment');
+    Route::get('payment-success', [App\Http\Controllers\HomeController::class, 'paymentSuccess'])->name('success.payment');
     Route::post('/it_programs/make-payment/{id}/{amount}', [App\Http\Controllers\HomeController::class, 'make_payment'])->name('user.proceed.to.payment.mysagepay');
     Route::get('/success/{id}', [App\Http\Controllers\HomeController::class, 'successful_payment'])->name('user.successful.payment');
     Route::get('/payments', [App\Http\Controllers\HomeController::class, 'payments'])->name('user.payments');
