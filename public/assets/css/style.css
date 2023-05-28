@@ -14964,16 +14964,16 @@ body.marketer {
   bottom: 27px;
 }
 .home-four.home-mazin .progress-wrap::after {
-  color: #FFAE00;
+  color: #1d42d9;
 }
 .home-four.home-mazin .progress-wrap::after {
-  border-color: #FFAE00;
+  border-color: #1d42d9;
 }
 .home-four.home-mazin .progress-wrap::after {
-  border: 2px solid #FFAE00;
+  border: 2px solid #1d42d9;
 }
 .home-four.home-mazin .progress-wrap svg.progress-circle path {
-  stroke: #FFAE00;
+  stroke: #1d42d9;
 }
 
 .header-one.header-four {
@@ -15678,8 +15678,8 @@ ul#mobile-menu-active {
   top: 0;
 }
 .rts-btn.btn-main-2 {
-  background: #FFAE00;
-  color: #0D0D0D;
+  background: #1d42d9;
+  color: #fff;
   border-radius: 8px;
 }
 .rts-btn.btn-main-2:hover {
@@ -15692,7 +15692,7 @@ ul#mobile-menu-active {
   height: 100%;
   left: 0;
   top: 0;
-  background: #FFAE00;
+  background: #1d42d9;
   border-radius: 8px;
 }
 .rts-btn.btn-main-2-alta {
@@ -15710,7 +15710,7 @@ ul#mobile-menu-active {
   height: 100%;
   left: 0;
   top: 0;
-  background: #FFAE00;
+  background: #1d42d9;
   border-radius: 8px;
 }
 .rts-btn.btn-main-3 {
@@ -17794,13 +17794,13 @@ body.inner-page {
 .tab-area-main-wrapper ul.nav-tabs li button:hover {
   border: none;
   border: none;
-  background: #FFAE00;
+  background: #1d42d9;
   color: #141414;
   border-radius: 15px 15px 0 0;
 }
 .tab-area-main-wrapper ul.nav-tabs li button.active {
   border: none;
-  background: #FFAE00;
+  background: #1d42d9;
   color: #141414;
   border-radius: 15px 15px 0 0;
 }
@@ -17910,25 +17910,25 @@ body.inner-page {
 }
 
 .photographer-home .single-progress-area-h4 .progress .bg--primary {
-  background: #FFAE00;
+  background: #1d42d9;
   border-radius: 0;
 }
 
 .photographer-home .single-progress-area-h4 .progress-top span.parcent {
-  color: #FFAE00;
+  color: #1d42d9;
 }
 
 .photographer-home .single-progress-area-h4 .progress-top p {
-  color: #FFAE00;
+  color: #1d42d9;
 }
 
 .photographer-home .about-h3 .tab-area-main-wrapper ul.nav-tabs li button.active {
-  background: #FFAE00;
+  background: #1d42d9;
   color: #fff;
 }
 
 .photographer-home .about-h3 .tab-area-main-wrapper ul.nav-tabs li button:hover {
-  background: #FFAE00;
+  background: #1d42d9;
   color: #fff;
 }
 
@@ -18415,7 +18415,7 @@ body.inner-page {
   transition: 0.3;
 }
 .blog-h2-main-wrapper:hover .icon svg {
-  background: #FFAE00;
+  background: #1d42d9;
   box-shadow: none;
 }
 .blog-h2-main-wrapper:hover .icon svg path {
@@ -18546,7 +18546,7 @@ body.inner-page {
   top: -20%;
 }
 .rts-service-style-4:hover .inner .icon svg {
-  background: #FFAE00;
+  background: #1d42d9;
   animation: service-icon 1s linear;
 }
 .rts-service-style-4:hover .inner .title {
@@ -19076,7 +19076,7 @@ body.inner-page {
   top: 0;
   height: 100%;
   width: 0%;
-  background: #FFAE00;
+  background: #1d42d9;
   content: "";
   border-radius: 20px;
   transition: 0.9s;
@@ -19283,7 +19283,7 @@ body.inner-page {
 .product-title-tab-b .tab-button-area ul li button.active {
   background: transparent;
   border: none;
-  color: #FFAE00 !important;
+  color: #1d42d9 !important;
   padding: 0;
 }
 
@@ -19799,7 +19799,7 @@ body.inner-page {
   transform: scale(1.06);
 }
 .rts-post-area-h2.style-four .content-area .icon-area i {
-  color: #FFAE00 !important;
+  color: #1d42d9 !important;
 }
 .rts-post-area-h2 a.thumbnail img {
   border-radius: 15px;
@@ -19814,7 +19814,7 @@ body.inner-page {
   }
 }
 .rts-post-area-h2 .content-area .icon-area i {
-  color: #FFAE00;
+  color: #1d42d9;
   margin-right: 7px;
 }
 .rts-post-area-h2 .content-area .title {
@@ -20263,7 +20263,7 @@ p.bold-text {
   border-radius: 40px;
 }
 .rts-single-testimonials-h3.style-four .top-area .start-area i {
-  color: #FFAE00;
+  color: #1d42d9;
 }
 .rts-single-testimonials-h3 .top-area {
   background: #FFFFFF;
@@ -22379,7 +22379,7 @@ body.photographer-home.dark-version ul#mobile-menu-active li a {
 .home-four.home-mazin.dark-version .rts-sidebar-menu-desktop .inner-wrapper .contact-info-area-wrapper .address a:hover,
 .home-four.home-mazin.dark-version .rts-sidebar-menu-desktop .inner-wrapper .contact-info-area-wrapper .mail a:hover,
 .home-four.home-mazin.dark-version .rts-sidebar-menu-desktop .inner-wrapper .contact-info-area-wrapper .single .social-wrapper-two ul li a i:hover {
-  color: #FFAE00;
+  color: #1d42d9;
 }
 
 /* Footer area style  */
@@ -22969,11 +22969,11 @@ body.photographer-home.dark-version ul#mobile-menu-active li a {
 }
 
 .designer-home .footer-copyright-four .inner .right .menu ul li a:hover {
-  color: #FFAE00;
+  color: #1d42d9;
 }
 
 .footer-three.four .footer-three-mid.footer-single-wized .body.contact-area .single-address .icon i {
-  color: #FFAE00;
+  color: #1d42d9;
 }
 
 .rts-contact-area {

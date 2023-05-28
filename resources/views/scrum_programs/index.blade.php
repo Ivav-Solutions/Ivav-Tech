@@ -115,7 +115,7 @@
                             <div class="single-service">
                                 <div class="service-img"><img src="{{URL::asset('images/favicon.png')}}" alt="service" /></div>
                                 <div class="service-content">
-                                    <h3 class="ml-4 mr-4">Four(4) Weeks Live Training Via Zoom Nov 19 - Dec 10 (Saturdays only 12pm to 5pm) @ £1,499
+                                    <h3 class="ml-4 mr-4">Four(4) Weeks Live Training Via Zoom June 17 - July 8 (Saturdays 12pm-5pm and Sundays 3pm-5pm) @ £2,099
                                         <ul style="text-align: left !important; font-size: 1.2rem; margin-top: 1.2rem;">
                                             <span style="font-size: 1.4rem;">Benifits</span>
                                             <br>

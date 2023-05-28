@@ -68,9 +68,9 @@
                     <div class="card text-center overflow-hidden">
                         <div class="card-body">
                             <h3 class="mb-3">Scrum Master</h3>
-                            <p>Four(4) Weeks Live Training Via Zoom: <br><span class="fs-20 fw-700">Priced at £1,499</span>.</p>
+                            <p>Four(4) Weeks Live Training Via Zoom: <br><span class="fs-20 fw-700">Priced at £2,099</span>.</p>
                             <a href="/service/it_programs/scrum_program/Scrum Master Certified (SMC™)" class="btn btn-info">Read More</a>
-                            <a href="payment/{{Crypt::encrypt(1499)}}/{{Crypt::encrypt('Scrum Master - Four(4) Weeks Live Training Via Zoom')}}" class="btn btn-info">Enroll</a>
+                            <a href="payment/{{Crypt::encrypt(2099)}}/{{Crypt::encrypt('Scrum Master - Four(4) Weeks Live Training Via Zoom')}}" class="btn btn-info">Enroll</a>
                         </div>
                     </div>
                 </div><!-- COL-END -->
