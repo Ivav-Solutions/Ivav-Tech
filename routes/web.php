@@ -46,6 +46,7 @@ Route::get('/payment/callback', [App\Http\Controllers\HomePageController::class,
 Route::get('/consultation/successfully', [App\Http\Controllers\HomePageController::class, 'consultation_successfully'])->name('consultation.successful');
 
 Route::get('/test', [App\Http\Controllers\HomePageController::class, 'test']);
+Route::any('/business-page', [App\Http\Controllers\HomePageController::class, 'business_page']);
 
 Auth::routes(['verify' => true]);
 
