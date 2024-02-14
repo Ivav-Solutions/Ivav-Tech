@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Consultation;
+use App\Models\ScheduleCall;
 use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -358,7 +359,7 @@ class HomePageController extends Controller
 
         // $gateway->setVendor('reapivavsolutio');
         // $gateway->setTestMode(true); // For a test account
-                
+
         // Create the credit card object from details entered by the user.
 
         $card = new CreditCard([
@@ -491,7 +492,7 @@ class HomePageController extends Controller
 
     public function paymentCancel()
     {
-        return 'User declined the payment!';   
+        return 'User declined the payment!';
     }
 
     public function mmm()
@@ -505,18 +506,18 @@ class HomePageController extends Controller
                 'qty' => 2
             ]
         ];
-  
+
         $product['invoice_id'] = 1;
         $product['invoice_description'] = "Order #{$product['invoice_id']} Bill";
         $product['return_url'] = route('success.payment');
         $product['cancel_url'] = route('cancel.payment');
         $product['total'] = 224;
-  
+
         $paypalModule = new ExpressCheckout;
-  
+
         $res = $paypalModule->setExpressCheckout($product);
         $res = $paypalModule->setExpressCheckout($product, true);
-  
+
         // return redirect($res['paypal_link']);
 
         dd($res);
@@ -529,7 +530,42 @@ class HomePageController extends Controller
         for($i = 0; $i < $strength; $i++) {
             $random_character = $input[mt_rand(0, $input_length - 1)];
             $random_string .= $random_character;
-        }    
+        }
         return $random_string;
+    }
+
+    public function business_page(Request $request)
+    {
+        if ($request->isMethod('post'))
+        {
+            ScheduleCall::create([
+                'name' => $request->name,
+                'phone' => $request->phone,
+                'email' => $request->email,
+                'whatsapp_call' => $request->whatsapp_call,
+                'preferred_time' => $request->preferred_time,
+                'context' => $request->context
+            ]);
+
+            /** Store information to include in mail in $data as an array */
+            $data = array(
+                'name' => request()->name,
+                'email' => request()->email,
+                'phone' => request()->phone,
+                'whatsapp_call' => request()->whatsapp_call,
+                'preferred_time' => request()->preferred_time,
+                'context' => $request->context,
+                'created_at' => now(),
+                'admin' => 'info@ivavtech.com',
+            );
+            /** Send message to the admin */
+            Mail::send('emails.schedule', $data, function ($m) use ($data) {
+                $m->to($data['admin'])->subject('Schedule Call Form Notification');
+            });
+
+            return back()->with('success_report', "We've received your request to schedule a phone call, and we're delighted that you've chosen to speak with us. A member of our team will be reaching out to you shortly to confirm the details of our upcoming call.");
+        }
+
+        return view('business_page');
     }
 }
